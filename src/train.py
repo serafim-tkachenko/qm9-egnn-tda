@@ -5,12 +5,13 @@ import torch
 from torch.utils.data import DataLoader
 from tqdm import tqdm
 
-from data.qm9_data import load_qm9, make_splits
-from data.indexed_dataset import IndexedDataset
-from data.collate import qm9_dense_collate
-from models.egnn_gap import EGNNGapRegressor
-from utils.seed import set_seed
-from utils.metrics import mae
+from src.data.qm9_data import load_qm9, make_splits
+from src.data.indexed_dataset import IndexedDataset
+from src.data.collate import qm9_dense_collate
+from src.models.egnn_gap import EGNNGapRegressor
+from src.utils.seed import set_seed
+from src.utils.metrics import mae
+
 
 
 @dataclass
