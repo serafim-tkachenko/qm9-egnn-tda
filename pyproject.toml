@@ -1,0 +1,22 @@
+[project]
+name = "topo-egnn-qm9"
+version = "0.1.0"
+description = "Topology-aware E(n)-Equivariant GNNs for HOMO–LUMO gap prediction on QM9"
+requires-python = ">=3.10"
+
+dependencies = [
+  "torch",
+  "torch-geometric",
+  "egnn-pytorch",
+  "giotto-tda",
+  "numpy",
+  "tqdm",
+  "scikit-learn",
+  "pyyaml",
+]
+
+[tool.uv]
+dev-dependencies = [
+  "ruff",
+  "black",
+]
