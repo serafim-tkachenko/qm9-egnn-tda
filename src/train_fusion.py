@@ -30,7 +30,7 @@ class TrainFusionConfig:
 
     # TDA cache settings
     tda_cache_dir: str = "artifacts/tda_cache"
-    tda_bins: int = 16
+    tda_bins: int = 64
     tda_max_dim: int = 1
 
     ckpt_path: str = "artifacts/checkpoints/best_fusion.pt"
@@ -102,7 +102,7 @@ def run():
 
     tda_cfg = TDAConfig(
         cache_dir=cfg.tda_cache_dir,
-        n_bins=cfg.tda_bins,
+        betti_bins=cfg.tda_bins,
         max_homology_dim=cfg.tda_max_dim,
         n_jobs=-1,
     )
@@ -197,7 +197,7 @@ def run():
             Path(cfg.results_dir) / "fusion_train_history.json",
             history,
             extra={
-                "model": "EGNN+TDA",
+                "model": "EGNN+TDA (FiLM)"
                 "seed": cfg.seed,
                 "batch_size": cfg.batch_size,
                 "lr": cfg.lr,
