@@ -13,7 +13,6 @@ from src.utils.seed import set_seed
 from src.utils.metrics import mae
 
 
-
 @dataclass
 class TrainConfig:
     seed: int = 42
@@ -22,7 +21,6 @@ class TrainConfig:
     lr: float = 1e-3
     epochs: int = 10
     device: str = "cuda" if torch.cuda.is_available() else "cpu"
-
 
 def run():
     cfg = TrainConfig()
