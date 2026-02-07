@@ -31,7 +31,7 @@ def qm9_dense_collate(batch: List[Tuple[int, object]]) -> BatchDense:
         z[i, :n] = data.z
         pos[i, :n, :] = data.pos
         mask[i, :n] = True
-        y[i] = data.y[GAP_TARGET_INDEX].float()
+        y[i] = data.y.view(-1)[GAP_TARGET_INDEX].float()
         idx[i] = gidx
 
     return BatchDense(z=z, pos=pos, mask=mask, y=y, idx=idx)

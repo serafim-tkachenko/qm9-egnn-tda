@@ -6,8 +6,9 @@ import torch
 from torch.utils.data import random_split
 from torch_geometric.datasets import QM9
 
-# PyG QM9 targets: 
-# HOMO index=2, LUMO index=3, GAP index=4 :contentReference[oaicite:1]{index=1}
+# PyG QM9 targets
+# https://pytorch-geometric.readthedocs.io/en/2.6.1/generated/torch_geometric.datasets.QM9.html
+# HOMO index=2, LUMO index=3, GAP index=4
 GAP_TARGET_INDEX = 4
 
 
