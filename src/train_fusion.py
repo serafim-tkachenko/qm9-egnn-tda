@@ -197,7 +197,7 @@ def run():
             Path(cfg.results_dir) / "fusion_train_history.json",
             history,
             extra={
-                "model": "EGNN+TDA (FiLM)"
+                "model": "EGNN+TDA (FiLM)",
                 "seed": cfg.seed,
                 "batch_size": cfg.batch_size,
                 "lr": cfg.lr,
