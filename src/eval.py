@@ -15,7 +15,7 @@ from src.data.indexed_dataset import IndexedDataset
 from src.data.collate import qm9_dense_collate
 from src.data.tda_features import TDACache, TDAConfig
 from src.models.egnn_gap import EGNNGapRegressor
-from src.models.fusion_gap import EGNNTDARegressor
+from src.models.fusion_gap import EGNNTDAFiLMRegressor
 from src.utils.metrics import mae
 from src.utils.seed import set_seed
 from src.utils.io import save_json, save_csv, ensure_dir
@@ -24,18 +24,18 @@ from src.utils.io import save_json, save_csv, ensure_dir
 @dataclass
 class CompareEvalConfig:
     seed: int = 42
-    root: str = "data/qm9" # overridden by QM9_ROOT env var
+    root: str = "data/qm9" 
     batch_size: int = 128
     device: str = "cuda" if torch.cuda.is_available() else "cpu"
 
-    # checkpoints (can be overridden via env vars)
+    # checkpoints
     baseline_ckpt: str = "artifacts/checkpoints/best_egnn.pt"
     fusion_ckpt: str = "artifacts/checkpoints/best_fusion.pt"
 
-    # TDA cache (used only for fusion)
+    # TDA cache
     tda_cache_dir: str = "artifacts/tda_cache"
-    tda_bins: int = 16
-    tda_max_dim: int = 1
+    tda_bins: int = 64    # must match betti_bins used in cache build
+    tda_max_dim: int = 1          # H0 and H1
 
     out_dir: str = "results"
     fig_dir: str = "figures"
@@ -44,7 +44,6 @@ class CompareEvalConfig:
 
 
 def _env_override(cfg: CompareEvalConfig) -> CompareEvalConfig:
-    # CKPT_DIR provides default locations for both checkpoints
     ckpt_dir = os.getenv("CKPT_DIR")
     if ckpt_dir:
         cfg.baseline_ckpt = str(Path(ckpt_dir) / "best_egnn.pt")
@@ -88,6 +87,7 @@ def load_tda_batch(idxs: torch.LongTensor, cache: TDACache) -> torch.FloatTensor
 def eval_baseline(model: torch.nn.Module, loader: DataLoader, device: str, noise_sigma: float) -> float:
     model.eval()
     mae_sum, n_sum = 0.0, 0
+
     for batch in loader:
         z = batch.z.to(device)
         pos = batch.pos.to(device)
@@ -99,16 +99,25 @@ def eval_baseline(model: torch.nn.Module, loader: DataLoader, device: str, noise
 
         pred = model(z, pos, mask)
         m = float(mae(pred, y).item())
+
         bs = z.size(0)
         mae_sum += m * bs
         n_sum += bs
+
     return mae_sum / max(n_sum, 1)
 
 
 @torch.no_grad()
-def eval_fusion(model: torch.nn.Module, loader: DataLoader, device: str, noise_sigma: float, tda_cache: TDACache) -> float:
+def eval_fusion(
+    model: torch.nn.Module,
+    loader: DataLoader,
+    device: str,
+    noise_sigma: float,
+    tda_cache: TDACache,
+) -> float:
     model.eval()
     mae_sum, n_sum = 0.0, 0
+
     for batch in loader:
         z = batch.z.to(device)
         pos = batch.pos.to(device)
@@ -122,21 +131,22 @@ def eval_fusion(model: torch.nn.Module, loader: DataLoader, device: str, noise_s
 
         pred = model(z, pos, mask, tda_vec)
         m = float(mae(pred, y).item())
+
         bs = z.size(0)
         mae_sum += m * bs
         n_sum += bs
+
     return mae_sum / max(n_sum, 1)
 
 
 def plot_compare_robustness(rows: List[Dict[str, float]], fig_path: str) -> None:
-    # rows contain sigma, baseline_test_mae, fusion_test_mae
     sigmas = [r["noise_sigma"] for r in rows]
     base = [r["baseline_test_mae"] for r in rows]
     fus = [r["fusion_test_mae"] for r in rows]
 
     plt.figure()
     plt.plot(sigmas, base, marker="o", label="EGNN")
-    plt.plot(sigmas, fus, marker="o", label="EGNN+TDA")
+    plt.plot(sigmas, fus, marker="o", label="EGNN+TDA (FiLM)")
     plt.xlabel("Gaussian noise sigma (added to coordinates)")
     plt.ylabel("Test MAE (HOMO-LUMO gap)")
     plt.title("Robustness comparison")
@@ -162,7 +172,7 @@ def run():
     val_loader = DataLoader(val_ds, batch_size=cfg.batch_size, shuffle=False, collate_fn=qm9_dense_collate)
     test_loader = DataLoader(test_ds, batch_size=cfg.batch_size, shuffle=False, collate_fn=qm9_dense_collate)
 
-    # Baseline
+    # Baseline EGNN
     baseline = EGNNGapRegressor().to(cfg.device)
     if not Path(cfg.baseline_ckpt).exists():
         raise FileNotFoundError(f"Baseline checkpoint not found: {cfg.baseline_ckpt}")
@@ -171,12 +181,17 @@ def run():
     baseline_val = eval_baseline(baseline, val_loader, cfg.device, noise_sigma=0.0)
     baseline_test = eval_baseline(baseline, test_loader, cfg.device, noise_sigma=0.0)
 
-    # Fusion
-    tda_cfg = TDAConfig(cache_dir=cfg.tda_cache_dir, n_bins=cfg.tda_bins, max_homology_dim=cfg.tda_max_dim, n_jobs=-1)
+    # Fusion EGNN + TDA (FiLM)
+    tda_cfg = TDAConfig(
+        cache_dir=cfg.tda_cache_dir,
+        betti_bins=cfg.tda_bins,
+        max_homology_dim=cfg.tda_max_dim,
+        n_jobs=-1,
+    )
     tda_cache = TDACache(tda_cfg)
     tda_dim = tda_cache.feature_dim()
 
-    fusion = EGNNTDARegressor(tda_dim=tda_dim).to(cfg.device)
+    fusion = EGNNTDAFiLMRegressor(tda_dim=tda_dim).to(cfg.device)
     if not Path(cfg.fusion_ckpt).exists():
         raise FileNotFoundError(f"Fusion checkpoint not found: {cfg.fusion_ckpt}")
     fusion.load_state_dict(torch.load(cfg.fusion_ckpt, map_location=cfg.device))
@@ -190,13 +205,15 @@ def run():
         s = float(s)
         b = eval_baseline(baseline, test_loader, cfg.device, noise_sigma=s)
         f = eval_fusion(fusion, test_loader, cfg.device, noise_sigma=s, tda_cache=tda_cache)
-        rob_rows.append({
-            "noise_sigma": s,
-            "baseline_test_mae": float(b),
-            "fusion_test_mae": float(f),
-        })
+        rob_rows.append(
+            {
+                "noise_sigma": s,
+                "baseline_test_mae": float(b),
+                "fusion_test_mae": float(f),
+            }
+        )
 
-    # Save comparison artifacts
+    # artifacts
     metrics = {
         "baseline": {
             "model": "EGNN",
@@ -205,33 +222,37 @@ def run():
             "test_mae": float(baseline_test),
         },
         "fusion": {
-            "model": "EGNN+TDA",
+            "model": "EGNN+TDA (FiLM)",
             "ckpt": cfg.fusion_ckpt,
             "tda_cache_dir": cfg.tda_cache_dir,
             "tda_dim": int(tda_dim),
+            "betti_bins": int(cfg.tda_bins),
+            "max_homology_dim": int(cfg.tda_max_dim),
             "val_mae": float(fusion_val),
             "test_mae": float(fusion_test),
         },
         "noise_sigmas": list(cfg.noise_sigmas),
     }
+
     save_json(Path(cfg.out_dir) / "compare_metrics.json", metrics)
     save_csv(Path(cfg.out_dir) / "compare_robustness.csv", rob_rows)
 
-    # Table for README
     table_rows = [
         {"model": "EGNN", "val_mae": float(baseline_val), "test_mae": float(baseline_test)},
-        {"model": "EGNN+TDA", "val_mae": float(fusion_val), "test_mae": float(fusion_test)},
+        {"model": "EGNN+TDA (FiLM)", "val_mae": float(fusion_val), "test_mae": float(fusion_test)},
     ]
     save_csv(Path(cfg.out_dir) / "compare_table.csv", table_rows)
 
     plot_compare_robustness(rob_rows, str(Path(cfg.fig_dir) / "compare_robustness.png"))
 
     print("Comparison results:")
-    print(f"  EGNN      val MAE={baseline_val:.6f} test MAE={baseline_test:.6f}")
-    print(f"  EGNN+TDA  val MAE={fusion_val:.6f} test MAE={fusion_test:.6f}")
+    print(f"  EGNN             val MAE={baseline_val:.6f} test MAE={baseline_test:.6f}")
+    print(f"  EGNN+TDA (FiLM)  val MAE={fusion_val:.6f} test MAE={fusion_test:.6f}")
     print("Robustness (test):")
     for r in rob_rows:
-        print(f"  sigma={r['noise_sigma']:.3f} -> EGNN={r['baseline_test_mae']:.6f}  EGNN+TDA={r['fusion_test_mae']:.6f}")
+        print(
+            f"  sigma={r['noise_sigma']:.3f} -> EGNN={r['baseline_test_mae']:.6f}  EGNN+TDA={r['fusion_test_mae']:.6f}"
+        )
 
     print("Saved:")
     print(" ", Path(cfg.out_dir) / "compare_metrics.json")
