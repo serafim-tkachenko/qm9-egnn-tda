@@ -1,5 +1,5 @@
 [project]
-name = "topo-egnn-qm9"
+name = "qm9-egnn-tda"
 version = "0.1.0"
 description = "Topology-aware E(n)-Equivariant GNNs for HOMO–LUMO gap prediction on QM9"
 requires-python = ">=3.10"

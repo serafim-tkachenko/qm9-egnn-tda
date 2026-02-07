@@ -1,4 +1,4 @@
-# topo-egnn-qm9
+# qm9-egnn-tda
 
 **Topology-aware E(n)-Equivariant Graph Neural Networks for HOMO--LUMO
 Gap Prediction**

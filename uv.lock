@@ -1973,7 +1973,7 @@ wheels = [
 ]
 
 [[package]]
-name = "topo-egnn-qm9"
+name = "qm9-egnn-tda"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
