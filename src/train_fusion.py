@@ -13,7 +13,7 @@ from src.data.qm9_data import load_qm9, make_splits
 from src.data.indexed_dataset import IndexedDataset
 from src.data.collate import qm9_dense_collate
 from src.data.tda_features import TDACache, TDAConfig
-from src.models.fusion_gap import EGNNTDARegressor
+from src.models.fusion_gap import EGNNTDAFiLMRegressor
 from src.utils.seed import set_seed
 from src.utils.metrics import mae
 from src.utils.exp_logging import History, save_history_json, save_summary_csv, plot_loss, plot_mae
@@ -109,7 +109,7 @@ def run():
     tda_cache = TDACache(tda_cfg)
     tda_dim = tda_cache.feature_dim()
 
-    model = EGNNTDARegressor(tda_dim=tda_dim).to(cfg.device)
+    model = EGNNTDAFiLMRegressor(tda_dim=tda_dim).to(cfg.device)
     opt = torch.optim.AdamW(model.parameters(), lr=cfg.lr)
     loss_fn = torch.nn.MSELoss()
 
@@ -146,6 +146,11 @@ def run():
 
             with torch.no_grad():
                 m = float(mae(pred, y).item())
+                
+            if epoch == 1 and train_n == 0:
+                print("TDA batch:", tda_vec.shape, "mean/std:", float(tda_vec.mean()), float(tda_vec.std()))
+                assert tda_vec.std() > 0, "TDA features look degenerate (std=0)"
+        
             train_mae_sum += m * bs
             train_n += bs
 
