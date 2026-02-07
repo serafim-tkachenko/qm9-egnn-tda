@@ -17,4 +17,4 @@ build/
 # Artifacts
 artifacts/tda_cache/
 artifacts/checkpoints/
-data/
+/data/
