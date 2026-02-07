@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
+import os
 from pathlib import Path
 import torch
 from torch.utils.data import random_split
@@ -20,6 +21,8 @@ class Split:
 
 
 def load_qm9(root: str = "data/qm9") -> QM9:
+    # allow override via env var for Colab/Drive persistence
+    root = os.getenv("QM9_ROOT", root)
     Path(root).mkdir(parents=True, exist_ok=True)
     return QM9(root)
 

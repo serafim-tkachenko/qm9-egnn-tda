@@ -22,7 +22,7 @@ from src.utils.exp_logging import History, save_history_json, save_summary_csv, 
 @dataclass
 class TrainFusionConfig:
     seed: int = 42
-    root: str = "data/qm9"
+    root: str = "data/qm9" # overridden by QM9_ROOT env var
     batch_size: int = 64
     lr: float = 1e-3
     epochs: int = 10
@@ -38,18 +38,35 @@ class TrainFusionConfig:
     figures_dir: str = "figures"
 
 
+def _env_override(cfg: TrainFusionConfig) -> TrainFusionConfig:
+    tda_dir = os.getenv("TDA_CACHE_DIR")
+    if tda_dir:
+        cfg.tda_cache_dir = tda_dir
+
+    ckpt_dir = os.getenv("CKPT_DIR")
+    if ckpt_dir:
+        Path(ckpt_dir).mkdir(parents=True, exist_ok=True)
+        cfg.ckpt_path = str(Path(ckpt_dir) / "best_fusion.pt")
+
+    res_dir = os.getenv("RESULTS_DIR")
+    if res_dir:
+        cfg.results_dir = res_dir
+
+    fig_dir = os.getenv("FIGURES_DIR")
+    if fig_dir:
+        cfg.figures_dir = fig_dir
+
+    return cfg
+
+
 def load_tda_batch(idxs: torch.LongTensor, cache: TDACache) -> torch.FloatTensor:
-    """
-    idxs: (B,) global QM9 indices
-    returns: (B, D) float tensor
-    """
     vecs = []
     for idx in idxs.tolist():
         p = cache.path_for_idx(int(idx))
         if not p.exists():
             raise FileNotFoundError(
                 f"Missing TDA cache file for idx={idx}. Expected: {p}\n"
-                f"Run: python -m scripts.build_tda_cache"
+                f"Build cache first"
             )
         vecs.append(np.load(p))
     arr = np.stack(vecs, axis=0)  # (B, D)
@@ -57,7 +74,7 @@ def load_tda_batch(idxs: torch.LongTensor, cache: TDACache) -> torch.FloatTensor
 
 
 def run():
-    cfg = TrainFusionConfig()
+    cfg = _env_override(TrainFusionConfig())
     set_seed(cfg.seed)
 
     ds = load_qm9(cfg.root)
@@ -83,7 +100,6 @@ def run():
         pin_memory=torch.cuda.is_available(),
     )
 
-    # TDA cache handle
     tda_cfg = TDAConfig(
         cache_dir=cfg.tda_cache_dir,
         n_bins=cfg.tda_bins,
@@ -93,7 +109,6 @@ def run():
     tda_cache = TDACache(tda_cfg)
     tda_dim = tda_cache.feature_dim()
 
-    # Model
     model = EGNNTDARegressor(tda_dim=tda_dim).to(cfg.device)
     opt = torch.optim.AdamW(model.parameters(), lr=cfg.lr)
     loss_fn = torch.nn.MSELoss()
@@ -117,7 +132,6 @@ def run():
             mask = batch.mask.to(cfg.device)
             y = batch.y.to(cfg.device)
 
-            # Load TDA features
             tda_vec = load_tda_batch(batch.idx, tda_cache).to(cfg.device)
 
             pred = model(z, pos, mask, tda_vec)
@@ -161,7 +175,6 @@ def run():
 
         val_mae_epoch = val_mae_sum / max(val_n, 1)
 
-        # log
         history.epochs.append(epoch)
         history.train_loss.append(float(train_loss_epoch))
         history.train_mae.append(float(train_mae_epoch))
@@ -169,13 +182,12 @@ def run():
 
         print(f"Epoch {epoch}: train_loss={train_loss_epoch:.6f} train_MAE={train_mae_epoch:.4f} val_MAE={val_mae_epoch:.4f}")
 
-        # checkpoint
         if val_mae_epoch < best_val:
             best_val = val_mae_epoch
             torch.save(model.state_dict(), cfg.ckpt_path)
             print("Saved best fusion checkpoint:", cfg.ckpt_path)
 
-        # save incremental history
+        # incremental history
         save_history_json(
             Path(cfg.results_dir) / "fusion_train_history.json",
             history,
@@ -191,24 +203,26 @@ def run():
                 "tda_bins": cfg.tda_bins,
                 "tda_max_dim": cfg.tda_max_dim,
                 "tda_dim": int(tda_dim),
+                "qm9_root_env": os.getenv("QM9_ROOT", ""),
             },
         )
 
-    # plots 
     plot_loss(history, Path(cfg.figures_dir) / "fusion_train_loss.png", title="EGNN+TDA: Training Loss")
     plot_mae(history, Path(cfg.figures_dir) / "fusion_mae_curves.png", title="EGNN+TDA: MAE Curves")
 
-    summary_rows = [{
-        "model": "EGNN+TDA",
-        "best_val_mae": float(best_val),
-        "final_train_mae": float(history.train_mae[-1]),
-        "final_val_mae": float(history.val_mae[-1]),
-        "final_train_loss": float(history.train_loss[-1]),
-        "ckpt_path": cfg.ckpt_path,
-        "tda_dim": int(tda_dim),
-        "tda_cache_dir": cfg.tda_cache_dir,
-    }]
-    save_summary_csv(Path(cfg.results_dir) / "fusion_summary.csv", summary_rows)
+    save_summary_csv(
+        Path(cfg.results_dir) / "fusion_summary.csv",
+        [{
+            "model": "EGNN+TDA",
+            "best_val_mae": float(best_val),
+            "final_train_mae": float(history.train_mae[-1]),
+            "final_val_mae": float(history.val_mae[-1]),
+            "final_train_loss": float(history.train_loss[-1]),
+            "ckpt_path": cfg.ckpt_path,
+            "tda_dim": int(tda_dim),
+            "tda_cache_dir": cfg.tda_cache_dir,
+        }],
+    )
 
     print("Fusion training completed -> best val MAE:", best_val)
     print("Saved:")
