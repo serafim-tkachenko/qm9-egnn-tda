@@ -6,8 +6,12 @@ from pathlib import Path
 import numpy as np
 from tqdm import tqdm
 
+from gtda.utils.validation import DataDimensionalityWarning
+
 from gtda.homology import VietorisRipsPersistence
 from gtda.diagrams import BettiCurve, PersistenceEntropy
+
+import warnings
 
 
 @dataclass
@@ -65,10 +69,13 @@ class TDACache:
             coords = coords / diameter
 
         X = coords[None, :, :]  # (1, N, 3)
-        diagrams = self.vr.fit_transform(X)  # (1, n_points, 3) with (birth, death, dim)
-
-        betti = self.betti.fit_transform(diagrams) # (1, dims, bins)
-        ent = self.entropy.fit_transform(diagrams) # (1, dims)
+        
+        # Supress warnings for (N,3) to make the output cleaner
+        with warnings.catch_warnings():
+            warnings.filterwarnings("ignore", category=DataDimensionalityWarning)
+            diagrams = self.vr.fit_transform(X)  # (1, n_points, 3) with (birth, death, dim)
+            betti = self.betti.fit_transform(diagrams) # (1, dims, bins)
+            ent = self.entropy.fit_transform(diagrams) # (1, dims)
 
         vec = np.concatenate([betti.reshape(1, -1), ent.reshape(1, -1)], axis=1)[0].astype(np.float32)
 
