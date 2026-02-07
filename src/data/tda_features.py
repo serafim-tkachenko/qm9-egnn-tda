@@ -22,7 +22,7 @@ class TDAConfig:
 class TDACache:
     """
     Computes persistent homology features for each molecule (point cloud of atom coordinates)
-    and stores them as .npy files indexed by the global QM9 index.
+    and stores them as .npy files indexed by the global QM9 index
     """
     def __init__(self, cfg: TDAConfig):
         self.cfg = cfg
@@ -47,17 +47,37 @@ class TDACache:
         return (self.cfg.max_homology_dim + 1) * self.cfg.n_bins * self.cfg.n_bins
 
     def compute_vec(self, coords: np.ndarray) -> np.ndarray:
-        """
-        coords: (N, 3) numpy array
-        returns: (D,) float32 vector
-        """
+        coords = np.asarray(coords, dtype=np.float32)
+
+        # Must be (N, 3) for point-cloud PH
+        if coords.ndim != 2 or coords.shape[1] != 3:
+            raise ValueError(f"Expected coords shape (N,3), got {coords.shape}")
+
+        # Center (translation invariance, numerical stability)
+        coords = coords - coords.mean(axis=0, keepdims=True)
+
+        # Scale to unit diameter to stabilize VR and PI ranges
+        # N is small in QM9, O(N^2) is fine
+        diffs = coords[:, None, :] - coords[None, :, :]
+        dists = np.sqrt((diffs ** 2).sum(axis=-1))
+        diameter = float(dists.max())
+        if diameter > 0:
+            coords = coords / diameter
+
         X = coords[None, :, :]  # (1, N, 3)
 
-        diagrams = self.vr.fit_transform(X) # persistence diagrams
-        imgs = self.pi.fit_transform(diagrams) # (1, dims, bins, bins)
+        diagrams = self.vr.fit_transform(X)
+        imgs = self.pi.fit_transform(diagrams)  # (1, dims, bins, bins) or similar
 
-        vec = imgs.reshape(1, -1)[0].astype(np.float32)
+        vec = imgs.reshape(-1).astype(np.float32)
+
+        if not np.isfinite(vec).all():
+            raise ValueError("Non-finite values in persistence image vector")
+        if vec.size == 0:
+            raise ValueError("Empty persistence image vector")
+
         return vec
+
 
     def build_for_dataset(self, dataset) -> None:
         """
