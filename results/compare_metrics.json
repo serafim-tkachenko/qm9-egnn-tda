@@ -1,0 +1,24 @@
+{
+  "baseline": {
+    "ckpt": "/content/drive/MyDrive/qm9-egnn-tda/checkpoints/best_egnn.pt",
+    "model": "EGNN",
+    "test_mae": 0.2051111161344389,
+    "val_mae": 0.20559687443321872
+  },
+  "fusion": {
+    "betti_bins": 64,
+    "ckpt": "/content/drive/MyDrive/qm9-egnn-tda/checkpoints/best_fusion.pt",
+    "max_homology_dim": 1,
+    "model": "EGNN+TDA (FiLM)",
+    "tda_cache_dir": "/content/drive/MyDrive/qm9-egnn-tda/tda_cache",
+    "tda_dim": 130,
+    "test_mae": 0.20229771859016815,
+    "val_mae": 0.20089362668766028
+  },
+  "noise_sigmas": [
+    0.0,
+    0.01,
+    0.05,
+    0.1
+  ]
+}

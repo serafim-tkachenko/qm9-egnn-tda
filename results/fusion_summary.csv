@@ -1,0 +1,2 @@
+model,best_val_mae,final_train_mae,final_val_mae,final_train_loss,ckpt_path,tda_dim,tda_cache_dir
+EGNN+TDA,0.2008936327378757,0.21440045319501572,0.20999073019352454,0.08376469187421973,/content/drive/MyDrive/qm9-egnn-tda/checkpoints/best_fusion.pt,130,/content/drive/MyDrive/qm9-egnn-tda/tda_cache
