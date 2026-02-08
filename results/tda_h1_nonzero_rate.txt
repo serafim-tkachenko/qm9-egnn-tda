@@ -1,0 +1,1 @@
+H1 nonzero rate (sample=5000): 93.4000%
