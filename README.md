@@ -2,11 +2,78 @@
 
 This project tests whether persistent-homology features help an EGNN predict the QM9 HOMO–LUMO gap. I built a training and evaluation pipeline around `egnn_pytorch`, then added a FiLM-conditioned model using Betti curves and persistence entropy.
 
-The saved single-seed comparison gives test MAE **0.2051 eV for EGNN and 0.2023 eV for EGNN + TDA**. This small difference has no estimate of variation across training seeds and does not establish a reliable advantage from topology.
+**Current finding — 13 September 2026:** fusion has lower error under paired coordinate noise, but its topology conditioning is saturated. Swapping individual descriptors barely changes predictions. These results **do not establish a benefit from molecule-specific topology**.
 
-**Paired validation, 13 September 2026:** a corrected 256-molecule development pilot gives noisy-input MAE **0.3803 eV for EGNN and 0.3282 eV for fusion** at sigma 0.10 Å. Clean and recomputed topology give essentially identical fusion predictions. A follow-up check finds saturated FiLM activations: shuffling real descriptors or using one constant real descriptor changes predictions by less than 1e-6 eV. This does not demonstrate a benefit from molecule-specific topology. See the [pilot, checks and stop decision](reports/paired_pilot_2026-09-13.md).
+[Research report](reports/paired_pilot_2026-09-13.md) · [Exact inputs and results](results/paired_pilot_2026-09-13) · [Next experiment](docs/controlled_replication.md)
+
+## The result at a glance
+
+The pilot used **256 frozen validation molecules**, recovered checkpoints and identical perturbations across all three arms. Targets remain the original molecular gaps.
+
+| Coordinate noise | EGNN MAE | Fusion: clean topology | Fusion: recomputed topology |
+| --- | ---: | ---: | ---: |
+| 0 Å | 0.187738 eV | 0.200843 eV | 0.200843 eV |
+| 0.10 Å | 0.380251 eV | 0.328248 eV | 0.328248 eV |
+
+![Paired QM9 results: clean and recomputed topology give nearly identical fusion MAE; intervals condition on the fixed checkpoints](results/paired_pilot_2026-09-13/paired_mae.png)
+
+At 0.10 Å, fusion has **13.68% lower mean absolute error** in this pilot. The paired difference is −0.052003 eV, with a 95% molecule-bootstrap interval of [−0.103444, −0.003422] eV. Fusion wins on 139/256 molecules. This is one noise realization and one pair of checkpoints; the interval does **not** measure variation across training seeds.
+
+## What the corrected comparison measures
 
 The original noise comparison below used clean cached topology and independently drawn coordinate noise. It remains a historical asymmetric-input experiment; the corrected pilot uses the same perturbed coordinates in all three conditions.
+
+```mermaid
+flowchart LR
+    X["Original coordinates"] --> N["One fixed perturbation per molecule"]
+    N --> G["Shared noisy coordinates"]
+    G --> E["EGNN"]
+    G --> FC["Fusion with clean topology"]
+    G --> FN["Fusion with recomputed topology"]
+    X --> TC["Clean TDA"]
+    TC --> FC
+    G --> TN["Recomputed TDA"]
+    TN --> FN
+    E --> P["Paired errors against original gap labels"]
+    FC --> P
+    FN --> P
+```
+
+Perturbations are computed on real atoms only and saved with input/descriptor hashes. This tests input corruption, not recalculated quantum properties of distorted molecules.
+
+## What we learned about conditioning
+
+All 256 noisy descriptors changed, yet clean and noisy topology produced essentially identical fusion predictions. The activation and replacement checks explain why.
+
+```mermaid
+flowchart LR
+    T["130 topology features"] --> M["FiLM MLP"]
+    M --> S["Saturated tanh outputs"]
+    S --> C["Nearly constant gamma and beta on tested descriptors"]
+    Z["Atoms and coordinates"] --> H["Learned EGNN embedding"]
+    H --> F["Conditioned embedding"]
+    C --> F
+    F --> R["Gap prediction"]
+```
+
+| Evidence | Interpretation |
+| --- | --- |
+| All checked FiLM outputs have absolute value above 0.9999 after tanh | Conditioning is near its saturation limits |
+| Shuffling descriptors or using one real descriptor changes predictions by less than 1e-6 eV | Individual topology has negligible influence on this pilot |
+| Zeroing descriptors causes large errors | This out-of-distribution intervention changes the operating point; it does not establish useful individual topology |
+
+Constant FiLM coefficients can be absorbed into the regression head's first linear layer. The fusion checkpoint can therefore behave like a geometric predictor with different learned weights. These checks do not reveal whether TDA influenced training or when saturation developed. Unscaled feature magnitudes are a hypothesis to investigate, not an established cause.
+
+Our conclusion is to **pause topology-specific performance claims** and diagnose conditioning before replication. A negative or inconclusive topology result is a valid research outcome.
+
+## What was verified
+
+- All four historical clean validation/test MAEs reproduce within **7.22e-9 eV**, across 26,167 molecules.
+- All 256 selected original topology vectors match recomputation exactly; real-molecule symmetry and padding checks pass.
+- Nine software tests cover pairing, cache compatibility, frozen splits, checkpoint loading and aggregation.
+- Exact inputs, predictions, hashes, activation checks and measured compute are [archived](results/paired_pilot_2026-09-13). Original outputs remain unchanged.
+
+Full-test clean MAEs are **0.205111 eV for EGNN and 0.202298 eV for fusion**. Their paired molecule-bootstrap interval for the difference is [−0.005871, +0.000230] eV and crosses zero. Numerical reproduction does not establish a reliable topology advantage.
 
 ## Method
 
@@ -14,7 +81,8 @@ The baseline embeds atomic numbers, applies four EGNN layers and pools the node 
 
 Both models use a random 80/10/10 split, seed 42, ten training epochs, batch size 64 and AdamW with learning rate 0.001. Checkpoints are selected by validation MAE. The [method notes](docs/methods.md) describe implementation details and unresolved descriptor/cache issues.
 
-## Saved results
+<details>
+<summary>Historical asymmetric noise comparison</summary>
 
 These values come from [compare_table.csv](results/compare_table.csv) and [compare_robustness.csv](results/compare_robustness.csv). MAE is in eV; noise sigma is in the original coordinate units.
 
@@ -27,19 +95,18 @@ These values come from [compare_table.csv](results/compare_table.csv) and [compa
 
 The [experiment record](reports/experiment_log.md) retains the separate baseline run, topology analysis and training history. The old noise plot in `figures/compare_robustness.png` visualizes this same asymmetric comparison, not a corrected robustness test.
 
-## Run the existing pipeline
+</details>
+
+## Reproduce and inspect
 
 ```bash
-git clone https://github.com/serafim-tkachenko/qm9-egnn-tda.git
-cd qm9-egnn-tda
-uv sync --frozen
-uv run python -m src.train
-uv run python -m scripts.build_tda_cache
-uv run python -m src.train_fusion
-uv run python -m src.eval
+# Install an appropriate official PyTorch 2.10.0 CPU/CUDA wheel first.
+python -m pip install -r requirements-validation.txt
+python -m pytest -q
+python -m src.eval_paired --help
 ```
 
-These are the existing entry points, including the evaluation limitations above. They train models and write to the default result paths; use a separate output location to preserve historical results. Dataset files, trained checkpoints and the topology cache are outside Git, so a clone alone cannot reproduce the saved metrics. The corrected evaluation uses the separate [validation environment and commands](docs/paired_evaluation.md) or [Colab notebook](notebooks/paired_validation.ipynb).
+Start with the [validation environment and commands](docs/paired_evaluation.md) or [Colab notebook](notebooks/paired_validation.ipynb). Dataset files, trained checkpoints and the full topology cache are outside Git; the archived pilot can be inspected immediately. Use new output locations to preserve earlier runs. The legacy training and `src.eval` entry points remain available, but the old evaluator does not implement the corrected paired protocol.
 
 ## Validation and next decision
 
