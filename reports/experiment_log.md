@@ -11,6 +11,13 @@ is therefore unsupported. The cycle stops before new training. Recovery checks,
 old-clean agreement, nine software tests and measured compute accompany the
 result. Original numeric artifacts remain unchanged.
 
+Follow-up analysis reports noisy per-molecule wins of 139/256 and distinguishes
+the median error improvement from the larger mean improvement. The reproduced
+full-test clean paired interval crosses zero. The
+[next-step protocol](../docs/controlled_replication.md) separates a short
+conditioning diagnostic from any multi-seed claim; no new training was run for
+this analysis.
+
 The tables below retain the original experiment outputs. New evaluation artifacts
 are stored separately in `results/paired_pilot_2026-09-13`.
 

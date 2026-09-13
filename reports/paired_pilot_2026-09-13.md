@@ -34,6 +34,14 @@ trained checkpoints and this noise realization. They do not estimate variation
 across training seeds, establish convergence, or provide independent confirmation.
 The clean pilot point estimate favors EGNN, with a paired interval crossing zero.
 
+The [distribution analysis](../results/paired_pilot_2026-09-13/outcome-analysis.json)
+adds context to the means. Fusion has lower absolute error on 117/256 clean
+molecules and 139/256 noisy molecules. At sigma 0.10 the median paired difference
+is only −0.009290 eV, compared with the mean −0.052003 eV: error magnitudes in
+the tails matter. Removing the single pair with the largest absolute error
+difference leaves a mean of −0.043418 eV. This is an influence check, not a revised
+estimate or an exclusion rule; the primary analysis retains every molecule.
+
 ## Why the fusion conditions coincide
 
 The post-pilot sensitivity check kept coordinates and weights fixed. All 256 noisy
@@ -59,6 +67,15 @@ topology. Conversely, these checks do not show that TDA had no effect during
 training, or that the branch is constant everywhere. Different learned geometry
 weights and the additional model capacity remain possible explanations for the
 checkpoint difference.
+
+There is a direct architectural interpretation. If gamma and beta are constant
+on a domain, the first linear layer of the regression head can absorb them:
+`W h' + b = W diag(1 + gamma) h + (W beta + b)`. The resulting predictor depends
+on the learned geometric embedding without needing individual descriptors at
+inference. This equivalence does not identify it with the baseline checkpoint,
+whose encoder/head weights and optimization history differ. Saturation is
+observed; whether unscaled features caused it, and when it developed during
+training, remain untested hypotheses.
 
 The sensitivity check ran locally in float32 with TF32 disabled. Clean-reference
 predictions differ from Colab CPU by at most 5.25e-6 eV across both noise levels;
@@ -105,6 +122,13 @@ four metrics with the untouched historical JSON (tolerance 2e-6 eV). Complete
 local records are in `outputs/full-clean-val` and `outputs/full-clean-test`;
 their hashes are included in the published check.
 
+The full-test paired clean difference is −0.002813 eV, with the existing 95%
+molecule-bootstrap interval [−0.005871, +0.000230] eV crossing zero. The validation
+interval is [−0.007719, −0.001647] eV, but validation was used for checkpoint
+selection and cannot supply independent confirmation. Successful numerical
+reproduction establishes that the saved scores can be recovered; it does not
+establish training-seed stability or a topology-specific effect.
+
 ## Compute and decision
 
 The Colab CPU pilot took 54.69 seconds: 13.27 seconds for descriptors/input/cache
@@ -144,6 +168,11 @@ topology claim. Changing the Betti grid at the same time would confound that che
 There is no justification here for a larger architecture or dataset. This cycle
 stops with a corrected checkpoint diagnostic; it does not launch that replication.
 
+The [proposed follow-up protocol](../docs/controlled_replication.md) makes the next
+step concrete: a bounded raw-versus-standardized conditioning diagnostic, then
+EGNN, TDA, simple-geometry and trained constant-conditioning controls if the
+diagnostic passes. It fixes split/seeds and keeps grid redesign separate.
+
 ## Reproduction
 
 Install the [validation environment](../requirements-validation.txt), with the
@@ -162,6 +191,7 @@ python -m scripts.benchmark_paired_inputs --pilot results/paired_pilot_2026-09-1
 python -m src.eval_paired --data DATA --provenance LOCAL_PROVENANCE --split-manifest SPLIT42 --cache FULL_CLEAN_CACHE --out full-clean-val --split val --size 0 --sigmas 0 --batch-size 128 --device cuda
 python -m src.eval_paired --data DATA --provenance LOCAL_PROVENANCE --split-manifest SPLIT42 --cache FULL_CLEAN_CACHE --out full-clean-test --split test --size 0 --sigmas 0 --batch-size 128 --device cuda
 python -m scripts.summarize_clean_reproduction --validation full-clean-val --test full-clean-test --out full-clean-check.json
+python -m scripts.analyze_checkpoint_outcomes --full-val full-clean-val --full-test full-clean-test --out outcome-check.json
 ```
 
 All output locations must be new. The checked-in

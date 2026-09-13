@@ -1,0 +1,65 @@
+{
+  "scope": "Post-pilot descriptive analysis; no fitting, filtering of primary results, or new model selection",
+  "delta_sign": "fusion matched-input absolute error minus EGNN absolute error",
+  "sensitivity_limit": "Deleting the largest absolute pair is an influence diagnostic only; primary estimates retain every molecule",
+  "interval_limit": "Existing molecule-bootstrap intervals condition on selected checkpoints; validation was used for checkpoint selection",
+  "predictions_sha256": "b3055124c64f65a105b524f192f417f71d85dda2dc1391790c6e3c5fb38b6ce9",
+  "pilot": [
+    {
+      "sigma": 0.0,
+      "n": 256,
+      "fusion_lower_error": 117,
+      "egnn_lower_error": 139,
+      "ties": 0,
+      "mean_delta_ev": 0.013104879297316074,
+      "median_delta_ev": 0.010127544403076172,
+      "delta_quantiles_0_10_50_90_100_ev": [
+        -0.42155027389526367,
+        -0.20572257041931152,
+        0.010127544403076172,
+        0.2365124225616455,
+        0.6349258422851562
+      ],
+      "mean_delta_without_largest_absolute_pair_ev": 0.010666365716971602
+    },
+    {
+      "sigma": 0.1,
+      "n": 256,
+      "fusion_lower_error": 139,
+      "egnn_lower_error": 117,
+      "ties": 0,
+      "mean_delta_ev": -0.05200284346938133,
+      "median_delta_ev": -0.009289979934692383,
+      "delta_quantiles_0_10_50_90_100_ev": [
+        -2.241209030151367,
+        -0.45769619941711426,
+        -0.009289979934692383,
+        0.3211710453033447,
+        1.756885051727295
+      ],
+      "mean_delta_without_largest_absolute_pair_ev": -0.04341772116866766
+    }
+  ],
+  "full_clean": [
+    {
+      "split": "val",
+      "n": 13083,
+      "fusion_minus_egnn_ev": -0.0047032559381788575,
+      "ci95_ev": [
+        -0.0077192248626922946,
+        -0.0016467428964585444
+      ],
+      "source_summary_sha256": "be6dce4ae7b723b1f5cef7db0ee8ce33fa91eac3c0cb559628ca144135ed7ef9"
+    },
+    {
+      "split": "test",
+      "n": 13084,
+      "fusion_minus_egnn_ev": -0.0028133887247512868,
+      "ci95_ev": [
+        -0.005871456109832378,
+        0.00023039423364340427
+      ],
+      "source_summary_sha256": "bf9ecf2b6dd5c31bd0295648f85e410ab985563c5f6834b481027f8351fca0b4"
+    }
+  ]
+}

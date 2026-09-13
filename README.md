@@ -51,6 +51,8 @@ The [archived pilot](results/paired_pilot_2026-09-13) includes per-molecule pred
 
 The current cycle stops without a new training experiment. Further work should first address FiLM saturation, then compare independent training seeds on the fixed split with a capacity control and simple geometric descriptors. The Betti grids are fitted separately for each molecule; a shared, training-defined grid requires rebuilding the cache and retraining.
 
+The [next-step protocol](docs/controlled_replication.md) specifies a short conditioning diagnostic before controlled replication. Full clean metrics were reproduced, but the full-test paired molecule interval crosses zero; numerical reproduction alone does not establish a reliable advantage.
+
 ## Code and references
 
 - [Data and topology](src/data), [models](src/models), [training](src/train.py), [fusion training](src/train_fusion.py), [evaluation](src/eval.py).
