@@ -1,0 +1,282 @@
+[
+  {
+    "descriptor_max_abs_difference": 1.1920928955078125e-07,
+    "molecule_id": 17587,
+    "passed": true,
+    "prediction_max_abs_difference_ev": 0.0,
+    "transform": "translation"
+  },
+  {
+    "descriptor_max_abs_difference": 1.1920928955078125e-07,
+    "molecule_id": 17587,
+    "passed": true,
+    "prediction_max_abs_difference_ev": 9.5367431640625e-07,
+    "transform": "rotation"
+  },
+  {
+    "descriptor_max_abs_difference": 0.0,
+    "molecule_id": 17587,
+    "passed": true,
+    "prediction_max_abs_difference_ev": 0.0,
+    "transform": "reflection"
+  },
+  {
+    "descriptor_max_abs_difference": 0.0,
+    "molecule_id": 17587,
+    "passed": true,
+    "prediction_max_abs_difference_ev": 9.5367431640625e-07,
+    "transform": "permutation"
+  },
+  {
+    "descriptor_max_abs_difference": 0.0,
+    "molecule_id": 17587,
+    "passed": true,
+    "prediction_max_abs_difference_ev": 9.5367431640625e-07,
+    "transform": "padding"
+  },
+  {
+    "descriptor_max_abs_difference": 2.384185791015625e-07,
+    "molecule_id": 78740,
+    "passed": true,
+    "prediction_max_abs_difference_ev": 4.76837158203125e-07,
+    "transform": "translation"
+  },
+  {
+    "descriptor_max_abs_difference": 2.980232238769531e-07,
+    "molecule_id": 78740,
+    "passed": true,
+    "prediction_max_abs_difference_ev": 4.76837158203125e-07,
+    "transform": "rotation"
+  },
+  {
+    "descriptor_max_abs_difference": 0.0,
+    "molecule_id": 78740,
+    "passed": true,
+    "prediction_max_abs_difference_ev": 0.0,
+    "transform": "reflection"
+  },
+  {
+    "descriptor_max_abs_difference": 4.76837158203125e-07,
+    "molecule_id": 78740,
+    "passed": true,
+    "prediction_max_abs_difference_ev": 0.0,
+    "transform": "permutation"
+  },
+  {
+    "descriptor_max_abs_difference": 0.0,
+    "molecule_id": 78740,
+    "passed": true,
+    "prediction_max_abs_difference_ev": 0.0,
+    "transform": "padding"
+  },
+  {
+    "descriptor_max_abs_difference": 0.0,
+    "molecule_id": 11640,
+    "passed": true,
+    "prediction_max_abs_difference_ev": 0.0,
+    "transform": "translation"
+  },
+  {
+    "descriptor_max_abs_difference": 2.384185791015625e-07,
+    "molecule_id": 11640,
+    "passed": true,
+    "prediction_max_abs_difference_ev": 0.0,
+    "transform": "rotation"
+  },
+  {
+    "descriptor_max_abs_difference": 0.0,
+    "molecule_id": 11640,
+    "passed": true,
+    "prediction_max_abs_difference_ev": 0.0,
+    "transform": "reflection"
+  },
+  {
+    "descriptor_max_abs_difference": 0.0,
+    "molecule_id": 11640,
+    "passed": true,
+    "prediction_max_abs_difference_ev": 4.76837158203125e-07,
+    "transform": "permutation"
+  },
+  {
+    "descriptor_max_abs_difference": 0.0,
+    "molecule_id": 11640,
+    "passed": true,
+    "prediction_max_abs_difference_ev": 0.0,
+    "transform": "padding"
+  },
+  {
+    "descriptor_max_abs_difference": 0.0,
+    "molecule_id": 124462,
+    "passed": true,
+    "prediction_max_abs_difference_ev": 9.5367431640625e-07,
+    "transform": "translation"
+  },
+  {
+    "descriptor_max_abs_difference": 0.0,
+    "molecule_id": 124462,
+    "passed": true,
+    "prediction_max_abs_difference_ev": 4.76837158203125e-07,
+    "transform": "rotation"
+  },
+  {
+    "descriptor_max_abs_difference": 0.0,
+    "molecule_id": 124462,
+    "passed": true,
+    "prediction_max_abs_difference_ev": 0.0,
+    "transform": "reflection"
+  },
+  {
+    "descriptor_max_abs_difference": 0.0,
+    "molecule_id": 124462,
+    "passed": true,
+    "prediction_max_abs_difference_ev": 9.5367431640625e-07,
+    "transform": "permutation"
+  },
+  {
+    "descriptor_max_abs_difference": 0.0,
+    "molecule_id": 124462,
+    "passed": true,
+    "prediction_max_abs_difference_ev": 0.0,
+    "transform": "padding"
+  },
+  {
+    "descriptor_max_abs_difference": 0.0,
+    "molecule_id": 16528,
+    "passed": true,
+    "prediction_max_abs_difference_ev": 4.76837158203125e-07,
+    "transform": "translation"
+  },
+  {
+    "descriptor_max_abs_difference": 0.0,
+    "molecule_id": 16528,
+    "passed": true,
+    "prediction_max_abs_difference_ev": 0.0,
+    "transform": "rotation"
+  },
+  {
+    "descriptor_max_abs_difference": 0.0,
+    "molecule_id": 16528,
+    "passed": true,
+    "prediction_max_abs_difference_ev": 0.0,
+    "transform": "reflection"
+  },
+  {
+    "descriptor_max_abs_difference": 0.0,
+    "molecule_id": 16528,
+    "passed": true,
+    "prediction_max_abs_difference_ev": 4.76837158203125e-07,
+    "transform": "permutation"
+  },
+  {
+    "descriptor_max_abs_difference": 0.0,
+    "molecule_id": 16528,
+    "passed": true,
+    "prediction_max_abs_difference_ev": 4.76837158203125e-07,
+    "transform": "padding"
+  },
+  {
+    "descriptor_max_abs_difference": 0.0,
+    "molecule_id": 107465,
+    "passed": true,
+    "prediction_max_abs_difference_ev": 4.76837158203125e-07,
+    "transform": "translation"
+  },
+  {
+    "descriptor_max_abs_difference": 0.0,
+    "molecule_id": 107465,
+    "passed": true,
+    "prediction_max_abs_difference_ev": 4.76837158203125e-07,
+    "transform": "rotation"
+  },
+  {
+    "descriptor_max_abs_difference": 0.0,
+    "molecule_id": 107465,
+    "passed": true,
+    "prediction_max_abs_difference_ev": 0.0,
+    "transform": "reflection"
+  },
+  {
+    "descriptor_max_abs_difference": 0.0,
+    "molecule_id": 107465,
+    "passed": true,
+    "prediction_max_abs_difference_ev": 4.76837158203125e-07,
+    "transform": "permutation"
+  },
+  {
+    "descriptor_max_abs_difference": 0.0,
+    "molecule_id": 107465,
+    "passed": true,
+    "prediction_max_abs_difference_ev": 0.0,
+    "transform": "padding"
+  },
+  {
+    "descriptor_max_abs_difference": 5.960464477539063e-08,
+    "molecule_id": 47903,
+    "passed": true,
+    "prediction_max_abs_difference_ev": 0.0,
+    "transform": "translation"
+  },
+  {
+    "descriptor_max_abs_difference": 5.960464477539063e-08,
+    "molecule_id": 47903,
+    "passed": true,
+    "prediction_max_abs_difference_ev": 0.0,
+    "transform": "rotation"
+  },
+  {
+    "descriptor_max_abs_difference": 0.0,
+    "molecule_id": 47903,
+    "passed": true,
+    "prediction_max_abs_difference_ev": 0.0,
+    "transform": "reflection"
+  },
+  {
+    "descriptor_max_abs_difference": 0.0,
+    "molecule_id": 47903,
+    "passed": true,
+    "prediction_max_abs_difference_ev": 4.76837158203125e-07,
+    "transform": "permutation"
+  },
+  {
+    "descriptor_max_abs_difference": 0.0,
+    "molecule_id": 47903,
+    "passed": true,
+    "prediction_max_abs_difference_ev": 0.0,
+    "transform": "padding"
+  },
+  {
+    "descriptor_max_abs_difference": 0.0,
+    "molecule_id": 35869,
+    "passed": true,
+    "prediction_max_abs_difference_ev": 0.0,
+    "transform": "translation"
+  },
+  {
+    "descriptor_max_abs_difference": 0.0,
+    "molecule_id": 35869,
+    "passed": true,
+    "prediction_max_abs_difference_ev": 1.430511474609375e-06,
+    "transform": "rotation"
+  },
+  {
+    "descriptor_max_abs_difference": 0.0,
+    "molecule_id": 35869,
+    "passed": true,
+    "prediction_max_abs_difference_ev": 0.0,
+    "transform": "reflection"
+  },
+  {
+    "descriptor_max_abs_difference": 0.0,
+    "molecule_id": 35869,
+    "passed": true,
+    "prediction_max_abs_difference_ev": 4.76837158203125e-07,
+    "transform": "permutation"
+  },
+  {
+    "descriptor_max_abs_difference": 0.0,
+    "molecule_id": 35869,
+    "passed": true,
+    "prediction_max_abs_difference_ev": 0.0,
+    "transform": "padding"
+  }
+]

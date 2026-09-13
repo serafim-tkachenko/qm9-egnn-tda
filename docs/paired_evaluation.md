@@ -60,11 +60,11 @@ Existing output directories are refused. Completed prediction batches persist
 incrementally; incomplete runs lack `complete.json`. After interruption, choose
 a new output directory and reuse the checked cache.
 
-If the legacy Drive directory is too large for mounted filesystem reads, stage
-the **same selected files** through the Drive API and pass `--legacy-cache-dir`
-to recovery and clean reproduction. Verify provider checksums during transfer;
-archive the subset on Drive. This changes storage access only, not molecules,
-descriptors or compatibility tolerances.
+Stage the **same selected legacy files** into a small local directory and pass
+`--legacy-cache-dir` to recovery and clean reproduction. The notebook retries
+bounded Drive read failures on the same file, saves byte checksums and archives
+the staged subset. A direct Drive API transfer is another option when available.
+This changes storage access only, not molecules, descriptors or tolerances.
 
 `scripts.reproduce_clean_subset` compares the sigma-zero output against the old
 clean evaluator with the original cached descriptors (2e-6 eV MAE tolerance).
@@ -73,7 +73,9 @@ real pilot inputs, without saving models. It reports fixed-batch throughput,
 excluding data/cache I/O and validation; extrapolations are not measured epochs.
 
 For clean full-split reproduction, use separate outputs with `--size 0 --split val
---sigmas 0`, then `--split test`. These remain retrospective evaluations.
+--sigmas 0 --batch-size 128`, then `--split test`. Batch size 128 matches the original
+comparison evaluator, while the pilot uses 64. `scripts.summarize_clean_reproduction`
+checks those outputs against saved metrics at 2e-6 eV tolerance. These remain retrospective evaluations.
 The historical `src.eval` remains available and must not be used for a corrected
 robustness claim. Frozen membership is checked against the original seed-42 split.
 
@@ -85,3 +87,8 @@ Stop expansion on unresolved artifact or representation failures. After a valid
 pilot, decide whether to stop with a corrected claim, expand paired evaluation,
 or retrain with controls. A topology-specific claim needs capacity and simple
 geometric-descriptor controls plus independent training seeds on a fixed split.
+
+The [completed pilot](../reports/paired_pilot_2026-09-13.md) retained a noisy-input
+checkpoint advantage but found saturated FiLM and negligible sensitivity to
+shuffled or constant real descriptors. `scripts.check_topology_reliance` records
+that post-pilot stress test; it does not substitute for trained controls.

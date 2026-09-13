@@ -1,0 +1,11 @@
+{
+  "runtime": "Colab CPU, 12.67 GB RAM",
+  "gpu_allocated": false,
+  "wall_seconds_since_setup_start_including_waits": 1664.947074822,
+  "observed_rate_units_per_hour": 0.08,
+  "estimated_units_rate_times_elapsed": 0.036998823884933335,
+  "exact_units_consumed": null,
+  "accounting_limit": "Estimate uses approximate UI rate; setup-start is after runtime allocation; waiting and transfer included",
+  "pilot_training_steps": 0,
+  "data_archive_exported": true
+}

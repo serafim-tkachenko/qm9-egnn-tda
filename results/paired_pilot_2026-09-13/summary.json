@@ -1,0 +1,80 @@
+{
+  "bootstrap_seed": 20260913,
+  "conditions": [
+    {
+      "egnn_mae": 0.18773837853223085,
+      "egnn_mae_ci95": [
+        0.17035536628682166,
+        0.20681259161792695
+      ],
+      "fraction_of_paired_clean_topology_advantage_remaining": null,
+      "fusion_clean_mae": 0.20084325782954693,
+      "fusion_clean_mae_ci95": [
+        0.181444409256801,
+        0.22044899621978403
+      ],
+      "fusion_clean_minus_egnn": 0.013104879297316074,
+      "fusion_clean_minus_egnn_ci95": [
+        -0.008090660441666842,
+        0.033154946076683706
+      ],
+      "fusion_perturbed_mae": 0.20084325782954693,
+      "fusion_perturbed_mae_ci95": [
+        0.181444409256801,
+        0.22044899621978403
+      ],
+      "fusion_perturbed_minus_egnn": 0.013104879297316074,
+      "fusion_perturbed_minus_egnn_ci95": [
+        -0.008090660441666842,
+        0.033154946076683706
+      ],
+      "n_molecules": 256,
+      "n_noise_seeds": 1,
+      "perturbed_minus_clean": 0.0,
+      "perturbed_minus_clean_ci95": [
+        0.0,
+        0.0
+      ],
+      "sigma": 0.0
+    },
+    {
+      "egnn_mae": 0.3802511412650347,
+      "egnn_mae_ci95": [
+        0.32994948006235064,
+        0.4338998750317842
+      ],
+      "fraction_of_paired_clean_topology_advantage_remaining": 0.99999982090933,
+      "fusion_clean_mae": 0.3282482884824276,
+      "fusion_clean_mae_ci95": [
+        0.2861183052416891,
+        0.37510088700801136
+      ],
+      "fusion_clean_minus_egnn": -0.05200285278260708,
+      "fusion_clean_minus_egnn_ci95": [
+        -0.10344394608400762,
+        -0.0034221678506582837
+      ],
+      "fusion_perturbed_mae": 0.32824829779565334,
+      "fusion_perturbed_mae_ci95": [
+        0.28611831087619066,
+        0.37510089464485646
+      ],
+      "fusion_perturbed_minus_egnn": -0.05200284346938133,
+      "fusion_perturbed_minus_egnn_ci95": [
+        -0.10344392037950456,
+        -0.0034221550449728827
+      ],
+      "n_molecules": 256,
+      "n_noise_seeds": 1,
+      "perturbed_minus_clean": 9.313225746154785e-09,
+      "perturbed_minus_clean_ci95": [
+        -3.725290298461914e-09,
+        2.2351741790771484e-08
+      ],
+      "sigma": 0.1
+    }
+  ],
+  "delta_sign": "fusion minus EGNN; negative favors fusion",
+  "interval": "95% percentile bootstrap over molecules; average noise seeds within molecule; fixed checkpoints",
+  "resamples": 4000
+}

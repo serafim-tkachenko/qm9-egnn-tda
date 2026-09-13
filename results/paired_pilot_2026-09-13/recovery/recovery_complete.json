@@ -1,0 +1,19 @@
+{
+  "clean_full_split_metrics_reproduced": false,
+  "data_sha256": "9c58622125e8768329e0035b59c1d3c7446fac13de64b5ad6610bf07fe0ae9a5",
+  "invariance_molecules_checked": 8,
+  "legacy_cache_molecules_checked": 256,
+  "n_molecules": 130831,
+  "packages": {
+    "egnn-pytorch": "0.2.8",
+    "giotto-tda": "0.6.2",
+    "numpy": "1.26.4",
+    "scikit-learn": "1.3.2",
+    "scipy": "1.15.3",
+    "torch": "2.10.0+cpu",
+    "torch-geometric": "2.7.0"
+  },
+  "platform": "Linux-6.6.122+-x86_64-with-glibc2.39",
+  "python": "3.11.16",
+  "seconds": 8.751568994000081
+}

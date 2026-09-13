@@ -1,0 +1,8 @@
+{
+  "colab_credits_consumed": null,
+  "credit_accounting": "Use Colab account/runtime readings for remote runs; not exposed by PyTorch",
+  "descriptor_and_input_seconds": 13.272148644000026,
+  "three_arm_inference_seconds": 35.228799766000066,
+  "training_steps": 0,
+  "wall_seconds": 54.68824774099994
+}

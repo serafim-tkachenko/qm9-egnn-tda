@@ -1,0 +1,2050 @@
+[
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "b49579e32d30d9c8560f4706b4058625f2ae3bb31f7c47372ae5f96f257ecbce",
+    "legacy_file_sha256": "31f764d701333668c69dfc2fee89912002315c9302a1dfbf88e5c334c9045cc1",
+    "max_abs_difference": 0.0,
+    "molecule_id": 17587,
+    "recomputed_descriptor_sha256": "b49579e32d30d9c8560f4706b4058625f2ae3bb31f7c47372ae5f96f257ecbce"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "8d62684645556e0e418e370019cbfa0a43f6e292858b42bd94c680caa8941c5a",
+    "legacy_file_sha256": "d73805aceba15489227db91ce31e2d1be0bc362e69af6332fa30178967eba1a0",
+    "max_abs_difference": 0.0,
+    "molecule_id": 78740,
+    "recomputed_descriptor_sha256": "8d62684645556e0e418e370019cbfa0a43f6e292858b42bd94c680caa8941c5a"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "948a56dcb6e64d75ac540186fec7feec0874a0a65a1ea90bcb30fb629dddfe7e",
+    "legacy_file_sha256": "ced764f0bc9001ff2747cb8cac5400241a4e540a934280342c17b0123ba9f20b",
+    "max_abs_difference": 0.0,
+    "molecule_id": 11640,
+    "recomputed_descriptor_sha256": "948a56dcb6e64d75ac540186fec7feec0874a0a65a1ea90bcb30fb629dddfe7e"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "3ecaf4ab0c27eabec611ef0ce9e3eb7002509b7061a02b4a79a00144401ec436",
+    "legacy_file_sha256": "7a7a7195f484a887220299cfbabdc8ef59f7c270c9e7c94d5633f10dafc9a8f3",
+    "max_abs_difference": 0.0,
+    "molecule_id": 124462,
+    "recomputed_descriptor_sha256": "3ecaf4ab0c27eabec611ef0ce9e3eb7002509b7061a02b4a79a00144401ec436"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "e978018b2984e30315f751b7410e443f8603b37efe77e4e9f8d4be6b9ca0e527",
+    "legacy_file_sha256": "f95bd677f6ff43f49f731296a1cb136a35f92e3b0b311e3b73963803ef971fbd",
+    "max_abs_difference": 0.0,
+    "molecule_id": 16528,
+    "recomputed_descriptor_sha256": "e978018b2984e30315f751b7410e443f8603b37efe77e4e9f8d4be6b9ca0e527"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "7513de80c48e57deb3a046fa7aa756d134c8c0b154d5a15aaa7a7ac9dfad9ddb",
+    "legacy_file_sha256": "eb937298d4b0febfbe54314aaa4dc0db15cd2545c4f68a713e5f189d690e089e",
+    "max_abs_difference": 0.0,
+    "molecule_id": 107465,
+    "recomputed_descriptor_sha256": "7513de80c48e57deb3a046fa7aa756d134c8c0b154d5a15aaa7a7ac9dfad9ddb"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "6e4e9241d36efa83439edaef50c522326bb7d374578c594853659c781bdbbe72",
+    "legacy_file_sha256": "31e3b85a124cb346cbb123ed2576b31fb0b59b2242383a38c579ee3138ed653f",
+    "max_abs_difference": 0.0,
+    "molecule_id": 47903,
+    "recomputed_descriptor_sha256": "6e4e9241d36efa83439edaef50c522326bb7d374578c594853659c781bdbbe72"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "dfc19165bb10893def8d090e5de309bfb09a397dd1f4c6732846e99d2a983654",
+    "legacy_file_sha256": "3a4a8340c0d78dec1c581550a8821c1bc281c06de8613475e0d90de023ec2059",
+    "max_abs_difference": 0.0,
+    "molecule_id": 35869,
+    "recomputed_descriptor_sha256": "dfc19165bb10893def8d090e5de309bfb09a397dd1f4c6732846e99d2a983654"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "e705724e82b45b944b2e02312440d674eb999d829ae2aaf6084914e2894a8b94",
+    "legacy_file_sha256": "cc49010f04ce8b8df69cddcd0c0f4964b6561384d22d8f4bb5b0eafa0ec7d989",
+    "max_abs_difference": 0.0,
+    "molecule_id": 120619,
+    "recomputed_descriptor_sha256": "e705724e82b45b944b2e02312440d674eb999d829ae2aaf6084914e2894a8b94"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "c0ee0c2e5f6e1dee38c5881cb526352171977461d191ce46d0df1406ba2e0b48",
+    "legacy_file_sha256": "6c39d2aa188b4344249c37de6f99a3ae833f1be2ef382f4b9b600a06dac6a793",
+    "max_abs_difference": 0.0,
+    "molecule_id": 77917,
+    "recomputed_descriptor_sha256": "c0ee0c2e5f6e1dee38c5881cb526352171977461d191ce46d0df1406ba2e0b48"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "52fb234d99741aebecfcfffe02e19e0d38e17cb45df6495a2374e598dae8e080",
+    "legacy_file_sha256": "36ad09f8aa2df9df6e4592477c7a26e8186361ec17f3e5177d97333c96e45048",
+    "max_abs_difference": 0.0,
+    "molecule_id": 64557,
+    "recomputed_descriptor_sha256": "52fb234d99741aebecfcfffe02e19e0d38e17cb45df6495a2374e598dae8e080"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "65b06e85d46cc95c321eac0dd9f4c925775ff0e861ab0b8ddc53f4ad9f740862",
+    "legacy_file_sha256": "4103855bb3ab06cdd585246b00cf4b5b0c7bfc22450909f01b9d5c5d1819e589",
+    "max_abs_difference": 0.0,
+    "molecule_id": 113450,
+    "recomputed_descriptor_sha256": "65b06e85d46cc95c321eac0dd9f4c925775ff0e861ab0b8ddc53f4ad9f740862"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "df076363776f6be9cafe8d55887f1fb28b4d7bc0034f4abda6baf613e67a25b7",
+    "legacy_file_sha256": "ce69b23b9f682906b79418c01b991342840c59eb78dee247cbcb56e8f99810fe",
+    "max_abs_difference": 0.0,
+    "molecule_id": 82232,
+    "recomputed_descriptor_sha256": "df076363776f6be9cafe8d55887f1fb28b4d7bc0034f4abda6baf613e67a25b7"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "48aa33dc0edcc1a280692f374f12c808f871aa44beeb400d01528e62edcad447",
+    "legacy_file_sha256": "6263446daedaf07ec57e51a52c3d9a76c96945e3c3c2bfe67698416909e5d05d",
+    "max_abs_difference": 0.0,
+    "molecule_id": 102742,
+    "recomputed_descriptor_sha256": "48aa33dc0edcc1a280692f374f12c808f871aa44beeb400d01528e62edcad447"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "adefbba4bc82bae971fdbb8a31caeed3cf78e200b09c52e524f57e4284045389",
+    "legacy_file_sha256": "df08457f3e444073c2837ae618d3b4359c5e22bc0f388800c96ac672aa902284",
+    "max_abs_difference": 0.0,
+    "molecule_id": 62076,
+    "recomputed_descriptor_sha256": "adefbba4bc82bae971fdbb8a31caeed3cf78e200b09c52e524f57e4284045389"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "cc7a71724f7c7468aff1cc725c94d2c72e7a20d63d7bb625e7444d09d8cdcab3",
+    "legacy_file_sha256": "4afd6d8051a7c4e0a3e3ca740b19508fdbaad29d2a6e6add07991d65fa541e83",
+    "max_abs_difference": 0.0,
+    "molecule_id": 121313,
+    "recomputed_descriptor_sha256": "cc7a71724f7c7468aff1cc725c94d2c72e7a20d63d7bb625e7444d09d8cdcab3"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "b84933a803a67af88e36939b993cd71479aa1f19e49751306c4f491bcf4332c0",
+    "legacy_file_sha256": "3e4f9bbb814b568588cce6ed48fadcdf84b03098d8c8d5e71b9cd481f75f6813",
+    "max_abs_difference": 0.0,
+    "molecule_id": 48900,
+    "recomputed_descriptor_sha256": "b84933a803a67af88e36939b993cd71479aa1f19e49751306c4f491bcf4332c0"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "1ea3019fa96bb235785ac74ea6480b3274b49749956972e75867e3aa28c11e85",
+    "legacy_file_sha256": "0e31e7fe8b42a174a2923cf0912ecc92c2d2813aa923057dce810647d212f476",
+    "max_abs_difference": 0.0,
+    "molecule_id": 127718,
+    "recomputed_descriptor_sha256": "1ea3019fa96bb235785ac74ea6480b3274b49749956972e75867e3aa28c11e85"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "c6cdea778cb84438b1ed3166e7cc1546d87cfce8a5a48a4b832929366f223bb5",
+    "legacy_file_sha256": "3903a46d8b23f201b7f3aabfcd7692735ed4ce59145e8971baa385ddbca423bb",
+    "max_abs_difference": 0.0,
+    "molecule_id": 114802,
+    "recomputed_descriptor_sha256": "c6cdea778cb84438b1ed3166e7cc1546d87cfce8a5a48a4b832929366f223bb5"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "915abb7fd0ff9b093b190d11f814e67cd9b2431d159c8ea446253161b7741405",
+    "legacy_file_sha256": "716885ec6cf48fb1e09e30cd1d8058d411823af51426763f2bfd77569edc3d52",
+    "max_abs_difference": 0.0,
+    "molecule_id": 46939,
+    "recomputed_descriptor_sha256": "915abb7fd0ff9b093b190d11f814e67cd9b2431d159c8ea446253161b7741405"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "02677190dcb0765ef6526231e32b6d2d6fe36aef65eb90e458edc0bb2805b46f",
+    "legacy_file_sha256": "02224b13ef677c07a9a2f6d26b3d674d5c0b798f0d179a44e0c25657f84ebbbd",
+    "max_abs_difference": 0.0,
+    "molecule_id": 105749,
+    "recomputed_descriptor_sha256": "02677190dcb0765ef6526231e32b6d2d6fe36aef65eb90e458edc0bb2805b46f"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "526257443b8efe6605af8779a2d18949e48cbb9ef9624c650420153b867afcb0",
+    "legacy_file_sha256": "1c494e849be2b58aed1a747d3d592e5f3b091a8ef2867173c778f40b75257d13",
+    "max_abs_difference": 0.0,
+    "molecule_id": 110729,
+    "recomputed_descriptor_sha256": "526257443b8efe6605af8779a2d18949e48cbb9ef9624c650420153b867afcb0"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "497577e2064646984fb3484d1552aee97e8f109febbd6366e0a9cda248c08385",
+    "legacy_file_sha256": "eafed3fba6ec5cdfdbe1cf5a826e0f7c1e666b409aff34f97603f14155397d89",
+    "max_abs_difference": 0.0,
+    "molecule_id": 98105,
+    "recomputed_descriptor_sha256": "497577e2064646984fb3484d1552aee97e8f109febbd6366e0a9cda248c08385"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "d6145707d0a62753d8fc09b486694a026885e816a4eb03faf867731990792ecd",
+    "legacy_file_sha256": "1edc24b9a6c0f76144d40b3c1cea66195fd70f6274ee26df2bb25b2d45edeca2",
+    "max_abs_difference": 0.0,
+    "molecule_id": 93993,
+    "recomputed_descriptor_sha256": "d6145707d0a62753d8fc09b486694a026885e816a4eb03faf867731990792ecd"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "c0aca4b39529421e55e2946afc156573ceba036416b985d6226b77b64b279b58",
+    "legacy_file_sha256": "e815a00616e63e6f22b2eec4c533900702cfbec17d05a2c709cad9ce2448c2d6",
+    "max_abs_difference": 0.0,
+    "molecule_id": 64845,
+    "recomputed_descriptor_sha256": "c0aca4b39529421e55e2946afc156573ceba036416b985d6226b77b64b279b58"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "b0439ea4b4b7d05a0daf348198edc39f1dd7520a28daf46968bb357076bf33b7",
+    "legacy_file_sha256": "3cb04dcb7504a17977dce8c66a2fe0dd9346f91c4002dabe39dd55d5b316104c",
+    "max_abs_difference": 0.0,
+    "molecule_id": 109408,
+    "recomputed_descriptor_sha256": "b0439ea4b4b7d05a0daf348198edc39f1dd7520a28daf46968bb357076bf33b7"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "a6141e05331ff4f9d2a135d56a0f52399ece27fb323978ae4188d6e792fe7d53",
+    "legacy_file_sha256": "14c313c19ea1f958701f74aab325051e42b54ece4525dd460de2e1e1356f160f",
+    "max_abs_difference": 0.0,
+    "molecule_id": 849,
+    "recomputed_descriptor_sha256": "a6141e05331ff4f9d2a135d56a0f52399ece27fb323978ae4188d6e792fe7d53"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "065e38c91eb89293d7174ed7df681b6d6b367f5959e0ef3014d71467968a2950",
+    "legacy_file_sha256": "dd31ca5ce464bacf6644c51a48fc55dc1e4541f94762be19f5fd591763641ad4",
+    "max_abs_difference": 0.0,
+    "molecule_id": 120778,
+    "recomputed_descriptor_sha256": "065e38c91eb89293d7174ed7df681b6d6b367f5959e0ef3014d71467968a2950"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "cfe874444ed5b4aab0bdb7d9b78577e8fc00acbb43f73e32e54a0219d3183e84",
+    "legacy_file_sha256": "1b9478ca065b0b36d8ebbf9cae4d018da0f2dfaf9b01f93e71b99f5874d0edaf",
+    "max_abs_difference": 0.0,
+    "molecule_id": 128629,
+    "recomputed_descriptor_sha256": "cfe874444ed5b4aab0bdb7d9b78577e8fc00acbb43f73e32e54a0219d3183e84"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "87b1901312c8af36d2534369959791fe9c4b81cc9cdfeaf77a451aaea29aa20c",
+    "legacy_file_sha256": "faea8e83d9d436017110f8c9e236c68a8adaa632e3ea2554377ae9c178a65558",
+    "max_abs_difference": 0.0,
+    "molecule_id": 66791,
+    "recomputed_descriptor_sha256": "87b1901312c8af36d2534369959791fe9c4b81cc9cdfeaf77a451aaea29aa20c"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "9730386baf53b406b27a002d16457ba5ed3a5740d12a561b65b6af946d482620",
+    "legacy_file_sha256": "25c8e0f3b6cfd799217e70ec935deda18925cebc05175339ac6b58de39fe3962",
+    "max_abs_difference": 0.0,
+    "molecule_id": 120541,
+    "recomputed_descriptor_sha256": "9730386baf53b406b27a002d16457ba5ed3a5740d12a561b65b6af946d482620"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "4859ac48007779a9f110c6d35ae6199ee44fdee03dbb55ef3c2a6c8d78bae29a",
+    "legacy_file_sha256": "11ebda548e45a8cc396c5ee1c4ec41c5cdf86b5d09009be1710fe5250159ddd5",
+    "max_abs_difference": 0.0,
+    "molecule_id": 114365,
+    "recomputed_descriptor_sha256": "4859ac48007779a9f110c6d35ae6199ee44fdee03dbb55ef3c2a6c8d78bae29a"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "b338af696fd14fec5fa6e71b8f0334d7934dbca5edab7d4ec1dd1e074be23a3d",
+    "legacy_file_sha256": "b18af40ada493755d6ec0342082fb11ce26123b0cc6be508f306d867f3257b3c",
+    "max_abs_difference": 0.0,
+    "molecule_id": 31193,
+    "recomputed_descriptor_sha256": "b338af696fd14fec5fa6e71b8f0334d7934dbca5edab7d4ec1dd1e074be23a3d"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "6da3c893add597adf2e14d34b9c73941fe0e372e414f0408bf5fc5a704287a47",
+    "legacy_file_sha256": "4f89268c28b212875b8afb71a6a3ffcf138ca8bd07bac78387248256a0e1159b",
+    "max_abs_difference": 0.0,
+    "molecule_id": 117766,
+    "recomputed_descriptor_sha256": "6da3c893add597adf2e14d34b9c73941fe0e372e414f0408bf5fc5a704287a47"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "5162cb78cf868754aa6d6cce38423e63ebdf2733c65aeea07eeee325e65ce2ab",
+    "legacy_file_sha256": "dc605866e53517830b7e0a6b15c1b90acc6278c9b6cc9e8b9f78799d3f984da2",
+    "max_abs_difference": 0.0,
+    "molecule_id": 8217,
+    "recomputed_descriptor_sha256": "5162cb78cf868754aa6d6cce38423e63ebdf2733c65aeea07eeee325e65ce2ab"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "e3764f21c280b4fc1b9e09a3f8cf07e1eeb2504102c989faa91f5495de8921f9",
+    "legacy_file_sha256": "c97b1963d23f6348541afe12614cc2105bb919f85f12de156a2a991c0be0c21d",
+    "max_abs_difference": 0.0,
+    "molecule_id": 96492,
+    "recomputed_descriptor_sha256": "e3764f21c280b4fc1b9e09a3f8cf07e1eeb2504102c989faa91f5495de8921f9"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "d8f06df885f64113f8f47c53c910ea20b84a32f25e9c9915f96143b0d9618c0e",
+    "legacy_file_sha256": "ee77457f8e419e1c73107bfbf8574c9f801a61bcc5c2ecb6c5c1ba02cde44eff",
+    "max_abs_difference": 0.0,
+    "molecule_id": 125495,
+    "recomputed_descriptor_sha256": "d8f06df885f64113f8f47c53c910ea20b84a32f25e9c9915f96143b0d9618c0e"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "d9249c3dbb4684191b9b78ee2fbe1b9f74bea787e53761ef387053eca17c40cf",
+    "legacy_file_sha256": "5233c5a94cd2a6a1e04d2e7d60cd35a20385c5d0845e50cea8dfca90f2d4b581",
+    "max_abs_difference": 0.0,
+    "molecule_id": 90073,
+    "recomputed_descriptor_sha256": "d9249c3dbb4684191b9b78ee2fbe1b9f74bea787e53761ef387053eca17c40cf"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "662f8a53a972d23a0a20a42526bd7c19671d8bc3c2b325e66aee538f25b364f6",
+    "legacy_file_sha256": "6ce1028da4e4b831ab44373fead7598b3d1589a3103c0f008c7ea80f74b64aff",
+    "max_abs_difference": 0.0,
+    "molecule_id": 19948,
+    "recomputed_descriptor_sha256": "662f8a53a972d23a0a20a42526bd7c19671d8bc3c2b325e66aee538f25b364f6"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "fc69a5093742bf9053f88b6e589b364cb1d5b03dc5b06fce362cbc56c219c013",
+    "legacy_file_sha256": "f5fdb82dcecfe28fdfe3b93dcb1b493dc92887c91d06a0faf157bfb49f71e263",
+    "max_abs_difference": 0.0,
+    "molecule_id": 123246,
+    "recomputed_descriptor_sha256": "fc69a5093742bf9053f88b6e589b364cb1d5b03dc5b06fce362cbc56c219c013"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "116397a1132aaf14dcd112a462bdddff7b28f2e7817a36e16b1e4a8ca414036a",
+    "legacy_file_sha256": "96d02d05c7fb728a6e1d04e781e28a81e49a387899d4630e3dfe91b8fbd774e7",
+    "max_abs_difference": 0.0,
+    "molecule_id": 60407,
+    "recomputed_descriptor_sha256": "116397a1132aaf14dcd112a462bdddff7b28f2e7817a36e16b1e4a8ca414036a"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "98512e1025692b26cb2dd26f72c79cfd7e5daac6c3dc12338d06fff98c8ca155",
+    "legacy_file_sha256": "155eea9bd953b1271843a430983fbcc2c89745facb356f3575a18d3b55d593b5",
+    "max_abs_difference": 0.0,
+    "molecule_id": 111938,
+    "recomputed_descriptor_sha256": "98512e1025692b26cb2dd26f72c79cfd7e5daac6c3dc12338d06fff98c8ca155"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "06da0b8ebe4bc44f9d9443e23198fa2559e31f2ca08c000f88f1e65ad813fb03",
+    "legacy_file_sha256": "f3e219c6a725d84162860d8019bfdcef1daaa22bd8d8d43d7d953c8ab2e56136",
+    "max_abs_difference": 0.0,
+    "molecule_id": 80332,
+    "recomputed_descriptor_sha256": "06da0b8ebe4bc44f9d9443e23198fa2559e31f2ca08c000f88f1e65ad813fb03"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "b11e626f22bc6f564aa3e503db3b64d961723b2928cc9f06afb159d45b1c2a78",
+    "legacy_file_sha256": "5a549921ffcc4688582d011b36f333933ac851d058363dc6cb43b5dd133d0d7f",
+    "max_abs_difference": 0.0,
+    "molecule_id": 149,
+    "recomputed_descriptor_sha256": "b11e626f22bc6f564aa3e503db3b64d961723b2928cc9f06afb159d45b1c2a78"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "7f6a245ba93e17de9bc64df9f42d578dac20735b1d0be49d6f4e2afd7f055b6c",
+    "legacy_file_sha256": "9fec71294c64600ef0b0e4a90dd6c536a6b1d7dfe598f719a3e972f3f253a3b6",
+    "max_abs_difference": 0.0,
+    "molecule_id": 32746,
+    "recomputed_descriptor_sha256": "7f6a245ba93e17de9bc64df9f42d578dac20735b1d0be49d6f4e2afd7f055b6c"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "154ba29968568b415a3df683a1b9b9a611c1c3d463898f8507929a960f2479e0",
+    "legacy_file_sha256": "6bdc30a1e60f527c3d091cb64f5775b7e98cb789b0db160b9d2467a4a34af1f9",
+    "max_abs_difference": 0.0,
+    "molecule_id": 15577,
+    "recomputed_descriptor_sha256": "154ba29968568b415a3df683a1b9b9a611c1c3d463898f8507929a960f2479e0"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "06fda706c19b91fea9b9d8af56e75da60a4792320fd4d54730bb035ea5388d19",
+    "legacy_file_sha256": "f3734f2f65cc87c9a4e0fe76e4920141204e54b39aefb8dc0e0813d05c47e981",
+    "max_abs_difference": 0.0,
+    "molecule_id": 129077,
+    "recomputed_descriptor_sha256": "06fda706c19b91fea9b9d8af56e75da60a4792320fd4d54730bb035ea5388d19"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "0d6beccac159b094bdb4e9a78ff6d5fc07aa2789dfa04c44495de209c38b1215",
+    "legacy_file_sha256": "7bcf8fac47e80416a5118517e72719e54ba8571887bcf35c0e0ed4f4396e5e93",
+    "max_abs_difference": 0.0,
+    "molecule_id": 87759,
+    "recomputed_descriptor_sha256": "0d6beccac159b094bdb4e9a78ff6d5fc07aa2789dfa04c44495de209c38b1215"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "54e8317babd91a372b447127a5600704856210004e43dea3206e93495a922f21",
+    "legacy_file_sha256": "afd6e9a2ac1e2353921e173e5900bce3e7d350bc91307245b1ee234f5605cb36",
+    "max_abs_difference": 0.0,
+    "molecule_id": 85481,
+    "recomputed_descriptor_sha256": "54e8317babd91a372b447127a5600704856210004e43dea3206e93495a922f21"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "58c62567bb41f48b98ca90a7e0a3359e6dbd9ab550e0f44df5f5033b4e7bbf99",
+    "legacy_file_sha256": "c534ceddb239e5ca2540c124f7bb388e99c5e0fb285c39134630d5ccaa206593",
+    "max_abs_difference": 0.0,
+    "molecule_id": 92529,
+    "recomputed_descriptor_sha256": "58c62567bb41f48b98ca90a7e0a3359e6dbd9ab550e0f44df5f5033b4e7bbf99"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "0a7d61a8d39f5459c91e16dddab65b8e65414db6a5361288417d682b40ab26f3",
+    "legacy_file_sha256": "7a171796fbaedb151fe185a6597dc47689af47710fbe0fa4f476e19db3b5ff26",
+    "max_abs_difference": 0.0,
+    "molecule_id": 58760,
+    "recomputed_descriptor_sha256": "0a7d61a8d39f5459c91e16dddab65b8e65414db6a5361288417d682b40ab26f3"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "ca6124621e25fda4ec9f3eb2272fa72202741273a613bbba12e0d39d496d5c39",
+    "legacy_file_sha256": "8c8606e30b634344e70ec4a7d0b150da4e7738ecf8e3e33d83c737036ed56aab",
+    "max_abs_difference": 0.0,
+    "molecule_id": 27328,
+    "recomputed_descriptor_sha256": "ca6124621e25fda4ec9f3eb2272fa72202741273a613bbba12e0d39d496d5c39"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "b7fe3993b6fff5603cb3e68e67a5f1f2197f22efa6df87119d9a72824bdd2114",
+    "legacy_file_sha256": "a2afc476722d8615e05648e2bcb0253cfbcfcfd84c7670cd57022b0dcf7f2a57",
+    "max_abs_difference": 0.0,
+    "molecule_id": 88798,
+    "recomputed_descriptor_sha256": "b7fe3993b6fff5603cb3e68e67a5f1f2197f22efa6df87119d9a72824bdd2114"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "5d124d389ad343fc18fb0652277c949dfcee1363c05b644699d3dd9a0bcd1bde",
+    "legacy_file_sha256": "d43300952f552f5093d3b3894ea8e225d184858b60acae55b7268ba4f9c4b762",
+    "max_abs_difference": 0.0,
+    "molecule_id": 58498,
+    "recomputed_descriptor_sha256": "5d124d389ad343fc18fb0652277c949dfcee1363c05b644699d3dd9a0bcd1bde"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "d9d8767ee83034f92514ef4f10df885cedb2f5d3cd10399d27f708275d69b21d",
+    "legacy_file_sha256": "baef2bcf073073d2664aa83f94a2225ed65192953bef01a9453c1c1b0f504f07",
+    "max_abs_difference": 0.0,
+    "molecule_id": 51377,
+    "recomputed_descriptor_sha256": "d9d8767ee83034f92514ef4f10df885cedb2f5d3cd10399d27f708275d69b21d"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "4684db99eb1825fa95cd6380146e6378d9e5e511f60a443aad7425ce7bcf2164",
+    "legacy_file_sha256": "53c16e6c8c872ffe4129b9e94a5c8b2ea7baf77bbc708df5c50c8754dbac9d94",
+    "max_abs_difference": 0.0,
+    "molecule_id": 64153,
+    "recomputed_descriptor_sha256": "4684db99eb1825fa95cd6380146e6378d9e5e511f60a443aad7425ce7bcf2164"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "5ad181fcba3d39abec18b0a1010f518658b34dcc42cc5a309700d18b4f71e0e4",
+    "legacy_file_sha256": "544f18701a88ffa2445620358c976fdf99467d4f3d0d679e36bc5d83ad8c3c1b",
+    "max_abs_difference": 0.0,
+    "molecule_id": 20182,
+    "recomputed_descriptor_sha256": "5ad181fcba3d39abec18b0a1010f518658b34dcc42cc5a309700d18b4f71e0e4"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "e358fd7534c2185499be2f6b627e7c20e95179a665a1170b3da0bece4f0cc51c",
+    "legacy_file_sha256": "d81e0932a4303d7c253b7d273ee705ecbcb678d3f2b2ccd105ca9603f1a9e559",
+    "max_abs_difference": 0.0,
+    "molecule_id": 60139,
+    "recomputed_descriptor_sha256": "e358fd7534c2185499be2f6b627e7c20e95179a665a1170b3da0bece4f0cc51c"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "eaed120b5c7be2ac5234edee2a48f901e056771ea12ded407abc6bd82be1bb48",
+    "legacy_file_sha256": "5d969ea678633ca56dd97efdf6e2c6effe5da384ea284b798ff0fd4af0adea2d",
+    "max_abs_difference": 0.0,
+    "molecule_id": 86359,
+    "recomputed_descriptor_sha256": "eaed120b5c7be2ac5234edee2a48f901e056771ea12ded407abc6bd82be1bb48"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "9e33f1472b893f3b263e3b9fe2b764c98d75cb5adbade019ad13a0905ac3ad82",
+    "legacy_file_sha256": "a57a7b45ab6823a5eea1ee73f12af615729ede6fbd684ae41a214bd260637660",
+    "max_abs_difference": 0.0,
+    "molecule_id": 111449,
+    "recomputed_descriptor_sha256": "9e33f1472b893f3b263e3b9fe2b764c98d75cb5adbade019ad13a0905ac3ad82"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "8bc25e3fbb02f103d47fee92113f83ad6deb556270a840304364ec8474c3641d",
+    "legacy_file_sha256": "17dd6814de3bd4bbd2f2607f76edcc84ea42b6dc3e8065087e09379efa620159",
+    "max_abs_difference": 0.0,
+    "molecule_id": 81123,
+    "recomputed_descriptor_sha256": "8bc25e3fbb02f103d47fee92113f83ad6deb556270a840304364ec8474c3641d"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "bc7cfd348335f3712a17baff3492c47730ec731f27cf8d6cafb2114862ff1e7c",
+    "legacy_file_sha256": "587bfde1a5f7a3567840ad7ad0fe9fb3a653b4d46aac15d350fbe17783269703",
+    "max_abs_difference": 0.0,
+    "molecule_id": 91567,
+    "recomputed_descriptor_sha256": "bc7cfd348335f3712a17baff3492c47730ec731f27cf8d6cafb2114862ff1e7c"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "f268c06ed01ca5f34988eac80593223ab05b34562aa9112609656e35ae0df5a1",
+    "legacy_file_sha256": "b7e8933f7d97ca530e80294603f18dd129f019625b570770c259e0fef964fc31",
+    "max_abs_difference": 0.0,
+    "molecule_id": 95333,
+    "recomputed_descriptor_sha256": "f268c06ed01ca5f34988eac80593223ab05b34562aa9112609656e35ae0df5a1"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "e0e5bafd1abb6d3cfa2d0fbbeb07bed545f68e6ae1fbe5fe13ccdbd54f44016a",
+    "legacy_file_sha256": "03878f81996c5c4238002e05ad03f88af334447fdfe9094609a87cb8323fb130",
+    "max_abs_difference": 0.0,
+    "molecule_id": 92998,
+    "recomputed_descriptor_sha256": "e0e5bafd1abb6d3cfa2d0fbbeb07bed545f68e6ae1fbe5fe13ccdbd54f44016a"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "3a8ab55bfc92e2efc91a5c3b15dee38a175cc8fac011dd093e705f8addf57460",
+    "legacy_file_sha256": "8e250ad681dae590bce27e4a9d45f65af3de2fd1aa5285fb3d84f410dc6bdf02",
+    "max_abs_difference": 0.0,
+    "molecule_id": 47785,
+    "recomputed_descriptor_sha256": "3a8ab55bfc92e2efc91a5c3b15dee38a175cc8fac011dd093e705f8addf57460"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "6a70089340227e70ef2e5ab2b30a9601b9994c0516f1eb8ab6f17de2d2d8ba39",
+    "legacy_file_sha256": "aa2a6e0c7750f7bac3d581e04626297806d39c2d10382a52ea4a4f082caa8ea6",
+    "max_abs_difference": 0.0,
+    "molecule_id": 49302,
+    "recomputed_descriptor_sha256": "6a70089340227e70ef2e5ab2b30a9601b9994c0516f1eb8ab6f17de2d2d8ba39"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "c7724868fe8e89f643a64540b4ee9e94d92d973f52428be33c2cdf64324f4b53",
+    "legacy_file_sha256": "544395ca932c9121b3047c454f276f31c43c9107a70c670713e150e5c4f488ff",
+    "max_abs_difference": 0.0,
+    "molecule_id": 55712,
+    "recomputed_descriptor_sha256": "c7724868fe8e89f643a64540b4ee9e94d92d973f52428be33c2cdf64324f4b53"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "f6edb596c9fa65352a3bd1ac89f0b5af4890d3221c705958bfae0172d41d13a9",
+    "legacy_file_sha256": "d38027ac1744cf15e9971006e2488d4b455851534f79fe26588144c2f4f3acdd",
+    "max_abs_difference": 0.0,
+    "molecule_id": 120600,
+    "recomputed_descriptor_sha256": "f6edb596c9fa65352a3bd1ac89f0b5af4890d3221c705958bfae0172d41d13a9"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "f4379b81c9d81685c44d2d70ecee50555c01a71d0771f7a0ccd397f33839efa9",
+    "legacy_file_sha256": "45eaae5e280728e602bb4c71e9cf6b2b7cb4ec8a62f4ee5ba038ae692af3e3a7",
+    "max_abs_difference": 0.0,
+    "molecule_id": 2694,
+    "recomputed_descriptor_sha256": "f4379b81c9d81685c44d2d70ecee50555c01a71d0771f7a0ccd397f33839efa9"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "fee1a004e44490b4bd4cfac06894f96b71cb47e9aea74df1ee7c425d383b4f02",
+    "legacy_file_sha256": "ee2161cb947583e6731a17f1a333ba73253c4574a6f81ffc410573f611b4b80c",
+    "max_abs_difference": 0.0,
+    "molecule_id": 4890,
+    "recomputed_descriptor_sha256": "fee1a004e44490b4bd4cfac06894f96b71cb47e9aea74df1ee7c425d383b4f02"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "d65a8465dc177bea6bc773cf5ae089ccb846d10d809800146ba57baace288c65",
+    "legacy_file_sha256": "45f268af689a87d1de2cb675283b4fb8a76265ab1e1fa2bacb11fff498024456",
+    "max_abs_difference": 0.0,
+    "molecule_id": 39938,
+    "recomputed_descriptor_sha256": "d65a8465dc177bea6bc773cf5ae089ccb846d10d809800146ba57baace288c65"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "20f4b9aa81fee3e72c6b2b84e92d1a7177330afee310758e2720eb34825078a5",
+    "legacy_file_sha256": "b4890b7820d26175da38e5a77ae3206a71e3b2ba1b49ce353a3ed2b3baa77656",
+    "max_abs_difference": 0.0,
+    "molecule_id": 31477,
+    "recomputed_descriptor_sha256": "20f4b9aa81fee3e72c6b2b84e92d1a7177330afee310758e2720eb34825078a5"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "f2532a84c0cc28ae9b5b3bc473b3d656781397d2a58f0850b306ea0b5d308d7c",
+    "legacy_file_sha256": "7f4cc8c690ec67ea6cac5f355dc17e2d77efbb32de8db130b184ca2013504996",
+    "max_abs_difference": 0.0,
+    "molecule_id": 99038,
+    "recomputed_descriptor_sha256": "f2532a84c0cc28ae9b5b3bc473b3d656781397d2a58f0850b306ea0b5d308d7c"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "7b30b0e8eba4633839341cd7dd43f1770c0b709f8107fcb15dbd8af1349f6fb6",
+    "legacy_file_sha256": "a70d6effbd3cb26f95c0d1fb66510c6448d09b90e8f7a8a9b46cb6069a6042c3",
+    "max_abs_difference": 0.0,
+    "molecule_id": 21694,
+    "recomputed_descriptor_sha256": "7b30b0e8eba4633839341cd7dd43f1770c0b709f8107fcb15dbd8af1349f6fb6"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "64279329c4ebf7f61170469559050abbb3bb456b38ab3e432cdf06b0e5b0e197",
+    "legacy_file_sha256": "59f353e4745fda1cfc5a86166ce486fda2600a0bb60305ebb72dba7c86246767",
+    "max_abs_difference": 0.0,
+    "molecule_id": 55127,
+    "recomputed_descriptor_sha256": "64279329c4ebf7f61170469559050abbb3bb456b38ab3e432cdf06b0e5b0e197"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "f5643f85bdd034ba6024dd61f48927f5c37c3292b8a7a2e8e6a5e9d288a77933",
+    "legacy_file_sha256": "7497134e41cf619e9c126ea78a61b27ebd60dcda5f76936ca2b96f272ed7136c",
+    "max_abs_difference": 0.0,
+    "molecule_id": 27044,
+    "recomputed_descriptor_sha256": "f5643f85bdd034ba6024dd61f48927f5c37c3292b8a7a2e8e6a5e9d288a77933"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "25f6606d0ee1bb8eb3bff279735800c5da39a7f5f4c96f29a5f5899eb5bc8a21",
+    "legacy_file_sha256": "caa7b28d979f05ade706fc58d3a9141dbea83888a120e2486d93aff53e7ef5f9",
+    "max_abs_difference": 0.0,
+    "molecule_id": 45148,
+    "recomputed_descriptor_sha256": "25f6606d0ee1bb8eb3bff279735800c5da39a7f5f4c96f29a5f5899eb5bc8a21"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "29ae2eacdce19e571504f45a6cad3f1091502ac6a9667551854b3dc023bbc75a",
+    "legacy_file_sha256": "06d50ea8b32b2f6318666433c2875a337d878bbc6adb342536715899d7d4a55b",
+    "max_abs_difference": 0.0,
+    "molecule_id": 23761,
+    "recomputed_descriptor_sha256": "29ae2eacdce19e571504f45a6cad3f1091502ac6a9667551854b3dc023bbc75a"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "75330dffb69fe76c075ef7b5b7d229ee7cb70064261b6b0e16d6a29e6094eb24",
+    "legacy_file_sha256": "867e9c05e7d09cc8852a08c10ee9845183fbea1e6d7683ed016565284a9a57c9",
+    "max_abs_difference": 0.0,
+    "molecule_id": 31375,
+    "recomputed_descriptor_sha256": "75330dffb69fe76c075ef7b5b7d229ee7cb70064261b6b0e16d6a29e6094eb24"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "7a67101c896e98cea583890e2e0121c531c72dd9df186ddfa72a4cd20e6b27d8",
+    "legacy_file_sha256": "51074513ab065a9bad5d41b1030bb935f2ebfc275697763d157588ccbc82e177",
+    "max_abs_difference": 0.0,
+    "molecule_id": 130452,
+    "recomputed_descriptor_sha256": "7a67101c896e98cea583890e2e0121c531c72dd9df186ddfa72a4cd20e6b27d8"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "c1db778495cb2c82dec4d0aab8f298134f48c16e8315eff9e4d17e8d712cbb96",
+    "legacy_file_sha256": "e63e9cee55dcd449fa45d18ac91c95879daae55be51d4f10c632f2029556a4a0",
+    "max_abs_difference": 0.0,
+    "molecule_id": 48812,
+    "recomputed_descriptor_sha256": "c1db778495cb2c82dec4d0aab8f298134f48c16e8315eff9e4d17e8d712cbb96"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "54f501b5fd1164449bb324e17f0abe06256151129a45070210250986a46c8cb4",
+    "legacy_file_sha256": "d4ea3bbfb1475725f2fc950e99149461cbc89ad8eeab964e350b2ee677f5333c",
+    "max_abs_difference": 0.0,
+    "molecule_id": 107016,
+    "recomputed_descriptor_sha256": "54f501b5fd1164449bb324e17f0abe06256151129a45070210250986a46c8cb4"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "63ae6f890cff4e0f08a0a37b84215301834e589fc296846cf346427aa0ae5e6c",
+    "legacy_file_sha256": "e5622e1295d1131457adf5d0edd60b97e95ef48271f2623a8c3d42fcbfaf4656",
+    "max_abs_difference": 0.0,
+    "molecule_id": 129595,
+    "recomputed_descriptor_sha256": "63ae6f890cff4e0f08a0a37b84215301834e589fc296846cf346427aa0ae5e6c"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "56a658fbd92546c270821d6f5a986904d0ab0449cde3bce14efea18bf6589f10",
+    "legacy_file_sha256": "f51c2a8c115a94bf1e0c4cf063aea18c1c4daa87f3c6e747746dc2e5cfeae72d",
+    "max_abs_difference": 0.0,
+    "molecule_id": 66962,
+    "recomputed_descriptor_sha256": "56a658fbd92546c270821d6f5a986904d0ab0449cde3bce14efea18bf6589f10"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "15e9bfb46ce1d182bf3d7872fdd26ebfa6ce982b71f15730c73c66109642501a",
+    "legacy_file_sha256": "7aeccf9a0c15325495829538a19f8606c9a3b0a0492f5c5a6992649d1e1e8759",
+    "max_abs_difference": 0.0,
+    "molecule_id": 97478,
+    "recomputed_descriptor_sha256": "15e9bfb46ce1d182bf3d7872fdd26ebfa6ce982b71f15730c73c66109642501a"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "3a465418569bc5eaa62df7c623fafc228707158ed30708538dcb2fd2e2901a05",
+    "legacy_file_sha256": "994510762a437f5be8456deed8a5241f3c7bb7230cbc3896858e1cdcf6d364c2",
+    "max_abs_difference": 0.0,
+    "molecule_id": 57735,
+    "recomputed_descriptor_sha256": "3a465418569bc5eaa62df7c623fafc228707158ed30708538dcb2fd2e2901a05"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "24fdc8d667df65aeb03d1558ece5a7b80e56cdd0ad5cfc99c04dda850e02a1cc",
+    "legacy_file_sha256": "f9c23ff27b544b39a81de2c265f19e6afd26712d0ebab667df2335ae3140eb69",
+    "max_abs_difference": 0.0,
+    "molecule_id": 33262,
+    "recomputed_descriptor_sha256": "24fdc8d667df65aeb03d1558ece5a7b80e56cdd0ad5cfc99c04dda850e02a1cc"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "0eaf0b39347aabb58f113ec7c75444ed23707627dfb29056da5d156ba310eb32",
+    "legacy_file_sha256": "e3eb84f2d187fbb03755a3df6fb33023165ca4e67b44538eef8605720cdc2c9c",
+    "max_abs_difference": 0.0,
+    "molecule_id": 116096,
+    "recomputed_descriptor_sha256": "0eaf0b39347aabb58f113ec7c75444ed23707627dfb29056da5d156ba310eb32"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "08bb401c44a867348eaef645e99c604b5d712414a2ec05c34bb48ffc6c52ce73",
+    "legacy_file_sha256": "0c6d85ab140fd22791a9e21c7d3497a1192e51f23dedc0df2e234e050900ee7f",
+    "max_abs_difference": 0.0,
+    "molecule_id": 81354,
+    "recomputed_descriptor_sha256": "08bb401c44a867348eaef645e99c604b5d712414a2ec05c34bb48ffc6c52ce73"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "f7400b3593d6f56da405c2a8b4f8ff2e40cbe997fcb1f8710c05e21c4a4b76fe",
+    "legacy_file_sha256": "1150b669416fda639a6333244190b52131f2f27d3a0021b88bb98bfc32ceff70",
+    "max_abs_difference": 0.0,
+    "molecule_id": 14403,
+    "recomputed_descriptor_sha256": "f7400b3593d6f56da405c2a8b4f8ff2e40cbe997fcb1f8710c05e21c4a4b76fe"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "6e9aa7755074e1c6f890a7e8d1a205152f5ea95b0e86f9cdb28ffcd94090438d",
+    "legacy_file_sha256": "cd023c355396d208c3cb35d96b50cf2f3b9baf041399b4df512e489949327d6c",
+    "max_abs_difference": 0.0,
+    "molecule_id": 41232,
+    "recomputed_descriptor_sha256": "6e9aa7755074e1c6f890a7e8d1a205152f5ea95b0e86f9cdb28ffcd94090438d"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "fffec5bc24a5a3f80c80439a6d6107068ee54122dc7d7cd2ebd76ed32c0d2478",
+    "legacy_file_sha256": "0265a55cf71f4450bd5085d40716d0fd508e8256d1f91ce4b1978100b8cb1980",
+    "max_abs_difference": 0.0,
+    "molecule_id": 127876,
+    "recomputed_descriptor_sha256": "fffec5bc24a5a3f80c80439a6d6107068ee54122dc7d7cd2ebd76ed32c0d2478"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "0e113a3e96381af9f8dfe4b448ad8ddc74bc35f7ea17be6de8988c996c61540e",
+    "legacy_file_sha256": "c769306c3848ba3eff99fc46518145cf7285f4d3c358fb667ea61a834d1ec0d8",
+    "max_abs_difference": 0.0,
+    "molecule_id": 37952,
+    "recomputed_descriptor_sha256": "0e113a3e96381af9f8dfe4b448ad8ddc74bc35f7ea17be6de8988c996c61540e"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "dec6f9c014857c37acbfcafeba2ce1ea43b7cc2debe80e1ab487105f412fdd9d",
+    "legacy_file_sha256": "293de55dff92cbdbd9abf3e08b2c2d2904f56d120521eee6dfe75b93d5baccb1",
+    "max_abs_difference": 0.0,
+    "molecule_id": 91415,
+    "recomputed_descriptor_sha256": "dec6f9c014857c37acbfcafeba2ce1ea43b7cc2debe80e1ab487105f412fdd9d"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "4796827c90f0ebd2b474431497c204f978597141bc66b8e152aa0103f3315813",
+    "legacy_file_sha256": "0807731ffa8dc431a1847503734e2531d11a4b20abdd5da48575ac93c07ea26e",
+    "max_abs_difference": 0.0,
+    "molecule_id": 1418,
+    "recomputed_descriptor_sha256": "4796827c90f0ebd2b474431497c204f978597141bc66b8e152aa0103f3315813"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "d5b7b1e25700c70dd2cde19a93b1ddd00e8705358377c264ffe8265a0cd74d48",
+    "legacy_file_sha256": "8c18348e32ace846f1a4be61bfd1e5cde4d15c5417fab3899be280cf3a939e66",
+    "max_abs_difference": 0.0,
+    "molecule_id": 109668,
+    "recomputed_descriptor_sha256": "d5b7b1e25700c70dd2cde19a93b1ddd00e8705358377c264ffe8265a0cd74d48"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "92e5598612a3b16c8abb01feb1fead530bb7035f4add9f3edecc47425344ac28",
+    "legacy_file_sha256": "ea40d25356197684419d7c56afb6b59f77f85b89cc011bcaff57f78b93938a71",
+    "max_abs_difference": 0.0,
+    "molecule_id": 2315,
+    "recomputed_descriptor_sha256": "92e5598612a3b16c8abb01feb1fead530bb7035f4add9f3edecc47425344ac28"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "7cb4aeca93627fc699f8cc3916fe581a048885a8dc204119eb0048b3a28fc997",
+    "legacy_file_sha256": "3449ab0d02042fc1ad441f916baa7704db00a749130f1d9ab583615ae18ee47a",
+    "max_abs_difference": 0.0,
+    "molecule_id": 97100,
+    "recomputed_descriptor_sha256": "7cb4aeca93627fc699f8cc3916fe581a048885a8dc204119eb0048b3a28fc997"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "0c777063670ed9f0f036aa970c64b497f1e880b33e0d543e157fa9d9f8b0dda5",
+    "legacy_file_sha256": "58718a18e26ec8f0a48e4b349f02c287ab398169e26e7f498a5cbc1862cf6158",
+    "max_abs_difference": 0.0,
+    "molecule_id": 93433,
+    "recomputed_descriptor_sha256": "0c777063670ed9f0f036aa970c64b497f1e880b33e0d543e157fa9d9f8b0dda5"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "6ce50088643319bb6b90a33ba5ac4a5998665fd298add35956aceb40998cb914",
+    "legacy_file_sha256": "b5d36b3a0c08d248718441fa7f47187463a38ac3371594a181aacd3b8f69d4a2",
+    "max_abs_difference": 0.0,
+    "molecule_id": 35161,
+    "recomputed_descriptor_sha256": "6ce50088643319bb6b90a33ba5ac4a5998665fd298add35956aceb40998cb914"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "617d9ada510348c7f1bcb7864f6d789e0ec4b0ecc7a9e46f215c5742d79aed73",
+    "legacy_file_sha256": "4a675cee9eeee3b6767b774f883e49f875719086d4f7d4410f33a577fc0f6e79",
+    "max_abs_difference": 0.0,
+    "molecule_id": 72955,
+    "recomputed_descriptor_sha256": "617d9ada510348c7f1bcb7864f6d789e0ec4b0ecc7a9e46f215c5742d79aed73"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "206cde8848374b910b678d73e1b514d993bc2fc15d312727ec4e42a2a9598472",
+    "legacy_file_sha256": "f63878c3079446a30e20c13de8850897b8cd0bbce099edf62e4d0b0a70b1e7de",
+    "max_abs_difference": 0.0,
+    "molecule_id": 97296,
+    "recomputed_descriptor_sha256": "206cde8848374b910b678d73e1b514d993bc2fc15d312727ec4e42a2a9598472"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "ff1f99935c31b6f1d7580b37156631b63e85f691370077ab301f437403483afa",
+    "legacy_file_sha256": "3d3c0e44f768255994c4c8ddcfaabcac1d79b8182bf027c1a217396b4f574f24",
+    "max_abs_difference": 0.0,
+    "molecule_id": 42980,
+    "recomputed_descriptor_sha256": "ff1f99935c31b6f1d7580b37156631b63e85f691370077ab301f437403483afa"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "39df354491ee73fd9db89d3893daf5920b9c9e4df81806263d7659f4603c4e1e",
+    "legacy_file_sha256": "034a876e005f44f669008eed7e0059b37734e5aa87fdc75b04d9d828f55e5905",
+    "max_abs_difference": 0.0,
+    "molecule_id": 78911,
+    "recomputed_descriptor_sha256": "39df354491ee73fd9db89d3893daf5920b9c9e4df81806263d7659f4603c4e1e"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "d4b617bc1fbcb4ecb81ffa373fc2bdbe70449a5424efe1d3e7e8d112826ee59f",
+    "legacy_file_sha256": "035ddf2448f4510a3c6b785abd806d7c97a97b5d59ee694292a3cfcfad7c732e",
+    "max_abs_difference": 0.0,
+    "molecule_id": 31582,
+    "recomputed_descriptor_sha256": "d4b617bc1fbcb4ecb81ffa373fc2bdbe70449a5424efe1d3e7e8d112826ee59f"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "254be9cd363fa039890ccba1d146557277167c50d2412ed590ce38591d1b34ae",
+    "legacy_file_sha256": "120e7ea76324bd06ce5dcbe3cc7ef97581a229fa8acd1e49b88e74bef32a31fc",
+    "max_abs_difference": 0.0,
+    "molecule_id": 28182,
+    "recomputed_descriptor_sha256": "254be9cd363fa039890ccba1d146557277167c50d2412ed590ce38591d1b34ae"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "4abe660a7f61a4a2b01e2ce5e9d5a25039973ff18c0a51973fdbc5ac92e1cbcf",
+    "legacy_file_sha256": "8d20a2c0a668fadfce8a524c9fd8d51ea214d9cc65cc700665fae565a1064ec5",
+    "max_abs_difference": 0.0,
+    "molecule_id": 32340,
+    "recomputed_descriptor_sha256": "4abe660a7f61a4a2b01e2ce5e9d5a25039973ff18c0a51973fdbc5ac92e1cbcf"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "a31410bf8a9d928edba5057f672f19fd9fbeaa9173a4aca1208b1a8517b05efa",
+    "legacy_file_sha256": "ce392ac247ff79deadf4ef4a904e07a6287c5d1aa27093ea093660efe9ed2796",
+    "max_abs_difference": 0.0,
+    "molecule_id": 6372,
+    "recomputed_descriptor_sha256": "a31410bf8a9d928edba5057f672f19fd9fbeaa9173a4aca1208b1a8517b05efa"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "fe4125b4048d7795e23c6b3725178bc7522260f6550666c40af70184303c13ce",
+    "legacy_file_sha256": "c86ea03db55cfecacab51988cfed3765b417c264b87f56e8a6292728596ec7ce",
+    "max_abs_difference": 0.0,
+    "molecule_id": 65636,
+    "recomputed_descriptor_sha256": "fe4125b4048d7795e23c6b3725178bc7522260f6550666c40af70184303c13ce"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "828e268d6ad383cc2eb9363e3092727e8b6b8a0bd96846594ec1cf66a492203c",
+    "legacy_file_sha256": "3c6a570b4362dae5832ba3f47ed12a9d62c6e6d0b2b4570881eb1a4bf3c01ecd",
+    "max_abs_difference": 0.0,
+    "molecule_id": 6440,
+    "recomputed_descriptor_sha256": "828e268d6ad383cc2eb9363e3092727e8b6b8a0bd96846594ec1cf66a492203c"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "bf0b07eafd482abe4a5b243f5d5c7341125ff09e07e4dc0378ba92ed49834060",
+    "legacy_file_sha256": "6aa9b7353bb1bcf86cc16aff3ec6326ffe33adf31151451d9d465bb4f3e6f089",
+    "max_abs_difference": 0.0,
+    "molecule_id": 31763,
+    "recomputed_descriptor_sha256": "bf0b07eafd482abe4a5b243f5d5c7341125ff09e07e4dc0378ba92ed49834060"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "08278cfb56dc5ab084048260341807161ce4c828dd9f45e455347c66b0c1c07b",
+    "legacy_file_sha256": "5d08145f471ad4a9c00a6faaa06ae64de9eb744a60d22b9cae70fd9e703f58ee",
+    "max_abs_difference": 0.0,
+    "molecule_id": 71523,
+    "recomputed_descriptor_sha256": "08278cfb56dc5ab084048260341807161ce4c828dd9f45e455347c66b0c1c07b"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "d4c3e99b15995a94a533b9495b83e6c168c834146d3ce961a9a9304fe0e33e6f",
+    "legacy_file_sha256": "96948b0d93771a91d28177f4764ab1c101555e11632c5a750f38e8d297879421",
+    "max_abs_difference": 0.0,
+    "molecule_id": 63884,
+    "recomputed_descriptor_sha256": "d4c3e99b15995a94a533b9495b83e6c168c834146d3ce961a9a9304fe0e33e6f"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "69431b948749d4a3393c4480b12730598474dbbd01295da8fcfd36fb27619f8c",
+    "legacy_file_sha256": "2fd945290fefcf82ef4ec9a7f5672a7aad49baa51902e69e6e59171699e6a668",
+    "max_abs_difference": 0.0,
+    "molecule_id": 1614,
+    "recomputed_descriptor_sha256": "69431b948749d4a3393c4480b12730598474dbbd01295da8fcfd36fb27619f8c"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "c4a87cfc907f9abc247e9e811b2b02f7feac7954a405f4c7d6b05ce49c37ea4e",
+    "legacy_file_sha256": "218bb225c5144482976ce476ddd1f1d90c8dd283a94d46493a1de7d0c050b4c1",
+    "max_abs_difference": 0.0,
+    "molecule_id": 16791,
+    "recomputed_descriptor_sha256": "c4a87cfc907f9abc247e9e811b2b02f7feac7954a405f4c7d6b05ce49c37ea4e"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "09ed080d73537c18089aa635d36b24c982f4fba47eaf95beb62d0a39a3df5517",
+    "legacy_file_sha256": "dd1c30620a6ab4a457fc03af65e450770a121d4da346a7bce161e3a9643a80d5",
+    "max_abs_difference": 0.0,
+    "molecule_id": 80563,
+    "recomputed_descriptor_sha256": "09ed080d73537c18089aa635d36b24c982f4fba47eaf95beb62d0a39a3df5517"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "6579fddc923462f1c4245a8cdbcfa426a70d45526e9b1530450661f6995521dd",
+    "legacy_file_sha256": "c6b34cc0d0260f62ddbc6b9408c5d51ebd430fe9b26bfd3f3f000b3cf9f66524",
+    "max_abs_difference": 0.0,
+    "molecule_id": 72949,
+    "recomputed_descriptor_sha256": "6579fddc923462f1c4245a8cdbcfa426a70d45526e9b1530450661f6995521dd"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "9e621c01bfaffff5641c07ba6a47b10f4ea62c9f44f028bb45ad8d49e98d14ea",
+    "legacy_file_sha256": "e687e950e534ef8537de72dcb82e86bd09e17a2d1892dd0dd1dac9e5dcd1dc0b",
+    "max_abs_difference": 0.0,
+    "molecule_id": 86358,
+    "recomputed_descriptor_sha256": "9e621c01bfaffff5641c07ba6a47b10f4ea62c9f44f028bb45ad8d49e98d14ea"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "54d6eb14ae34cccbf597c9b2e5c37076af7d1abd2c75897fdbac1aea94731fc7",
+    "legacy_file_sha256": "8e89d9223d69ed95f46a0438013fd9c77cd8d2ce4cb7335b1f4fa4f7cc590b23",
+    "max_abs_difference": 0.0,
+    "molecule_id": 121972,
+    "recomputed_descriptor_sha256": "54d6eb14ae34cccbf597c9b2e5c37076af7d1abd2c75897fdbac1aea94731fc7"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "c56653930ffbec0499df713b766fbe75e5a7026691a28fc3360e7ce64d4017bf",
+    "legacy_file_sha256": "77c3e4868fcb4cf90a455a8efb6975ec88db62982426e5e44ddf6a5f2588af06",
+    "max_abs_difference": 0.0,
+    "molecule_id": 55966,
+    "recomputed_descriptor_sha256": "c56653930ffbec0499df713b766fbe75e5a7026691a28fc3360e7ce64d4017bf"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "773c163bc257f54bb202cf1843cb8709cc52d68b2ae2fa4d0b9983f38ddad246",
+    "legacy_file_sha256": "d404e49365c1083f5bde2c90ecc5283f86732abc7affc1331a4ab8f1980724b9",
+    "max_abs_difference": 0.0,
+    "molecule_id": 4074,
+    "recomputed_descriptor_sha256": "773c163bc257f54bb202cf1843cb8709cc52d68b2ae2fa4d0b9983f38ddad246"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "63f50d359474747cfe77059bf0b3bd46ccb5231c96307b45f563e0a86e5b0e20",
+    "legacy_file_sha256": "e0965c15ffa48a2ad8add906574213b56bcc4a717b820eb00611b9ab45f63f11",
+    "max_abs_difference": 0.0,
+    "molecule_id": 122781,
+    "recomputed_descriptor_sha256": "63f50d359474747cfe77059bf0b3bd46ccb5231c96307b45f563e0a86e5b0e20"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "77a200ea1cb4ee05b426681a7c3cd0787e3bf1dfc3b513f1a0cf49ff78a7a0dc",
+    "legacy_file_sha256": "b1d622c2615707bda05393280fb17803d44bc7c2fa400601a30e745d198cf7df",
+    "max_abs_difference": 0.0,
+    "molecule_id": 18060,
+    "recomputed_descriptor_sha256": "77a200ea1cb4ee05b426681a7c3cd0787e3bf1dfc3b513f1a0cf49ff78a7a0dc"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "e98af20de8a5ad7c18934c3f09e562a95ac35ab7510cb82b5d7d53d3ead73d91",
+    "legacy_file_sha256": "c0abed0460455a24657d3dcf9ab73dc48077496eb9e2901762c3775271f18a66",
+    "max_abs_difference": 0.0,
+    "molecule_id": 97953,
+    "recomputed_descriptor_sha256": "e98af20de8a5ad7c18934c3f09e562a95ac35ab7510cb82b5d7d53d3ead73d91"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "320e15d996fcdfb6f8fa74eabe676f5966ba431d2d67a428782fd1cf661b039c",
+    "legacy_file_sha256": "91dda0154a526e42233f540106433627e4817002d633f8f9920429be70d465c3",
+    "max_abs_difference": 0.0,
+    "molecule_id": 124145,
+    "recomputed_descriptor_sha256": "320e15d996fcdfb6f8fa74eabe676f5966ba431d2d67a428782fd1cf661b039c"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "efdba9bdbebb28954443935429ca7a83497bc4e1d6f888cd7bae8154f26b0f5c",
+    "legacy_file_sha256": "e286b8d6cb8a961d46c41db0c13808e988e20c640f9021b4ac6939c995e2748e",
+    "max_abs_difference": 0.0,
+    "molecule_id": 61779,
+    "recomputed_descriptor_sha256": "efdba9bdbebb28954443935429ca7a83497bc4e1d6f888cd7bae8154f26b0f5c"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "dce728c98898d0958f94a45bcf1b320ee86d32ae5afcc14d1ce14923f9957f19",
+    "legacy_file_sha256": "d733efde0f84eb3b564475437648747bbb676c467510d6b3fb22690e51ba4038",
+    "max_abs_difference": 0.0,
+    "molecule_id": 46670,
+    "recomputed_descriptor_sha256": "dce728c98898d0958f94a45bcf1b320ee86d32ae5afcc14d1ce14923f9957f19"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "4ba2ea5dcb09608c5666db219468809af4df1091fa971261d8ba0b784ba7e865",
+    "legacy_file_sha256": "5519cdf5033e100938a0e2a1ad50c3d18a2b40180867577a9a55ca6cc6fa7d25",
+    "max_abs_difference": 0.0,
+    "molecule_id": 85248,
+    "recomputed_descriptor_sha256": "4ba2ea5dcb09608c5666db219468809af4df1091fa971261d8ba0b784ba7e865"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "4faae6f360a95bf68e6f56638c6039846eec6352d0241b1f1f68f5be8bae4255",
+    "legacy_file_sha256": "4bd3820bf512051617236aa0445c127cc1ab5506c73744de2572907af6e28cbd",
+    "max_abs_difference": 0.0,
+    "molecule_id": 47404,
+    "recomputed_descriptor_sha256": "4faae6f360a95bf68e6f56638c6039846eec6352d0241b1f1f68f5be8bae4255"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "7d97350dd5c079db51824c28e6e062822f45510717d62884877f079bc71e68d6",
+    "legacy_file_sha256": "0e5b49a187a435a2bf263640212ad7671fee887b6da4ae8e34f11375785564b4",
+    "max_abs_difference": 0.0,
+    "molecule_id": 102369,
+    "recomputed_descriptor_sha256": "7d97350dd5c079db51824c28e6e062822f45510717d62884877f079bc71e68d6"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "cf20182350734e58db5ca242e7b587ddb2a4425b45302952bd704b809005ee84",
+    "legacy_file_sha256": "aeedde6faec79f6311e508580be496eeec20b2c62c76053d5451771330eff476",
+    "max_abs_difference": 0.0,
+    "molecule_id": 6369,
+    "recomputed_descriptor_sha256": "cf20182350734e58db5ca242e7b587ddb2a4425b45302952bd704b809005ee84"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "3f7adb7cbdb857fc7cff43a92aa8a64329c3a22669b7f3d1676c01ea506b19a2",
+    "legacy_file_sha256": "0062172da029be6df73116899d72054b2ddd2c7e32043072f76fb6ab71d47ac6",
+    "max_abs_difference": 0.0,
+    "molecule_id": 55323,
+    "recomputed_descriptor_sha256": "3f7adb7cbdb857fc7cff43a92aa8a64329c3a22669b7f3d1676c01ea506b19a2"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "ff85d04b08b61d083b5b9e90c89af016196e114253c8ed3d222a10c5d7afe09b",
+    "legacy_file_sha256": "c14c5cd66f36e721c078d7bd2588f463b9821160d0f5f3253c11eb1fabbaacc3",
+    "max_abs_difference": 0.0,
+    "molecule_id": 67214,
+    "recomputed_descriptor_sha256": "ff85d04b08b61d083b5b9e90c89af016196e114253c8ed3d222a10c5d7afe09b"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "8b0f7effa9909bbef59304d74e18b94e07b30fb7a24198216d8a1749ef8df086",
+    "legacy_file_sha256": "90ec988426cb8c53f63aaa955530e1d19bb0e478525fe8552e0ab92e117620cd",
+    "max_abs_difference": 0.0,
+    "molecule_id": 112430,
+    "recomputed_descriptor_sha256": "8b0f7effa9909bbef59304d74e18b94e07b30fb7a24198216d8a1749ef8df086"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "37014d7d37d2f38205700d506e2f8400ae635d594345c624d01a17f88e339737",
+    "legacy_file_sha256": "1ef7974f24d5b03e3094ed3ec4f4ccbff862936e189a813b7ba385c9ca627d6c",
+    "max_abs_difference": 0.0,
+    "molecule_id": 73981,
+    "recomputed_descriptor_sha256": "37014d7d37d2f38205700d506e2f8400ae635d594345c624d01a17f88e339737"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "79e56c415dc891834fb22884c6f55ced74355d3253381fcddb282664a968f239",
+    "legacy_file_sha256": "368ca03130827680891c1b13bb2410ba18ebe62cfae84eb1db7bdf891ca70d8d",
+    "max_abs_difference": 0.0,
+    "molecule_id": 103028,
+    "recomputed_descriptor_sha256": "79e56c415dc891834fb22884c6f55ced74355d3253381fcddb282664a968f239"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "4e12ab1a4ca8cef0a5185c6b53e2b55a44265edf3ba7939879fca65dfd344081",
+    "legacy_file_sha256": "06ebd6952a0bf7c5234588b16906648c4843ed7ef87069d34908b2d1fd471a17",
+    "max_abs_difference": 0.0,
+    "molecule_id": 29209,
+    "recomputed_descriptor_sha256": "4e12ab1a4ca8cef0a5185c6b53e2b55a44265edf3ba7939879fca65dfd344081"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "92557fda00f9ff956a96a15034971fcca83b29f882e198a2591f7ead858ec0bd",
+    "legacy_file_sha256": "02e82bf7280e1f20e99a5c50ea3a51dbab7d655099074cff4dc845caee233e63",
+    "max_abs_difference": 0.0,
+    "molecule_id": 23592,
+    "recomputed_descriptor_sha256": "92557fda00f9ff956a96a15034971fcca83b29f882e198a2591f7ead858ec0bd"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "caae10faf09b206d7f60a20c43aacadafda2b949dc3aab031d35fcaa0acaad3f",
+    "legacy_file_sha256": "97c3e4aee9a30f8014210bf776afeb211e46e7609d33a701065a4246793edbe2",
+    "max_abs_difference": 0.0,
+    "molecule_id": 64494,
+    "recomputed_descriptor_sha256": "caae10faf09b206d7f60a20c43aacadafda2b949dc3aab031d35fcaa0acaad3f"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "2ea26159a50e1363d8170c724fe3b891291d3dcf269a493002e227a07ccef2ac",
+    "legacy_file_sha256": "c4d006a5862775ecc5236cb32e0238d6a4c2aa4f2dac5cda851d24428ebbf514",
+    "max_abs_difference": 0.0,
+    "molecule_id": 31854,
+    "recomputed_descriptor_sha256": "2ea26159a50e1363d8170c724fe3b891291d3dcf269a493002e227a07ccef2ac"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "0895ab73ee2d3bac12cc899c6c0b8c56e38c3f1c4882562386fbdc52c344221d",
+    "legacy_file_sha256": "e5df7f55b0a65ff99ee77fdd9c92f0ece99b8c5968727d2348e512a7b52f13d1",
+    "max_abs_difference": 0.0,
+    "molecule_id": 28813,
+    "recomputed_descriptor_sha256": "0895ab73ee2d3bac12cc899c6c0b8c56e38c3f1c4882562386fbdc52c344221d"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "497113ba31aa9f0a245b07c262a3b6714c438176e1b2341a0456ab372b1ec737",
+    "legacy_file_sha256": "22ce062bc3e7cdafe99c3ae2d307543353c763f7a775c726b3b727835dc49eb3",
+    "max_abs_difference": 0.0,
+    "molecule_id": 53760,
+    "recomputed_descriptor_sha256": "497113ba31aa9f0a245b07c262a3b6714c438176e1b2341a0456ab372b1ec737"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "95b7aa506b38036fcca9610507a38c3ce75bc13d754225ff5c5cb9f798c495d7",
+    "legacy_file_sha256": "8e8dee9de2d813c7b221f22de08b4c62b2025bb624ca13bf6d6c8687020ea345",
+    "max_abs_difference": 0.0,
+    "molecule_id": 84397,
+    "recomputed_descriptor_sha256": "95b7aa506b38036fcca9610507a38c3ce75bc13d754225ff5c5cb9f798c495d7"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "a726fae741a74feb36b70e11f7ba075e2a8338064bbc0bf68beb035470345a72",
+    "legacy_file_sha256": "8a014e516b8456192fe27547ca3bd60614de35f22557aca63325b725b4b49030",
+    "max_abs_difference": 0.0,
+    "molecule_id": 23688,
+    "recomputed_descriptor_sha256": "a726fae741a74feb36b70e11f7ba075e2a8338064bbc0bf68beb035470345a72"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "44eca0b09549e9855366962a886c04753a413d3faad5c7f31284f33f655d1829",
+    "legacy_file_sha256": "955f0c069fcb9d86747c4e196d62255a5f4703469356d3ee8dd5a58b04e9b943",
+    "max_abs_difference": 0.0,
+    "molecule_id": 124070,
+    "recomputed_descriptor_sha256": "44eca0b09549e9855366962a886c04753a413d3faad5c7f31284f33f655d1829"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "e391b1642f220581aa9c493e53f60b8b55bdeb13f1480ebaf84e8ffb6ac522d7",
+    "legacy_file_sha256": "b2ddacf706026c72223c5632ba10b5bafdb040d3963b54adc966c2cbd81aee49",
+    "max_abs_difference": 0.0,
+    "molecule_id": 14192,
+    "recomputed_descriptor_sha256": "e391b1642f220581aa9c493e53f60b8b55bdeb13f1480ebaf84e8ffb6ac522d7"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "0c231d0a52c004717778c407edcab5cb97aa66ae54664f7bb533d4c7ba02337c",
+    "legacy_file_sha256": "b14a0871ccaf817624010da72d40a8a5b033e543e25f1b52fb228e17021a66f4",
+    "max_abs_difference": 0.0,
+    "molecule_id": 2543,
+    "recomputed_descriptor_sha256": "0c231d0a52c004717778c407edcab5cb97aa66ae54664f7bb533d4c7ba02337c"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "dc3a9224841579077bbfe983533c1d7b9f0522b4bd1e7d9bd6894b999a58f732",
+    "legacy_file_sha256": "664c91d63ccaf9ff7c1d8b4762d8048b01f963d181a294104cbf36fc35b923e4",
+    "max_abs_difference": 0.0,
+    "molecule_id": 16630,
+    "recomputed_descriptor_sha256": "dc3a9224841579077bbfe983533c1d7b9f0522b4bd1e7d9bd6894b999a58f732"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "75b8c3f0d84ab397528c754afa2ee75a5d102bbc58fce16f49b6ca76c6a78983",
+    "legacy_file_sha256": "8d18f6f5a6ff912f9ee55f18525c1232d8e6055117863dbc359c751f7ce3398e",
+    "max_abs_difference": 0.0,
+    "molecule_id": 12923,
+    "recomputed_descriptor_sha256": "75b8c3f0d84ab397528c754afa2ee75a5d102bbc58fce16f49b6ca76c6a78983"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "e0458f8d8156e4a74ccf22fb1c239b9b5b9f1f468e36e7e5cc80ad6caebf8b1e",
+    "legacy_file_sha256": "9f3de9289fab1eb43003dcd7463c347805293d1f6937b68a53ae0a1622322f2a",
+    "max_abs_difference": 0.0,
+    "molecule_id": 110294,
+    "recomputed_descriptor_sha256": "e0458f8d8156e4a74ccf22fb1c239b9b5b9f1f468e36e7e5cc80ad6caebf8b1e"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "df3d183932e3e5cb12cd6860d6f10e3c6c735ebd9ae9fc7a2dce5cb23ae5c3fd",
+    "legacy_file_sha256": "981de66075bc7d2a8fd449020266b8d53a074edac4bafc286a1114e793ec2a63",
+    "max_abs_difference": 0.0,
+    "molecule_id": 56537,
+    "recomputed_descriptor_sha256": "df3d183932e3e5cb12cd6860d6f10e3c6c735ebd9ae9fc7a2dce5cb23ae5c3fd"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "71dd67f086561b8a3673ef614dd6ca471d176728aff6817694404bcefb0437d0",
+    "legacy_file_sha256": "8e3b39e7551636ac7317528c8b7b5687d3bfc4bc8d3fc83a28112ee758269480",
+    "max_abs_difference": 0.0,
+    "molecule_id": 12831,
+    "recomputed_descriptor_sha256": "71dd67f086561b8a3673ef614dd6ca471d176728aff6817694404bcefb0437d0"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "cc780f39c0e4a335abc437957802c7e3af73ab1b2440fc97891eaa6c02b95d5f",
+    "legacy_file_sha256": "81188ff64f8be5e70108ac61241b6afd5fb4bb9ca37daad987cb925fd79120a8",
+    "max_abs_difference": 0.0,
+    "molecule_id": 56296,
+    "recomputed_descriptor_sha256": "cc780f39c0e4a335abc437957802c7e3af73ab1b2440fc97891eaa6c02b95d5f"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "c2a277e1597701866d77f0d27fe96ebe068c024562729ff7adbd5b6786e7ebef",
+    "legacy_file_sha256": "813c14e8009a875de2343c4b578b15c162a4f3aeda6964afe68834142a9e06d8",
+    "max_abs_difference": 0.0,
+    "molecule_id": 9094,
+    "recomputed_descriptor_sha256": "c2a277e1597701866d77f0d27fe96ebe068c024562729ff7adbd5b6786e7ebef"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "bc8ae01d17b22ca60fdc32ad4fdfbd17c86c68321c0badac9b1897676db71ed4",
+    "legacy_file_sha256": "a08f182c2025d87c60ec919df22988838eedb8b75c3b9e2b15ff8206ee281d7f",
+    "max_abs_difference": 0.0,
+    "molecule_id": 73161,
+    "recomputed_descriptor_sha256": "bc8ae01d17b22ca60fdc32ad4fdfbd17c86c68321c0badac9b1897676db71ed4"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "a55d80d430f9ff822516e507b2a242f748a232c0e5104a7b118843b85b4451e7",
+    "legacy_file_sha256": "b47f88a3ee2664725f516023265d76fa49cf91ad7bce307f919689de14b8df01",
+    "max_abs_difference": 0.0,
+    "molecule_id": 58032,
+    "recomputed_descriptor_sha256": "a55d80d430f9ff822516e507b2a242f748a232c0e5104a7b118843b85b4451e7"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "ca4c00aba80d05357e972b1ce660e0b0276ef68b55dfb855950400a37927a687",
+    "legacy_file_sha256": "c207bdfb4524979f2f818cd0b87ae1363200e55f3c91d1817220e718a7293278",
+    "max_abs_difference": 0.0,
+    "molecule_id": 119495,
+    "recomputed_descriptor_sha256": "ca4c00aba80d05357e972b1ce660e0b0276ef68b55dfb855950400a37927a687"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "458b11c46e1245ec4ac2570e24989f09f595a5dd4c7880c89efab48613ed4f94",
+    "legacy_file_sha256": "44b5681d65ce169a73305ce40a2f85775cf5696562b85707a09fd38bb72c8dfb",
+    "max_abs_difference": 0.0,
+    "molecule_id": 27016,
+    "recomputed_descriptor_sha256": "458b11c46e1245ec4ac2570e24989f09f595a5dd4c7880c89efab48613ed4f94"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "c8920e6975e49d776b176782c16bed07b60fe33f7570e5411ee23f2b0f95f37b",
+    "legacy_file_sha256": "4dd9e29b8e6ef4721a6f7c0de0da1c5cbc6468a349ecfb3c91cc034cc0475b37",
+    "max_abs_difference": 0.0,
+    "molecule_id": 23894,
+    "recomputed_descriptor_sha256": "c8920e6975e49d776b176782c16bed07b60fe33f7570e5411ee23f2b0f95f37b"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "95867c9b3cd4f0ef29ced8329416a02980ccdea688813ff3d642cf131d979f1c",
+    "legacy_file_sha256": "8153605853529a209828b8a5202999043ee2e9b87d73aac89f4766ad1b68f8c1",
+    "max_abs_difference": 0.0,
+    "molecule_id": 117754,
+    "recomputed_descriptor_sha256": "95867c9b3cd4f0ef29ced8329416a02980ccdea688813ff3d642cf131d979f1c"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "2674e0dd81451f8fdda0ef0d35adc8f066a287c54a22f095fcb221cd97ced7f4",
+    "legacy_file_sha256": "6095e852ff6dafc2fcd01be430bced8d8fa66ed2dcb826a6b515c4c871611715",
+    "max_abs_difference": 0.0,
+    "molecule_id": 24968,
+    "recomputed_descriptor_sha256": "2674e0dd81451f8fdda0ef0d35adc8f066a287c54a22f095fcb221cd97ced7f4"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "31c95e52e19af18cbb3123c793a370b563d9f1e8c1218c07d25138d4fb2af361",
+    "legacy_file_sha256": "87f2e71364333794662b286c224079dbbc5c520c8ebefdc9c328e90dc3b3beab",
+    "max_abs_difference": 0.0,
+    "molecule_id": 83557,
+    "recomputed_descriptor_sha256": "31c95e52e19af18cbb3123c793a370b563d9f1e8c1218c07d25138d4fb2af361"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "4896cd5667d614a92db84f17dadf9d5a89a314523c4c3a27a71d9bf0e22b3a62",
+    "legacy_file_sha256": "a852b325e048b64c3ee14e41f094f32deb067b0a21fcdf0a89b8e33661077b55",
+    "max_abs_difference": 0.0,
+    "molecule_id": 118278,
+    "recomputed_descriptor_sha256": "4896cd5667d614a92db84f17dadf9d5a89a314523c4c3a27a71d9bf0e22b3a62"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "ee66dbf792ffe945d3503b0fb8b6fa0b7c97af4a3093405507f90176509c8210",
+    "legacy_file_sha256": "30ba7696c75394a6ce918c4e73e165ee21852cb71c6789a28ad19888dfdea510",
+    "max_abs_difference": 0.0,
+    "molecule_id": 58437,
+    "recomputed_descriptor_sha256": "ee66dbf792ffe945d3503b0fb8b6fa0b7c97af4a3093405507f90176509c8210"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "fe01448c0e1ec294fc1515494f09530a3a8e9b1f6618a403a974c641063f18a0",
+    "legacy_file_sha256": "65d3caafc9be0175a1008fca21c3ceee1ab0140e2e4d6609f9d6ebadd23af2ba",
+    "max_abs_difference": 0.0,
+    "molecule_id": 34774,
+    "recomputed_descriptor_sha256": "fe01448c0e1ec294fc1515494f09530a3a8e9b1f6618a403a974c641063f18a0"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "28b3e3b9cdcd21a61672b83575dd9b9ad78181f12713eb5c6133e4237dd31690",
+    "legacy_file_sha256": "bd2b57d1dc27c27c32b3ed5763ae7eff4e2d716505e6ccddd778900b13149774",
+    "max_abs_difference": 0.0,
+    "molecule_id": 110247,
+    "recomputed_descriptor_sha256": "28b3e3b9cdcd21a61672b83575dd9b9ad78181f12713eb5c6133e4237dd31690"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "f02ccbb31f65224d6a8dc9947adf01905f2f1df7c06aee27b2e86153d8875764",
+    "legacy_file_sha256": "ac8b0465653cddd4498779bb45df646e6ef1680d66cf78d19316426870dc1d7f",
+    "max_abs_difference": 0.0,
+    "molecule_id": 96215,
+    "recomputed_descriptor_sha256": "f02ccbb31f65224d6a8dc9947adf01905f2f1df7c06aee27b2e86153d8875764"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "ac44ec7bb7ce24f877de9dc71971e6c794821a368e23f18dd18a05e23c0c87b4",
+    "legacy_file_sha256": "20e19854b0137d078050d4e34f75e2e54a2add31b979605a3d371f48772384a2",
+    "max_abs_difference": 0.0,
+    "molecule_id": 66436,
+    "recomputed_descriptor_sha256": "ac44ec7bb7ce24f877de9dc71971e6c794821a368e23f18dd18a05e23c0c87b4"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "8a173fa3461a18a97e504b6284ed5dd3ba2c7ffcb06056b6afee13662f8e1792",
+    "legacy_file_sha256": "ba9a65b52cf00e6e5bf37424307c401ee0b1a3ab93d782fce6863d5711a2f437",
+    "max_abs_difference": 0.0,
+    "molecule_id": 47353,
+    "recomputed_descriptor_sha256": "8a173fa3461a18a97e504b6284ed5dd3ba2c7ffcb06056b6afee13662f8e1792"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "73cd5d2b7e072a3f10d0a3dd17235cd5c668d25eae4ded69d68cb594d444bea8",
+    "legacy_file_sha256": "7b7c7f0967bcf53cb97fe7398b4d8c781b6a8e6ad155a4e7d3b95088ee73ec28",
+    "max_abs_difference": 0.0,
+    "molecule_id": 106375,
+    "recomputed_descriptor_sha256": "73cd5d2b7e072a3f10d0a3dd17235cd5c668d25eae4ded69d68cb594d444bea8"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "7de53b8b33d8483d20ddf0475dd6a090d7b85b6750f1aef0b9b5c0e5fb59124a",
+    "legacy_file_sha256": "27119034d61f4ac0570ed1ffdc5d9c945dcaac50703454f64b858b2f85c9443b",
+    "max_abs_difference": 0.0,
+    "molecule_id": 73484,
+    "recomputed_descriptor_sha256": "7de53b8b33d8483d20ddf0475dd6a090d7b85b6750f1aef0b9b5c0e5fb59124a"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "980585fec70a0b4cac5c31f1a35f895de8c5748b600365b6c88090fb0b0f9d74",
+    "legacy_file_sha256": "9ce8df32e586371efea6d5d10344853114feda674503edddbb6f3f67ba15d0a3",
+    "max_abs_difference": 0.0,
+    "molecule_id": 82213,
+    "recomputed_descriptor_sha256": "980585fec70a0b4cac5c31f1a35f895de8c5748b600365b6c88090fb0b0f9d74"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "4baa296ef6ca8940ee9f4be795d950202d21c62a3ee4d2a5a7394c75926a360d",
+    "legacy_file_sha256": "551b324156df234c8806e3b64da16157be4020bdbd530f149c55756d42c91e22",
+    "max_abs_difference": 0.0,
+    "molecule_id": 85899,
+    "recomputed_descriptor_sha256": "4baa296ef6ca8940ee9f4be795d950202d21c62a3ee4d2a5a7394c75926a360d"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "3b7134c93850730f5acabb785d6590a6392afbd1d162ff36747fb3762cb65612",
+    "legacy_file_sha256": "d3135f0a0f771f8a2232ae07188f6fcd39f79566e385216d0dfdea32911782d5",
+    "max_abs_difference": 0.0,
+    "molecule_id": 81158,
+    "recomputed_descriptor_sha256": "3b7134c93850730f5acabb785d6590a6392afbd1d162ff36747fb3762cb65612"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "206c25aa38ce5396217c1926b82f9cc6f7736ceaa4db3e752dfae6461801755b",
+    "legacy_file_sha256": "c570476f3f2fde4d0d0e954a525218d98154ba7f9bc3d5d54e5c0c167b57b3a8",
+    "max_abs_difference": 0.0,
+    "molecule_id": 33805,
+    "recomputed_descriptor_sha256": "206c25aa38ce5396217c1926b82f9cc6f7736ceaa4db3e752dfae6461801755b"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "e85fed05620b9a2e57d5995c66a0218af5b18c03c8da30e70eb1bd6aceb4361d",
+    "legacy_file_sha256": "f877a88e9ab6d2a1e56ce0f328af8b7678bb4c8b427db55cab375c36805a2925",
+    "max_abs_difference": 0.0,
+    "molecule_id": 92106,
+    "recomputed_descriptor_sha256": "e85fed05620b9a2e57d5995c66a0218af5b18c03c8da30e70eb1bd6aceb4361d"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "395db3b9569dbb9b9b1d87b646348ad4e840914dcc65777a30eaff8e23f54f63",
+    "legacy_file_sha256": "4411b5c88e2ec2458f54298df56eb9d10674f73836bc63e51980e774a0791e10",
+    "max_abs_difference": 0.0,
+    "molecule_id": 68661,
+    "recomputed_descriptor_sha256": "395db3b9569dbb9b9b1d87b646348ad4e840914dcc65777a30eaff8e23f54f63"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "13cb18ebee0e88e53d018248838a9880f486d0faf1decb06b37263d3e572c614",
+    "legacy_file_sha256": "c1269187dc0de9029acccbf24caee0e383539757dd68e2c78e2671b795a9c02b",
+    "max_abs_difference": 0.0,
+    "molecule_id": 105062,
+    "recomputed_descriptor_sha256": "13cb18ebee0e88e53d018248838a9880f486d0faf1decb06b37263d3e572c614"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "2d72bd04db10a95c4ac9691f0ecc8e608f9d53daf11d293598779f0f827cca08",
+    "legacy_file_sha256": "0cc10bf3da3559aad7ff6617457e02def0e61277717afa619b70738b7dd8250c",
+    "max_abs_difference": 0.0,
+    "molecule_id": 90114,
+    "recomputed_descriptor_sha256": "2d72bd04db10a95c4ac9691f0ecc8e608f9d53daf11d293598779f0f827cca08"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "887823769e3f3da94d42f3c3be6aa96a5241232603b05519f15a3385e61f5cd7",
+    "legacy_file_sha256": "fae838d9339fef6c87ecbe15c72a32f8d255ac8995d021177e5e126f6be05e35",
+    "max_abs_difference": 0.0,
+    "molecule_id": 37113,
+    "recomputed_descriptor_sha256": "887823769e3f3da94d42f3c3be6aa96a5241232603b05519f15a3385e61f5cd7"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "5bce6a7d6b33b19c5de2d84463902e472949ba70d91523897f5786484a775261",
+    "legacy_file_sha256": "b8a565d0713be13f78e55d81bd85ecf8054b039381064c8073a0b5368dd66739",
+    "max_abs_difference": 0.0,
+    "molecule_id": 55265,
+    "recomputed_descriptor_sha256": "5bce6a7d6b33b19c5de2d84463902e472949ba70d91523897f5786484a775261"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "c89024ddc2f23eab57d6bb5746a4acf37132cdf9de90127622f5322f13b8f12b",
+    "legacy_file_sha256": "095527f53bb4faf7cafe551b007985f3399a66f373cdedb9d06f4becded0be4f",
+    "max_abs_difference": 0.0,
+    "molecule_id": 47564,
+    "recomputed_descriptor_sha256": "c89024ddc2f23eab57d6bb5746a4acf37132cdf9de90127622f5322f13b8f12b"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "a088dc830f8433b03b7e549a55d9ac78aa8b75f79a72af7f000fae53cdc41d69",
+    "legacy_file_sha256": "3e279449d650c4781733ed67c08c11bbcbfc55ff2cdcde9666571c5812562650",
+    "max_abs_difference": 0.0,
+    "molecule_id": 120252,
+    "recomputed_descriptor_sha256": "a088dc830f8433b03b7e549a55d9ac78aa8b75f79a72af7f000fae53cdc41d69"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "03a8f87b364b3b072e60c75db03bcfe1da95cfb9b09ab43b35626c5529d9ffc0",
+    "legacy_file_sha256": "091c1e5d13e0934bd55a033e322f8b7eb954cb37245817e5fb88499ad12a6ee8",
+    "max_abs_difference": 0.0,
+    "molecule_id": 75440,
+    "recomputed_descriptor_sha256": "03a8f87b364b3b072e60c75db03bcfe1da95cfb9b09ab43b35626c5529d9ffc0"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "3cc503c161e2e7bf6c6a5faabef5951ebc6391ca4fe250cb6ab0edf53081ebaa",
+    "legacy_file_sha256": "6910a85fd34064aff0fd3a971adc7e0aedceb89479eab158c30e5fbefa86225c",
+    "max_abs_difference": 0.0,
+    "molecule_id": 58383,
+    "recomputed_descriptor_sha256": "3cc503c161e2e7bf6c6a5faabef5951ebc6391ca4fe250cb6ab0edf53081ebaa"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "76d8b28dbf8042895295a90eb62a1a206b755147485e51ca0ef5b373cd353f55",
+    "legacy_file_sha256": "01114f6f2e91cbdfab6de2aad40aa5a8b23873cb75b197500637d00a537dfbb1",
+    "max_abs_difference": 0.0,
+    "molecule_id": 106216,
+    "recomputed_descriptor_sha256": "76d8b28dbf8042895295a90eb62a1a206b755147485e51ca0ef5b373cd353f55"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "f735c39b01a28f6e781a9458a589a310a0924c61cc162a1a975a68baafd0609f",
+    "legacy_file_sha256": "3ecad324401f4159f29eb11ce8e71df07d8bd6b160f40aeb92798133c5f5a871",
+    "max_abs_difference": 0.0,
+    "molecule_id": 129725,
+    "recomputed_descriptor_sha256": "f735c39b01a28f6e781a9458a589a310a0924c61cc162a1a975a68baafd0609f"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "0520072b862da9452119939dfeea87ab80674ce7b8a58d9e105139e43a052dbf",
+    "legacy_file_sha256": "596dab723e638bc86e83856463f0d7a04b2b99ea2752fd07efa1713bf21133b7",
+    "max_abs_difference": 0.0,
+    "molecule_id": 81223,
+    "recomputed_descriptor_sha256": "0520072b862da9452119939dfeea87ab80674ce7b8a58d9e105139e43a052dbf"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "0a9198a2b7d6c9044f9b79b70cd77e78a2170c4ccb4c89c112434c7f57ac9e96",
+    "legacy_file_sha256": "afe826919dd2112b64d436632936232708aabd979c6314b6d7444f7803eb3aee",
+    "max_abs_difference": 0.0,
+    "molecule_id": 31003,
+    "recomputed_descriptor_sha256": "0a9198a2b7d6c9044f9b79b70cd77e78a2170c4ccb4c89c112434c7f57ac9e96"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "0ceb032c73c868616eaf61675fc487ce33a90937887a242faac096f8b1cd8c51",
+    "legacy_file_sha256": "5918a7a8f5aae1fbe0ec96b6fea4b3163ea17ca9f28d60aaa4e1e6cd5879a284",
+    "max_abs_difference": 0.0,
+    "molecule_id": 123590,
+    "recomputed_descriptor_sha256": "0ceb032c73c868616eaf61675fc487ce33a90937887a242faac096f8b1cd8c51"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "76891b314e692e8a853595834803fdbdbcead913183aabe2b4b5149b1411fd53",
+    "legacy_file_sha256": "f235fb46453ec540c03a5dbdb1ab4c6fc50b2a7d3e5e5f09acdfb0243fc92e0d",
+    "max_abs_difference": 0.0,
+    "molecule_id": 39598,
+    "recomputed_descriptor_sha256": "76891b314e692e8a853595834803fdbdbcead913183aabe2b4b5149b1411fd53"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "051c183de92452d9badd4904fd0dff3741194442243a16daef3362e872a4a053",
+    "legacy_file_sha256": "35b5c91bbc436090e83895667a909b9568a1aba5c960899c9a9c316e2da970a3",
+    "max_abs_difference": 0.0,
+    "molecule_id": 78932,
+    "recomputed_descriptor_sha256": "051c183de92452d9badd4904fd0dff3741194442243a16daef3362e872a4a053"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "ebac396ae7bfb0944ed9fee441a425b54ffa712b0ade34a87abdaac569ee68d4",
+    "legacy_file_sha256": "2e232cc02d01c46cec0d0862a33fbd5e17479a00c997e0a198c36b4259a683a8",
+    "max_abs_difference": 0.0,
+    "molecule_id": 126182,
+    "recomputed_descriptor_sha256": "ebac396ae7bfb0944ed9fee441a425b54ffa712b0ade34a87abdaac569ee68d4"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "bfa365222507756648983de90274d0225895594a414e036ea5544b509695b35b",
+    "legacy_file_sha256": "54cfe380a5a870208928fe19df9facbdd55512f734fc06b4ac306de5be2ab27f",
+    "max_abs_difference": 0.0,
+    "molecule_id": 92032,
+    "recomputed_descriptor_sha256": "bfa365222507756648983de90274d0225895594a414e036ea5544b509695b35b"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "1cdecd78403114da3b85774076bf22c8829a5db28f3a6a05dced357431daa0e2",
+    "legacy_file_sha256": "8fb99694c56132db987e7e4208a8197f045ab1e6e4532d6c022b06ed89a75acb",
+    "max_abs_difference": 0.0,
+    "molecule_id": 34241,
+    "recomputed_descriptor_sha256": "1cdecd78403114da3b85774076bf22c8829a5db28f3a6a05dced357431daa0e2"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "6b3e2e64ffcf0c8c4b84f568f9949175ff58ce3b410a7bc079252ea653bf9767",
+    "legacy_file_sha256": "0e528b496ec06c881a5b451990b4f8caf43285b860e6abfe08320889757e2624",
+    "max_abs_difference": 0.0,
+    "molecule_id": 127947,
+    "recomputed_descriptor_sha256": "6b3e2e64ffcf0c8c4b84f568f9949175ff58ce3b410a7bc079252ea653bf9767"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "28e714f76238ef27068d78358c740a29d191aee9c1b509666bf5705e5e365f6d",
+    "legacy_file_sha256": "694cec3b2f85b513e96365a9716148fe849938207c1d18d9e7e7c39f99a14a21",
+    "max_abs_difference": 0.0,
+    "molecule_id": 24383,
+    "recomputed_descriptor_sha256": "28e714f76238ef27068d78358c740a29d191aee9c1b509666bf5705e5e365f6d"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "8b1ac299e80fc202579d5d5db7e8e78ea0d59c1910c0ed3ccd5192f66d9696cd",
+    "legacy_file_sha256": "d63618f1ce97628c06af7dfe350d4fd52247b061270e0e1cda9d75880f235a31",
+    "max_abs_difference": 0.0,
+    "molecule_id": 75393,
+    "recomputed_descriptor_sha256": "8b1ac299e80fc202579d5d5db7e8e78ea0d59c1910c0ed3ccd5192f66d9696cd"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "9c3bbbb7762f469daed3e91502aa8f048d1efe67a2412528b21ace6d7bcede9a",
+    "legacy_file_sha256": "b8fc692646578f28b853b26a6d804b1eed7b74e6a03393a420193155fd9f49eb",
+    "max_abs_difference": 0.0,
+    "molecule_id": 112658,
+    "recomputed_descriptor_sha256": "9c3bbbb7762f469daed3e91502aa8f048d1efe67a2412528b21ace6d7bcede9a"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "7642dfb471b43cea30c226cfad8ad4989a2d310ae20c898ebfe983a3e6c05272",
+    "legacy_file_sha256": "016b3955c1274ffc4c1a8420afbe7e5ce4384bea7e305205d83147ed5caa4762",
+    "max_abs_difference": 0.0,
+    "molecule_id": 29101,
+    "recomputed_descriptor_sha256": "7642dfb471b43cea30c226cfad8ad4989a2d310ae20c898ebfe983a3e6c05272"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "733176b93a32123f37a0881460b13b407d6bacc4b7f08928906b2e9867bbd78e",
+    "legacy_file_sha256": "94c8aa2985aa4ca32c8dc95e5ea90ab2e1b60da1dcdb3b256b69f1f9b25dcd3b",
+    "max_abs_difference": 0.0,
+    "molecule_id": 29577,
+    "recomputed_descriptor_sha256": "733176b93a32123f37a0881460b13b407d6bacc4b7f08928906b2e9867bbd78e"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "2b1b24ad05acb764e5f1c9c68a47dd82163f5e48c5c80a84bf10c915e06cfdf3",
+    "legacy_file_sha256": "003f2a5b902ba0681e41b1df3dafa8f7ade4a00a63bc6e1863aaf41c3a8ffa0d",
+    "max_abs_difference": 0.0,
+    "molecule_id": 53778,
+    "recomputed_descriptor_sha256": "2b1b24ad05acb764e5f1c9c68a47dd82163f5e48c5c80a84bf10c915e06cfdf3"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "9f1b3c77633936130201a19c61f95e0feb937d4b0b47d45360e4f1230624a8cb",
+    "legacy_file_sha256": "82fcad1cfb2ce9e6c762788144f3f8225017bf03f47014a4de1896f788e90daa",
+    "max_abs_difference": 0.0,
+    "molecule_id": 14993,
+    "recomputed_descriptor_sha256": "9f1b3c77633936130201a19c61f95e0feb937d4b0b47d45360e4f1230624a8cb"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "cc7421ac84156f5a0aa717f013e2e40c119f0eb79d67de816c8b562114b38794",
+    "legacy_file_sha256": "c5872279834dcff7e1acc5ed001db29d9ee0788bddf02ac97e5f69738d742d91",
+    "max_abs_difference": 0.0,
+    "molecule_id": 55493,
+    "recomputed_descriptor_sha256": "cc7421ac84156f5a0aa717f013e2e40c119f0eb79d67de816c8b562114b38794"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "8659c44368055619f0dfea288debbab4a02f4050fbccbcfa4159376551ebd3e3",
+    "legacy_file_sha256": "73fb0a41b1d008d72d867136ca46cd1e53d30d9a8d95d1456b1d44d247d27210",
+    "max_abs_difference": 0.0,
+    "molecule_id": 82782,
+    "recomputed_descriptor_sha256": "8659c44368055619f0dfea288debbab4a02f4050fbccbcfa4159376551ebd3e3"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "d702af207fc16358f7206b29e6cd4763e3d0ccb3f4cda7c58b6e4d2b213b75b7",
+    "legacy_file_sha256": "c32dbd9c9d0bfddac651ea5e2700ea49a5644168f660e2b5eb92b90eedf7105b",
+    "max_abs_difference": 0.0,
+    "molecule_id": 36654,
+    "recomputed_descriptor_sha256": "d702af207fc16358f7206b29e6cd4763e3d0ccb3f4cda7c58b6e4d2b213b75b7"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "8623a680962e97dde1367bf75233e44d0bef57f11e2106dbd9f01aa2bb568e9c",
+    "legacy_file_sha256": "98ee038584a726a6570194c7b92ce6d7e68895c3b03b8de4826169c5a9b5f5c4",
+    "max_abs_difference": 0.0,
+    "molecule_id": 35195,
+    "recomputed_descriptor_sha256": "8623a680962e97dde1367bf75233e44d0bef57f11e2106dbd9f01aa2bb568e9c"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "b3dafaddf56103cdde7c0fc0c68b9bbdc25e750479fd99fc58fcb10f4c838605",
+    "legacy_file_sha256": "dd75ac098ec5d4a500b49c9211bc5de2e6c01083197af5ca26455cb59b5e4371",
+    "max_abs_difference": 0.0,
+    "molecule_id": 39795,
+    "recomputed_descriptor_sha256": "b3dafaddf56103cdde7c0fc0c68b9bbdc25e750479fd99fc58fcb10f4c838605"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "98bf45807c18b49284e16a602e9523f99ec0cccb928eb490f1c5b2a2a294770e",
+    "legacy_file_sha256": "02e26fb5b9eaf808f6fd9850555f2d6655aae6c8d837d61bc42644317bd56724",
+    "max_abs_difference": 0.0,
+    "molecule_id": 102190,
+    "recomputed_descriptor_sha256": "98bf45807c18b49284e16a602e9523f99ec0cccb928eb490f1c5b2a2a294770e"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "9b2943f571702fdff9c69c2d041e414c0fe2f6f5636f8e89f9306446a150f477",
+    "legacy_file_sha256": "0a7402e903ccd204f6d9638f9955b7efa37f1477ee94fb9a48ea8fdbc67ec45f",
+    "max_abs_difference": 0.0,
+    "molecule_id": 97558,
+    "recomputed_descriptor_sha256": "9b2943f571702fdff9c69c2d041e414c0fe2f6f5636f8e89f9306446a150f477"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "776d248fcfe097a7b208b7cab77c531307e024f1b7ce2e4d1ba2b05c8b0fe3f5",
+    "legacy_file_sha256": "49b86de2e810aec30e59d16e358cf841680e3ae1e3dade80a8c3493a2029ea36",
+    "max_abs_difference": 0.0,
+    "molecule_id": 83539,
+    "recomputed_descriptor_sha256": "776d248fcfe097a7b208b7cab77c531307e024f1b7ce2e4d1ba2b05c8b0fe3f5"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "22bd8c4d807c259dd3e7e048930e90425bcf220840d02a58c0e9f288385270f9",
+    "legacy_file_sha256": "ed1f0c34a8bdad8a6b950b82f1ce499d6485f355d155ed005a671703a6d04645",
+    "max_abs_difference": 0.0,
+    "molecule_id": 84657,
+    "recomputed_descriptor_sha256": "22bd8c4d807c259dd3e7e048930e90425bcf220840d02a58c0e9f288385270f9"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "fbbcb1e45be75224113eab24a5f4c46684fdb9ddbf4fe82e1f5676c6ed15f51b",
+    "legacy_file_sha256": "d3a2049dad3fff4f296fd0e4b66212bdf2c46aac507f6bd1eb246cf6ffc3eb1b",
+    "max_abs_difference": 0.0,
+    "molecule_id": 3707,
+    "recomputed_descriptor_sha256": "fbbcb1e45be75224113eab24a5f4c46684fdb9ddbf4fe82e1f5676c6ed15f51b"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "1e73a1ce717e0baa6b447700622fc2a2c392ef6744b102ba67729ec758c9bfa5",
+    "legacy_file_sha256": "cb5c3a67edfd4a50a8cbf38634335d007e0f8c4bd59aabb9a4e9c2da24edf278",
+    "max_abs_difference": 0.0,
+    "molecule_id": 123585,
+    "recomputed_descriptor_sha256": "1e73a1ce717e0baa6b447700622fc2a2c392ef6744b102ba67729ec758c9bfa5"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "a03f4c55a30bc4571447db09333e8f9194d9c8ac8507ef8b19882bb89a3f4285",
+    "legacy_file_sha256": "05f10c2375b6b8b9f26b157e71b5cbeef422befa25825ce55117f435d2f86209",
+    "max_abs_difference": 0.0,
+    "molecule_id": 100119,
+    "recomputed_descriptor_sha256": "a03f4c55a30bc4571447db09333e8f9194d9c8ac8507ef8b19882bb89a3f4285"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "08833183cbdb54ceb02274629aff8e67624aa07d6f230992e96e5803cd5cdf1c",
+    "legacy_file_sha256": "ac2ea0ddc1fa8a4ae60326d77282562ced875e248d21187a2622e2c50f5a5eb7",
+    "max_abs_difference": 0.0,
+    "molecule_id": 95531,
+    "recomputed_descriptor_sha256": "08833183cbdb54ceb02274629aff8e67624aa07d6f230992e96e5803cd5cdf1c"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "c1d7b295614ec288df6323c1ae8ff0a14d19d9e6c159074f44dbef05ecc6c2a4",
+    "legacy_file_sha256": "d1952a3022c155ad2828e212c5c4379ccb5e852ac3d77360c52330c6030c63f4",
+    "max_abs_difference": 0.0,
+    "molecule_id": 84507,
+    "recomputed_descriptor_sha256": "c1d7b295614ec288df6323c1ae8ff0a14d19d9e6c159074f44dbef05ecc6c2a4"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "40d09ea56a7f2cc37e2e94d434fd5ab551b3f11212ead55358cdae1d4e2638fa",
+    "legacy_file_sha256": "9ed38b625dfe67f447a5f1f6d1e94bdbbfb3765e16590266421b5ef50d8fec12",
+    "max_abs_difference": 0.0,
+    "molecule_id": 130128,
+    "recomputed_descriptor_sha256": "40d09ea56a7f2cc37e2e94d434fd5ab551b3f11212ead55358cdae1d4e2638fa"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "776fec820bf5fcc53cda8606ae3e67ee85004554bd73345792b09c5c8a6b1bf0",
+    "legacy_file_sha256": "9eeea088f6f4a2a7d41bdd6fdca48bd01de58482795838148e9d2c926ccff295",
+    "max_abs_difference": 0.0,
+    "molecule_id": 76070,
+    "recomputed_descriptor_sha256": "776fec820bf5fcc53cda8606ae3e67ee85004554bd73345792b09c5c8a6b1bf0"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "d9405b2372e71ea1787bb1720f01c16d73138c44cdf9b536886c4aafea081cc2",
+    "legacy_file_sha256": "5bd884bac9ca993181341160558136137943c2388c4fc77c6fa54287c62f22b5",
+    "max_abs_difference": 0.0,
+    "molecule_id": 69734,
+    "recomputed_descriptor_sha256": "d9405b2372e71ea1787bb1720f01c16d73138c44cdf9b536886c4aafea081cc2"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "c44d25d036094776e3c74554aa04d9f09c563c000da7bc6381f326f063e4d9b1",
+    "legacy_file_sha256": "8d4a3f08b3eebe5e50a01c208a57b7b4ede879d8bef1056ea932bec7b89dd647",
+    "max_abs_difference": 0.0,
+    "molecule_id": 125938,
+    "recomputed_descriptor_sha256": "c44d25d036094776e3c74554aa04d9f09c563c000da7bc6381f326f063e4d9b1"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "69ba3b53bb9f2c3156b02cdebd9e2605c01774086f40b2dfc39e74bbc372b05c",
+    "legacy_file_sha256": "7794890c82057daf359a4b4e073220f2f29e33cb07239e64075cb9aaa6252075",
+    "max_abs_difference": 0.0,
+    "molecule_id": 57391,
+    "recomputed_descriptor_sha256": "69ba3b53bb9f2c3156b02cdebd9e2605c01774086f40b2dfc39e74bbc372b05c"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "82f24c0ef4d6d2b56bb0393c9142ed5fd5257af24a8c7650e5154ca2cfb2e277",
+    "legacy_file_sha256": "18b34c5731866d4961d1336712a13ebde38064eaced648168f54d27601522293",
+    "max_abs_difference": 0.0,
+    "molecule_id": 90099,
+    "recomputed_descriptor_sha256": "82f24c0ef4d6d2b56bb0393c9142ed5fd5257af24a8c7650e5154ca2cfb2e277"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "309c11df022a62217d80beef4adaad161fe03b7d3c6314a3f32db3a042b71e98",
+    "legacy_file_sha256": "ae7c0efac5dd8c74b1ac23c8f2c8641a5c191d76ee28d76d0c0cffd3e94dc6da",
+    "max_abs_difference": 0.0,
+    "molecule_id": 21225,
+    "recomputed_descriptor_sha256": "309c11df022a62217d80beef4adaad161fe03b7d3c6314a3f32db3a042b71e98"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "e332a562666243cccfbd12f6ec9af0ccf90e19427ae65fbc4ecc1766e286cb0c",
+    "legacy_file_sha256": "26a952354980f356e82d86ee6d64326c5dfae1b0b32ac45dd8b8a6a4d3befa35",
+    "max_abs_difference": 0.0,
+    "molecule_id": 57257,
+    "recomputed_descriptor_sha256": "e332a562666243cccfbd12f6ec9af0ccf90e19427ae65fbc4ecc1766e286cb0c"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "068daabd730a6effdbaccca1e98c895e65de76b894f1c687325235716f1a6032",
+    "legacy_file_sha256": "1e3244ee0fba78a7b7db3daccf5cdad391f2b9752706a5624f48eac68ef08b8f",
+    "max_abs_difference": 0.0,
+    "molecule_id": 48132,
+    "recomputed_descriptor_sha256": "068daabd730a6effdbaccca1e98c895e65de76b894f1c687325235716f1a6032"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "ad43ad13cec70cbaedf4f99514b1aa1c41ead2a46524bfc9d01bd8c37921f381",
+    "legacy_file_sha256": "8b8ceff6ad5b9119084c6545687dcdefb8055f789247d45402ca81af2daa9fe8",
+    "max_abs_difference": 0.0,
+    "molecule_id": 49095,
+    "recomputed_descriptor_sha256": "ad43ad13cec70cbaedf4f99514b1aa1c41ead2a46524bfc9d01bd8c37921f381"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "f9674e4894ff37b09763adc6db8e6ada9d9426c40ddb8bdd3a65f89546859400",
+    "legacy_file_sha256": "72e0883808f81f8b56a654c9a19e33711edb91709412d0838528929c10908bd8",
+    "max_abs_difference": 0.0,
+    "molecule_id": 58751,
+    "recomputed_descriptor_sha256": "f9674e4894ff37b09763adc6db8e6ada9d9426c40ddb8bdd3a65f89546859400"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "15438c736eaa95c17a80197a10d9632a009037b8ad7aea77fc9096380f955adc",
+    "legacy_file_sha256": "5ce96c4f625e82088f593c7c610d8c5eecdb1fb14ed1ae9f59410cae6d8eb9c1",
+    "max_abs_difference": 0.0,
+    "molecule_id": 99951,
+    "recomputed_descriptor_sha256": "15438c736eaa95c17a80197a10d9632a009037b8ad7aea77fc9096380f955adc"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "8135a22ee7386a7ba6fb4d19a2e3c0123b34ce0521d93d75d00bbcb5026f6384",
+    "legacy_file_sha256": "4f2c2f3b04691e7a3301612c70ec6762948834b544497df040b86b053f651974",
+    "max_abs_difference": 0.0,
+    "molecule_id": 12193,
+    "recomputed_descriptor_sha256": "8135a22ee7386a7ba6fb4d19a2e3c0123b34ce0521d93d75d00bbcb5026f6384"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "4b14b9dbacb3803848bf15c0bdd2d7aa7348aa1b78979d48ac5e363d161d9f34",
+    "legacy_file_sha256": "73d7a9b47030ffd8ea4d4a9ee3ead1451197d19fa53d80cc54e106300d3f6ebf",
+    "max_abs_difference": 0.0,
+    "molecule_id": 41699,
+    "recomputed_descriptor_sha256": "4b14b9dbacb3803848bf15c0bdd2d7aa7348aa1b78979d48ac5e363d161d9f34"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "9daab7b0577d6f1649e6ccbed10a79c7b84073d11483f9ec52d7677da1113490",
+    "legacy_file_sha256": "8c8af1b3de0f6f286c053adcc066b6e2115897b5906558e755e02b2c5ebd0ee4",
+    "max_abs_difference": 0.0,
+    "molecule_id": 77653,
+    "recomputed_descriptor_sha256": "9daab7b0577d6f1649e6ccbed10a79c7b84073d11483f9ec52d7677da1113490"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "732d65f7a1b7857d26de46c71bf4464316de9e37135b9c89a4e811c97f94ed8e",
+    "legacy_file_sha256": "9805b5cb3690b77a966c858672c82d705a047afc2d0096db65c53df09e9133c7",
+    "max_abs_difference": 0.0,
+    "molecule_id": 75223,
+    "recomputed_descriptor_sha256": "732d65f7a1b7857d26de46c71bf4464316de9e37135b9c89a4e811c97f94ed8e"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "7eb90a654f16294f55247810c25711814b96abc975f3bbacf278a5ac68e0edb9",
+    "legacy_file_sha256": "d304d24ab6297fb7fa357573176e7ceb67ec6e4c4bbe30b02e952e119b442c06",
+    "max_abs_difference": 0.0,
+    "molecule_id": 116166,
+    "recomputed_descriptor_sha256": "7eb90a654f16294f55247810c25711814b96abc975f3bbacf278a5ac68e0edb9"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "edc0d1c5395e5ccbb9485afe1f2b9a64f93323c2120761796b61d9e844ce4383",
+    "legacy_file_sha256": "073e8cfdddfff79dfbdebe00d30e2361ad8ece368d84947fa05af34154b20c29",
+    "max_abs_difference": 0.0,
+    "molecule_id": 46761,
+    "recomputed_descriptor_sha256": "edc0d1c5395e5ccbb9485afe1f2b9a64f93323c2120761796b61d9e844ce4383"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "5588d1f3a61b21217b705596057d6ec7d705e496ca9303c587caf0e4a3e33430",
+    "legacy_file_sha256": "48e56e560adf26e39aa11c021b5b18737e51532b5b149f77b3e23e5ea14a0fde",
+    "max_abs_difference": 0.0,
+    "molecule_id": 13261,
+    "recomputed_descriptor_sha256": "5588d1f3a61b21217b705596057d6ec7d705e496ca9303c587caf0e4a3e33430"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "86467c11f7fe13353527a0497080fd7c1b8966b766f7d38c2d9106683378f9a2",
+    "legacy_file_sha256": "f2241258580ea26ac2b939db11d29525a59f75a135698ebdded37e98517c72f3",
+    "max_abs_difference": 0.0,
+    "molecule_id": 91786,
+    "recomputed_descriptor_sha256": "86467c11f7fe13353527a0497080fd7c1b8966b766f7d38c2d9106683378f9a2"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "7f860470b54cef72f082234287767ce9ca483b4d493c76a5245bbdde90d97be2",
+    "legacy_file_sha256": "5fc3e95aeaec890188942a39d0a1d775afae5fca00ac5ea49e740b42e2ccaeb4",
+    "max_abs_difference": 0.0,
+    "molecule_id": 55612,
+    "recomputed_descriptor_sha256": "7f860470b54cef72f082234287767ce9ca483b4d493c76a5245bbdde90d97be2"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "f84d97d7a883a7ad67437db0a4e595ee170f961062199749924c670a0e2e4191",
+    "legacy_file_sha256": "8a277e9feb2f204503f492a06cccfef7565667c343dc3196bf529cfb60895623",
+    "max_abs_difference": 0.0,
+    "molecule_id": 57403,
+    "recomputed_descriptor_sha256": "f84d97d7a883a7ad67437db0a4e595ee170f961062199749924c670a0e2e4191"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "0780014448d32fe01483db9c30d30d058302af0cfeeed88353b62f609c2d1328",
+    "legacy_file_sha256": "35210253777b2e40b79c5c93080b73725d140d1ce5d8cc3a27d056bc69a9522b",
+    "max_abs_difference": 0.0,
+    "molecule_id": 112581,
+    "recomputed_descriptor_sha256": "0780014448d32fe01483db9c30d30d058302af0cfeeed88353b62f609c2d1328"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "e21a24ad5000cf97ea48b20bb365e79359356d3ee4031c72e782aad757972d0e",
+    "legacy_file_sha256": "66210c753746ec2c4e9b8e3e7fedba35cc9020bd6b1a27866f9ec608692fed2e",
+    "max_abs_difference": 0.0,
+    "molecule_id": 4947,
+    "recomputed_descriptor_sha256": "e21a24ad5000cf97ea48b20bb365e79359356d3ee4031c72e782aad757972d0e"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "a04eeba34e3ef4973e0eb54c9350998b11237369a59c9ec2b2b0933f946ec22b",
+    "legacy_file_sha256": "bf33a71f2497bbea5f4c6e4e7ca1e7e5d4f385748ef5fca3a79120720ea68fe2",
+    "max_abs_difference": 0.0,
+    "molecule_id": 5549,
+    "recomputed_descriptor_sha256": "a04eeba34e3ef4973e0eb54c9350998b11237369a59c9ec2b2b0933f946ec22b"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "2e8c6164b7f1db1d3c8784a79d258d6b2e1a9b639c6c385319734a16e3c92e32",
+    "legacy_file_sha256": "cb0153557b8ff4d53c1b361b24c3f6e48c095a22fe5f91d62f848c3888d3c1d8",
+    "max_abs_difference": 0.0,
+    "molecule_id": 14388,
+    "recomputed_descriptor_sha256": "2e8c6164b7f1db1d3c8784a79d258d6b2e1a9b639c6c385319734a16e3c92e32"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "1f84493135316362d4ca1b2cde892a6df03d9f7d6458c208252d5546a3f7e99e",
+    "legacy_file_sha256": "b5bbdfc384a0e79dd76e9aa6fb42a0124f3794c4678180641f6a16801cf10d95",
+    "max_abs_difference": 0.0,
+    "molecule_id": 15655,
+    "recomputed_descriptor_sha256": "1f84493135316362d4ca1b2cde892a6df03d9f7d6458c208252d5546a3f7e99e"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "89c8f155db8e74fe2d897dbcbfa747cfb2d2b03338b86762eb906a7368b93ee7",
+    "legacy_file_sha256": "61eec25c4aec133b24f9ab2f49925e66529496a2ee691cd7cfa0f1d8bcba3540",
+    "max_abs_difference": 0.0,
+    "molecule_id": 27442,
+    "recomputed_descriptor_sha256": "89c8f155db8e74fe2d897dbcbfa747cfb2d2b03338b86762eb906a7368b93ee7"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "86345efc9b89bfdfdc711927369144cd57c97f9720bc039435759ca0ff415cf6",
+    "legacy_file_sha256": "f4d33d7810dfbbc6a47b895ab1e3d7bff59c961ba6274312255f8f8eadb50c7e",
+    "max_abs_difference": 0.0,
+    "molecule_id": 66105,
+    "recomputed_descriptor_sha256": "86345efc9b89bfdfdc711927369144cd57c97f9720bc039435759ca0ff415cf6"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "4d19fcb593e565321b2babde24070ad4ae0dd7b376c57cd1a86d1e6622e0551d",
+    "legacy_file_sha256": "d18dc399cd234c5308811b32744ee0f0c41e4c72be47ad59ea6433ac9baca2b3",
+    "max_abs_difference": 0.0,
+    "molecule_id": 80577,
+    "recomputed_descriptor_sha256": "4d19fcb593e565321b2babde24070ad4ae0dd7b376c57cd1a86d1e6622e0551d"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "e755ffc7ec82e6d5d95955da0c2fb353bea869c198bf0b972fdd2eccd17e6549",
+    "legacy_file_sha256": "5eab85e269d171f3819df2f225c5546554977698ea8d99d3014d5dfeb4014130",
+    "max_abs_difference": 0.0,
+    "molecule_id": 64816,
+    "recomputed_descriptor_sha256": "e755ffc7ec82e6d5d95955da0c2fb353bea869c198bf0b972fdd2eccd17e6549"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "3ced1e4a66dc3a97420a1b0835df1ba1413c161162c04f1632caf230e1c63130",
+    "legacy_file_sha256": "0111ea37a0309bcb8114458593edc958130a1bb79ce6a2575a1e0c6122cd8379",
+    "max_abs_difference": 0.0,
+    "molecule_id": 35105,
+    "recomputed_descriptor_sha256": "3ced1e4a66dc3a97420a1b0835df1ba1413c161162c04f1632caf230e1c63130"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "22922b4f69442ceb11490d78e0683da93eb99d68ad2d9d61c0161bf54f1bb966",
+    "legacy_file_sha256": "aa8dc77ec48bd0ca349961de92febaa9c9730d720b717f18f5c011df4f9af4e0",
+    "max_abs_difference": 0.0,
+    "molecule_id": 110535,
+    "recomputed_descriptor_sha256": "22922b4f69442ceb11490d78e0683da93eb99d68ad2d9d61c0161bf54f1bb966"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "3f2576e44d3e2678f04f13685be6f66f4a0744a0b3b6706e80d1abb7c0f50325",
+    "legacy_file_sha256": "a18672b4f7eb5d412b6e04890ba46556375e1a1ad6caca8f8375bc434f85d122",
+    "max_abs_difference": 0.0,
+    "molecule_id": 83579,
+    "recomputed_descriptor_sha256": "3f2576e44d3e2678f04f13685be6f66f4a0744a0b3b6706e80d1abb7c0f50325"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "b733f4ed5bc6aed7be4b6b5ccdda9b555bd4e11ca764285e2793021f43494adb",
+    "legacy_file_sha256": "6aaca7bf5f3101bc85849b44e690248a897ed2ab63d9b1e015f5b214d2b146a3",
+    "max_abs_difference": 0.0,
+    "molecule_id": 106203,
+    "recomputed_descriptor_sha256": "b733f4ed5bc6aed7be4b6b5ccdda9b555bd4e11ca764285e2793021f43494adb"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "a8519b17880195be588cfc93e6e1fbb8e3d896d977b22f5f5196bea0568397b2",
+    "legacy_file_sha256": "67f6b167f2d18e913a0724023b330df5be22993236bd3bcbe523d829ab85a56d",
+    "max_abs_difference": 0.0,
+    "molecule_id": 22219,
+    "recomputed_descriptor_sha256": "a8519b17880195be588cfc93e6e1fbb8e3d896d977b22f5f5196bea0568397b2"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "74a2dbe7f8db64f797b13a2e496f6cb559041d15abf9166166be71f564fd866e",
+    "legacy_file_sha256": "45d258d38e4145700ea3f935e4ae72372a75e385025a3f8ab37c3012801101d6",
+    "max_abs_difference": 0.0,
+    "molecule_id": 70817,
+    "recomputed_descriptor_sha256": "74a2dbe7f8db64f797b13a2e496f6cb559041d15abf9166166be71f564fd866e"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "007191ea65f1115fc730bb74ec541e04ddb3dde1322a29e8f8a6800edba2e927",
+    "legacy_file_sha256": "88062d1fe399cafc784fcbc944ea3166d9ca598fffe5383f3f9dd436cc7d2952",
+    "max_abs_difference": 0.0,
+    "molecule_id": 73382,
+    "recomputed_descriptor_sha256": "007191ea65f1115fc730bb74ec541e04ddb3dde1322a29e8f8a6800edba2e927"
+  },
+  {
+    "compatible": true,
+    "legacy_descriptor_sha256": "caa6f91c8f7064af89da0dd5a0cee574c885a83e972878143f9598e6df0d0466",
+    "legacy_file_sha256": "e298f720a4d4e4516d1f0f9aa97659ade2d4b5a1a29ea1cc13e35dae4abbbb83",
+    "max_abs_difference": 0.0,
+    "molecule_id": 46231,
+    "recomputed_descriptor_sha256": "caa6f91c8f7064af89da0dd5a0cee574c885a83e972878143f9598e6df0d0466"
+  }
+]

@@ -1,14 +1,18 @@
 # Original QM9 experiment record
 
-## 13 September 2026 — paired evaluator implementation
+## 13 September 2026 — paired checkpoint validation
 
-Added a paired evaluator and artifact-recovery checks. The
-[audit](validation_audit_2026-09-13.md) records hashes, environment checks and
-execution status; the [protocol](../docs/paired_evaluation.md) freezes the initial
-subset and three conditions. Nine software tests pass. Synthetic fixtures are
-not molecular performance results. Original numeric artifacts remain unchanged.
+The [paired pilot](paired_pilot_2026-09-13.md) evaluated 256 frozen validation
+molecules with identical perturbations. At sigma 0.10 Å, MAE was 0.380251 eV for
+EGNN and 0.328248 eV for fusion with either clean or recomputed TDA. The FiLM
+branch is saturated on the checked descriptors; shuffling or replacing them with
+one real vector barely changes predictions. A molecule-specific topology benefit
+is therefore unsupported. The cycle stops before new training. Recovery checks,
+old-clean agreement, nine software tests and measured compute accompany the
+result. Original numeric artifacts remain unchanged.
 
-This is a summary of the saved experiment outputs. The tables retain the original results; the interpretation was corrected on 13 September 2026 after inspecting the evaluation and topology code. This documentation review did not rerun training or evaluation.
+The tables below retain the original experiment outputs. New evaluation artifacts
+are stored separately in `results/paired_pilot_2026-09-13`.
 
 ## Correction to the noise interpretation
 
@@ -68,8 +72,10 @@ Sources: [comparison metrics](../results/compare_metrics.json), [comparison tabl
 
 **Fusion topology remains clean in every row. Noise is not paired across models.** Sources: [noise comparison](../results/compare_robustness.csv), [original plot](../figures/compare_robustness.png). These percentages describe the saved asymmetric-input comparison, not a corrected robustness result.
 
-## What the next run must resolve
+## What further training would need to resolve
 
-Restore the original checkpoints and caches. Run paired perturbations for the baseline and fusion, comparing clean auxiliary topology with topology recomputed from the same noisy coordinates. Keep the old feature definition for checkpoint compatibility, record per-molecule results and inspect failures before retraining.
+The original checkpoints and selected cache files have been recovered and the
+paired pilot completed. Any further training must address conditioning saturation
+before interpreting descriptor robustness as topology use.
 
 If further work is justified, train on a fixed split with independent model seeds and compare topology against both extra capacity and simple geometric descriptors. A revised common-grid representation needs its own versioned cache and retraining. Preserve these original CSVs and write the corrected experiment to a new directory, with actual execution dates and a configuration manifest.

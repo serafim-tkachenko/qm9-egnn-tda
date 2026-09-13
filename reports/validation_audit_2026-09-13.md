@@ -1,10 +1,9 @@
 # Validation audit — 13 September 2026
 
 Starting revision: `1f75ea29aff2b975b78929dcf1e2eaf59ab547d5` on `master`.
-The local repository was empty with no user changes; remote master matched the
-handover revision. The supplied documentation cleanup patch was not applied
-upstream, passed `git apply --check`, and is now included. Historical numeric
-result files and figures remain unchanged.
+Historical numeric result files and figures remain unchanged. The completed
+[paired pilot and diagnosis](paired_pilot_2026-09-13.md) provide the execution
+record and decision for this cycle.
 
 | Confirmed issue | Impact |
 | --- | --- |
@@ -16,14 +15,15 @@ result files and figures remain unchanged.
 | One seed controls split and training | Changing initialization also changes evaluation membership |
 | Fusion: 994,517 parameters; EGNN: 895,189 | Extra capacity confounds a topology-specific interpretation |
 | One documented ten-epoch configuration | No convergence demonstration or training-seed uncertainty |
+| Saturated FiLM on all 256 checked descriptors | Shuffling/constant real TDA changes predictions by less than 1e-6 eV; individual topology use is not demonstrated |
 
 Installed PyG 2.7.0 identifies target 4 in eV and converts raw energy targets from
-Hartree. The collator has no further target transform. Saved preprocessing records
-still need checking before evaluation. Only the topology branch centers and scales
+Hartree. The collator has no further target transform. Both saved preprocessing
+records were checked and contain the string `None`. Only the topology branch centers and scales
 coordinates to unit diameter. Installed giotto-tda 0.6.2 confirms per-fit grids;
 empty H1 defaults to entropy -1 and zero Betti counts.
 
-## Recovery status at implementation checkpoint
+## Recovery and execution
 
 Located the original Drive project, processed `data_v3.pt` (329,137,334 bytes),
 preprocessing records, result summaries, checkpoints and topology-cache folder.
@@ -40,17 +40,29 @@ PyTorch 2.10.0+cu128 recognizes the GPU with CUDA available. Free disk was about
 graphics workloads were present; no separate GPU compute job was visible.
 Availability snapshots are not throughput benchmarks.
 
-Nine tests pass on Windows/Python 3.10.3: noise pairing, masking/batching,
+Nine tests pass on Windows/Python 3.10.3 and Colab/Python 3.11.16: noise pairing, masking/batching,
 symmetries, cache mismatch/corruption, checkpoint compatibility, fixed membership,
 hand-computable aggregation, degenerate diagrams and a synthetic CLI run.
 Synthetic fixtures are software checks, not molecular performance results.
 
-The large dataset could not yet be materialized locally: the connector exceeded
-its transfer-frame limit and the application browser blocked the binary download.
-Colab with mounted Drive is the next route. At this implementation checkpoint,
-no corrected QM9 pilot, clean full-split reproduction or representative training
-benchmark has completed; no Colab runtime or new training has been used. There
-is no measured multi-seed compute estimate. Append execution results when available.
+The 130,831-molecule processed dataset was recovered through mounted Colab Drive,
+then transferred locally as four compressed parts. All part hashes and the final
+329,137,334-byte dataset SHA-256 were verified. Original descriptors were staged
+without changing the fixed selection after a large-directory read timeout.
+All 256 recomputed vectors match the original files exactly; all 40 real-molecule
+symmetry/padding checks pass (maximum prediction difference 1.43e-6 eV).
+
+The 256-molecule paired pilot and old-clean evaluator comparison completed in
+Colab CPU. A representative RTX 3080 Ti optimizer-step benchmark and the topology
+reliance check completed locally. The report separates measured timings from
+training extrapolations. Colab was shut down after verifying persistent exports.
+No new trained model was produced.
+
+Both full clean splits were subsequently reproduced on the RTX 3080 Ti: 13,083
+validation and 13,084 test molecules. All four original MAEs agree within
+7.22e-9 eV, below the 2e-6 eV comparison tolerance. The published
+[reproduction check](../results/paired_pilot_2026-09-13/full-clean-reproduction.json)
+records their provenance, output checksums and measured timings.
 
 See the [frozen protocol and failure gates](../docs/paired_evaluation.md).
 

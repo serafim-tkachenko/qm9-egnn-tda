@@ -1,6 +1,6 @@
 # Method and implementation notes
 
-These notes describe the checked-in implementation reviewed on 13 September 2026. They distinguish its actual behavior from the changes needed for the next comparison.
+These notes describe the implementation reviewed and validated on 13 September 2026.
 
 ## Data and model
 
@@ -20,7 +20,7 @@ The existing implementation calls `BettiCurve.fit_transform` separately for each
 
 For a shared-scale comparison, define and freeze the grid using training data or a prespecified physical range, save its parameters, rebuild features and retrain. Feeding changed descriptors into the old checkpoint would conflate an evaluation repair with a representation change.
 
-The cache currently uses only numeric molecule IDs and skips existing `.npy` files. It does not validate dataset version, preprocessing or feature settings. A new experiment needs a separate cache identity containing those settings, and a perturbation identity for noisy features. The original cache must remain available for reproducing old checkpoints.
+The historical `TDACache` uses numeric molecule IDs and skips existing `.npy` files without checking compatibility. The new paired evaluator uses `CheckedTDACache`, which binds dataset bytes, descriptor settings, implementation/package versions and exact unpadded coordinates. The original cache remains available and was checked on the 256 preselected pilot molecules.
 
 ## Training and evaluation
 
@@ -28,6 +28,6 @@ The default training configuration uses seed 42, ten epochs, batch size 64, Adam
 
 In `src/eval.py`, baseline and fusion evaluation draw Gaussian coordinate noise independently. Fusion then loads the cached descriptor computed from the clean molecule. This measures two-input prediction when only one input is corrupted. It cannot isolate whether topology recomputed from noisy coordinates improves robustness.
 
-The next diagnostic should give both models identical perturbations and compare fusion with clean versus recomputed noisy topology. Preserve the existing feature definition for this first checkpoint diagnostic. Save errors by molecule and perturbation, excluding padded nodes from topology extraction. Keep clean target labels fixed and describe the task as input-corruption sensitivity, not prediction of recalculated energies for distorted molecules.
+The [paired diagnostic](paired_evaluation.md) gives both models identical perturbations and compares clean versus recomputed noisy topology while preserving the old descriptor definition. It saves errors and exact inputs by molecule and perturbation, excluding padding from topology. Clean target labels remain fixed: this is input-corruption sensitivity, not prediction of recalculated energies for distorted molecules.
 
-These are conclusions from source inspection. Checkpoints, raw cache files and GPU execution were not independently verified during this documentation review.
+The [completed validation](../reports/paired_pilot_2026-09-13.md) verifies recovered checkpoints, selected original cache files, model symmetries and GPU execution. Full clean metrics reproduce the historical outputs. On the pilot descriptors, FiLM saturates and shuffling or fixing a real TDA vector barely changes predictions. This checkpoint comparison does not establish use of molecule-specific topology.
