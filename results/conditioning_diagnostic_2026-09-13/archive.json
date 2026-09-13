@@ -1,0 +1,16 @@
+{
+  "external_checkpoints": {
+    "raw.pt": "925f954d69d5a90f1a09063a5c4fa639c837e5fdf6c4b97299664270ed710edf",
+    "standardized.pt": "eaaa13a314baf15916a2995a1e741c65c7f2978f2b6ab05d0b787f4bb8aaf43d"
+  },
+  "figure_script_sha256": "80d7c9bba72299a2574f96f1339726ba7c6ecd16c20ad20c6f67c6055dd81824",
+  "files": {
+    "complete.json": "715d2794714a0ccb66ad50ec8ac6df9e6e662285b10517182be73604a347192e",
+    "conditioning.png": "f3436d1c3e4147a34bbddf11016348b40b17ebad2b5a37a8afea5bac472a2d2a",
+    "inputs.npz": "b7b0384242de2595a98e3bcb073de4b1997d65a86b8274cdae94098b1bceead5",
+    "manifest.json": "f51aabaf1ceaf9ee58fc2d62bfad4fad405d7127b1104d3f835f3d5418d0f4b7",
+    "predictions.csv": "bda5854a0de4cf06a4e0f26614b3ea8c94dc39ee0316f6ee0508e653a2ca8e4d",
+    "steps.csv": "bd7b3c8b64070af62edc610d9c80599bdb49bd621c091cd441bfe8c965362dfe",
+    "summary.json": "3923dd9116744b7c7de291e092d850e26ac3c5b38e0029be5acc074c82bc38f3"
+  }
+}

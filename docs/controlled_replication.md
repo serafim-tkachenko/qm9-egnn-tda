@@ -1,7 +1,16 @@
 # Proposed controlled replication
 
-Status: a follow-up protocol, not executed results. The completed checkpoint
+Status: the bounded diagnostic below **completed on 13 September 2026**;
+the four-arm multi-seed replication remains proposed. The completed checkpoint
 validation is in the [pilot report](../reports/paired_pilot_2026-09-13.md).
+
+The [training diagnostic](../reports/conditioning_diagnostic_2026-09-13.md)
+used scaling fitted on its 4,096 training molecules only. Standardization gave
+0% saturated outputs after one epoch versus 85.7% with raw inputs and retained
+descriptor sensitivity. The gate passed; retain standardization for replication
+and refit the scaler on the full training split. This is a functioning-path
+result, not evidence of superior predictive accuracy. No initialization or
+descriptor-definition change was combined with scaling.
 
 The next question is whether a fusion model can learn useful molecule-specific
 conditioning once saturation is controlled, and whether topology improves on

@@ -7,6 +7,11 @@ descriptor barely changes predictions. The decision for this cycle is to correct
 the interpretation and stop expansion of the current topology claim. No new
 training run was used to obtain a favorable result.
 
+Subsequent work: the separately archived
+[one-epoch training diagnostic](conditioning_diagnostic_2026-09-13.md) passed
+the conditioning gate using training-standardized features. It does not alter
+the historical checkpoint findings below or establish a topology advantage.
+
 ## Paired result
 
 The first 256 validation IDs from the original seed-42 split were fixed before

@@ -1,0 +1,83 @@
+{
+  "gate": "pass",
+  "preprocessing_seconds": 14.572346900000412,
+  "raw": {
+    "after_epoch": {
+      "abs_pretanh_quantiles": [
+        0.5245524048805237,
+        8.41761302947998,
+        13.814193725585938,
+        26.224628448486328
+      ],
+      "constant_mean_abs_prediction_change_eV": 0.0033959615975618362,
+      "mae_eV": 0.9170142207294703,
+      "mean_channel_range": 0.012045062147080898,
+      "saturation_fraction": 0.8571014404296875,
+      "shuffled_max_abs_prediction_change_eV": 0.027686595916748047,
+      "shuffled_mean_abs_prediction_change_eV": 0.005183255299925804,
+      "symmetry_padding_max_abs_error_eV": 9.5367431640625e-07
+    },
+    "checkpoint_sha256": "925f954d69d5a90f1a09063a5c4fa639c837e5fdf6c4b97299664270ed710edf",
+    "feature_max": 28.0,
+    "feature_min": -1.0,
+    "initial": {
+      "abs_pretanh_quantiles": [
+        3.331899642944336e-05,
+        1.594293475151062,
+        5.184331178665161,
+        11.3734769821167
+      ],
+      "constant_mean_abs_prediction_change_eV": 0.010721358936280012,
+      "mae_eV": 6.573875245754607,
+      "mean_channel_range": 0.39640167355537415,
+      "saturation_fraction": 0.0595550537109375,
+      "shuffled_max_abs_prediction_change_eV": 0.06505529582500458,
+      "shuffled_mean_abs_prediction_change_eV": 0.015080892422702163,
+      "symmetry_padding_max_abs_error_eV": 8.940696716308594e-08
+    },
+    "initial_state_sha256": "b9496caf02ff780becf600d289b47da4c135a1715791ba390a8bc2be0b7feb1d",
+    "min_film_gradient_norm": 0.1514136642217636,
+    "peak_allocated_bytes": 1436445696,
+    "training_seconds": 1.8778878999983135
+  },
+  "standardized": {
+    "after_epoch": {
+      "abs_pretanh_quantiles": [
+        4.589557647705078e-06,
+        0.1731935665011406,
+        0.7442934960126877,
+        3.738710403442383
+      ],
+      "constant_mean_abs_prediction_change_eV": 0.5275675151497126,
+      "mae_eV": 0.7417188957333565,
+      "mean_channel_range": 1.2126601934432983,
+      "saturation_fraction": 0.0,
+      "shuffled_max_abs_prediction_change_eV": 2.650723457336426,
+      "shuffled_mean_abs_prediction_change_eV": 0.6733044125139713,
+      "symmetry_padding_max_abs_error_eV": 9.5367431640625e-07
+    },
+    "checkpoint_sha256": "eaaa13a314baf15916a2995a1e741c65c7f2978f2b6ab05d0b787f4bb8aaf43d",
+    "feature_max": 13.675741195678711,
+    "feature_min": -6.073475360870361,
+    "initial": {
+      "abs_pretanh_quantiles": [
+        2.1345913410186768e-06,
+        0.1038445234298706,
+        0.38746141642332077,
+        1.762284278869629
+      ],
+      "constant_mean_abs_prediction_change_eV": 0.01685075048590079,
+      "mae_eV": 6.58911780489143,
+      "mean_channel_range": 0.9964652061462402,
+      "saturation_fraction": 0.0,
+      "shuffled_max_abs_prediction_change_eV": 0.09769630432128906,
+      "shuffled_mean_abs_prediction_change_eV": 0.02194469835376367,
+      "symmetry_padding_max_abs_error_eV": 4.470348358154297e-08
+    },
+    "initial_state_sha256": "b9496caf02ff780becf600d289b47da4c135a1715791ba390a8bc2be0b7feb1d",
+    "min_film_gradient_norm": 0.6453141570091248,
+    "peak_allocated_bytes": 1436445696,
+    "training_seconds": 1.767585900000995
+  },
+  "wall_seconds": 19.25224629999866
+}

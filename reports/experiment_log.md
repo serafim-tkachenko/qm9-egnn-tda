@@ -1,5 +1,19 @@
 # Original QM9 experiment record
 
+## 13 September 2026 — new conditioning training diagnostic
+
+After the checkpoint analysis, two newly initialized fusion arms were trained
+for one epoch on the first 4,096 training IDs, with identical weights and batch
+order. Scaling used those training molecules only. Raw features reached 85.710%
+saturated FiLM outputs; standardized features remained at 0% and retained a
+descriptor response. Both arms passed finite-gradient and symmetry/padding
+checks. The local RTX 3080 Ti completed the diagnostic in 19.25 seconds.
+
+The [diagnostic report](conditioning_diagnostic_2026-09-13.md) and
+[archived inputs, predictions and logs](../results/conditioning_diagnostic_2026-09-13)
+record the actual experiment. The conditioning gate passes; four-arm multi-seed
+replication remains unexecuted. One-epoch validation MAEs are diagnostic only.
+
 ## 13 September 2026 — paired checkpoint validation
 
 The [paired pilot](paired_pilot_2026-09-13.md) evaluated 256 frozen validation

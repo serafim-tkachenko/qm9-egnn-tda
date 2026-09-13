@@ -6,6 +6,10 @@ This project tests whether persistent-homology features help an EGNN predict the
 
 [Research report](reports/paired_pilot_2026-09-13.md) · [Exact inputs and results](results/paired_pilot_2026-09-13) · [Next experiment](docs/controlled_replication.md)
 
+**New training diagnostic:** standardizing TDA on training molecules prevented early FiLM saturation: **0% saturated outputs versus 85.7% with raw features** after one epoch. Both arms used identical initial weights and minibatch order. This restores descriptor sensitivity; it does not yet show a topology-specific prediction benefit. [Diagnostic report](reports/conditioning_diagnostic_2026-09-13.md).
+
+![Controlled training diagnostic: standardization prevents early saturation and preserves descriptor sensitivity](results/conditioning_diagnostic_2026-09-13/conditioning.png)
+
 ## The result at a glance
 
 The pilot used **256 frozen validation molecules**, recovered checkpoints and identical perturbations across all three arms. Targets remain the original molecular gaps.
@@ -70,7 +74,7 @@ Our conclusion is to **pause topology-specific performance claims** and diagnose
 
 - All four historical clean validation/test MAEs reproduce within **7.22e-9 eV**, across 26,167 molecules.
 - All 256 selected original topology vectors match recomputation exactly; real-molecule symmetry and padding checks pass.
-- Nine software tests cover pairing, cache compatibility, frozen splits, checkpoint loading and aggregation.
+- Ten software tests cover pairing, cache compatibility, frozen splits, checkpoint loading, aggregation and training-only scaling.
 - Exact inputs, predictions, hashes, activation checks and measured compute are [archived](results/paired_pilot_2026-09-13). Original outputs remain unchanged.
 
 Full-test clean MAEs are **0.205111 eV for EGNN and 0.202298 eV for fusion**. Their paired molecule-bootstrap interval for the difference is [−0.005871, +0.000230] eV and crosses zero. Numerical reproduction does not establish a reliable topology advantage.
@@ -116,9 +120,9 @@ records recovered artifacts, software checks and execution status.
 
 The [archived pilot](results/paired_pilot_2026-09-13) includes per-molecule predictions, exact inputs, checksums, recovery checks and measured compute. Labels stay fixed: this tests input corruption, not the electronic properties of newly distorted molecules.
 
-The current cycle stops without a new training experiment. Further work should first address FiLM saturation, then compare independent training seeds on the fixed split with a capacity control and simple geometric descriptors. The Betti grids are fitted separately for each molecule; a shared, training-defined grid requires rebuilding the cache and retraining.
+The follow-up one-epoch diagnostic trained two newly initialized fusion models on 4,096 training molecules using the local RTX 3080 Ti. Standardization passed the conditioning check. The next comparison uses independent training seeds on the fixed split, a trained constant-conditioning control and simple geometric descriptors. The Betti grids remain fitted separately for each molecule; a shared, training-defined grid would require rebuilding the cache and retraining.
 
-The [next-step protocol](docs/controlled_replication.md) specifies a short conditioning diagnostic before controlled replication. Full clean metrics were reproduced, but the full-test paired molecule interval crosses zero; numerical reproduction alone does not establish a reliable advantage.
+The [next-step protocol](docs/controlled_replication.md) records the completed diagnostic and proposed controlled replication. Multi-seed replication has not run. Full historical clean metrics were reproduced, but the full-test paired molecule interval crosses zero; numerical reproduction alone does not establish a reliable advantage.
 
 ## Code and references
 
