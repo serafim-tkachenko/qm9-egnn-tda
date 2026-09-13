@@ -1,5 +1,13 @@
 # Original QM9 experiment record
 
+## 13 September 2026 — literature synthesis and project pause
+
+Compared the completed experiment with original EGNN, TopNets, molecular
+multiparameter persistence and stability literature. Added a source-linked
+comparison figure, protocol table, interpretation limits and restart criteria in
+[the final synthesis](research_synthesis_2026-09-13.md). Recommended pausing the
+current pipeline. No new training or changes to historical numerical artifacts.
+
 ## 13 September 2026 — completed four-arm replication
 
 All twelve models completed ten epochs: EGNN, standardized legacy TDA fusion,

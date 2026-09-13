@@ -1,0 +1,13 @@
+{
+  "review_date": "2026-09-13",
+  "metric": "QM9 HOMO-LUMO gap clean test MAE",
+  "unit": "meV",
+  "comparison_warning": "Different protocols; reference values are not a controlled ranking against our experiment. No uncertainty supplied for these cited entries.",
+  "points": [
+    {"label": "EGNN (2021)", "mae": 48, "source": "https://proceedings.mlr.press/v139/satorras21a/satorras21a.pdf", "location": "Table 3"},
+    {"label": "TopNets VC discrete", "mae": 47, "source": "https://arxiv.org/pdf/2406.03164", "location": "Table 4"},
+    {"label": "TopNets VC continuous", "mae": 49, "source": "https://arxiv.org/pdf/2406.03164", "location": "Table 4"},
+    {"label": "TopNets RePHINE discrete", "mae": 57, "source": "https://arxiv.org/pdf/2406.03164", "location": "Table 4"},
+    {"label": "TopNets RePHINE continuous", "mae": 50, "source": "https://arxiv.org/pdf/2406.03164", "location": "Table 4"}
+  ]
+}

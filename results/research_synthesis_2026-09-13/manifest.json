@@ -1,0 +1,8 @@
+{
+  "files": {
+    "results/research_synthesis_2026-09-13/references.json": "0133ece9e8ac0a70df7ce31a480cf982e66c1cd57cc3eaa0ae2e6c072b123a52",
+    "results/controlled_replication_2026-09-13/evaluation/summary.json": "3714125b23b6329f6d63660177a7b87cba6678cd8fbac4e6ee4e3b5ec2e4a68e",
+    "scripts/plot_research_synthesis.py": "5c49e52c0f545a28fdd4f230df4b97618979027a9081f75aaaf26bf944e94b8a",
+    "results/research_synthesis_2026-09-13/comparison.png": "771d2226cc5680b9e0de536b4ea6e31d664c41ffab3290ab580331895aca6bee"
+  }
+}

@@ -1,5 +1,9 @@
 # Controlled QM9 replication — 13 September 2026
 
+**Final context:** [literature comparison and pause decision](research_synthesis_2026-09-13.md).
+This is an internal replication across training seeds, not a reproduction of
+the published EGNN QM9 benchmark. The final synthesis documents that distinction.
+
 **The standardized legacy TDA model failed the predeclared comparison.** It had
 higher clean and matched-noise test MAE than all three controls in every training
 seed. Standardization restored descriptor sensitivity, but that sensitivity was

@@ -1,5 +1,19 @@
 # EGNN with topology features on QM9
 
+**Status: paused after controlled validation and literature review (13 September 2026).**
+The current pipeline produced a reproducible negative result. Before further
+topology experiments, the next milestone is a faithful, converged clean baseline.
+Our EGNN variant is not a reproduction of the original paper's QM9 benchmark.
+
+**[Final research synthesis: related works, comparison plots, limitations and restart criteria](reports/research_synthesis_2026-09-13.md)**
+
+![Clean-QM9 reference context and our results, under different protocols](results/research_synthesis_2026-09-13/comparison.png)
+
+Published values are context, not a controlled ranking against our ten-epoch
+experiment. Source links, implementation differences and uncertainty definitions
+are recorded in the final synthesis. The evidence does not establish a general
+failure of persistent homology or a topology-specific robustness benefit.
+
 This project tests whether persistent-homology features help an EGNN predict the QM9 HOMO–LUMO gap. I built a training and evaluation pipeline around `egnn_pytorch`, then added a FiLM-conditioned model using Betti curves and persistence entropy.
 
 **Current finding — 13 September 2026:** the completed four-arm, three-seed replication found **no benefit from standardized legacy TDA under this training budget**. TDA had higher clean and matched-noise test error than every control in all three seeds. Restoring descriptor sensitivity exposed substantial noise fragility.
