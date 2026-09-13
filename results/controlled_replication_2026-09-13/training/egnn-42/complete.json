@@ -1,0 +1,8 @@
+{
+  "best_sha256": "a388d26e24543bedd70dbc5f69db69342d53d08db82b701cc2e01d5078b5dbfb",
+  "best_val_mae_eV": 0.21713894331827902,
+  "epochs": 10,
+  "history_sha256": "2c47a55e1dccb5be834fe8003f6ebc262bddb686f24806f067af0767f059af86",
+  "initial_state_sha256": "7ff6be23e879a8313feae55a9c6b0613f7ce5bcdc71bdbf65887c005c7df32a5",
+  "manifest_sha256": "f21b77bfa6703e4b65a879a3444f0090338563e6bd619286b5136c248245531a"
+}

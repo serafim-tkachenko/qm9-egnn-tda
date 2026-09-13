@@ -1,0 +1,588 @@
+{
+  "comparisons": [
+    {
+      "control": "egnn",
+      "fixed_models_molecule_ci95_eV": [
+        0.0378755222064912,
+        0.04323827089743914
+      ],
+      "mean_difference_eV": 0.04051712596621777,
+      "relative_improvement": -0.18656347250720828,
+      "scope": "full_clean",
+      "seed_differences_eV": {
+        "42": 0.015602558076800792,
+        "43": 0.07205180333171624,
+        "44": 0.03389701649013625
+      },
+      "sigma": 0.0
+    },
+    {
+      "control": "geometry",
+      "fixed_models_molecule_ci95_eV": [
+        0.018329792007276996,
+        0.02422942017243687
+      ],
+      "mean_difference_eV": 0.021211257357972968,
+      "relative_improvement": -0.08969503321398295,
+      "scope": "full_clean",
+      "seed_differences_eV": {
+        "42": 0.027728238298199804,
+        "43": 0.010359107172478232,
+        "44": 0.025546426603240874
+      },
+      "sigma": 0.0
+    },
+    {
+      "control": "constant",
+      "fixed_models_molecule_ci95_eV": [
+        0.04099984540495196,
+        0.04658241341110521
+      ],
+      "mean_difference_eV": 0.04366971414946616,
+      "relative_improvement": -0.2040416742293962,
+      "scope": "full_clean",
+      "seed_differences_eV": {
+        "42": 0.026299211090400437,
+        "43": 0.08087016626149279,
+        "44": 0.02383976509650524
+      },
+      "sigma": 0.0
+    },
+    {
+      "control": "egnn",
+      "fixed_models_molecule_ci95_eV": [
+        0.02372845080875171,
+        0.043371577430904536
+      ],
+      "mean_difference_eV": 0.033352295169606805,
+      "relative_improvement": -0.15319799452145078,
+      "scope": "noise_subset",
+      "seed_differences_eV": {
+        "42": 0.014924475690349936,
+        "43": 0.054974272614344954,
+        "44": 0.030158137204125524
+      },
+      "sigma": 0.0
+    },
+    {
+      "control": "geometry",
+      "fixed_models_molecule_ci95_eV": [
+        0.001102653529960663,
+        0.021607500623213132
+      ],
+      "mean_difference_eV": 0.011278359141821664,
+      "relative_improvement": -0.0470360712556426,
+      "scope": "noise_subset",
+      "seed_differences_eV": {
+        "42": 0.02072430308908224,
+        "43": 0.0007163172122091055,
+        "44": 0.012394457124173641
+      },
+      "sigma": 0.0
+    },
+    {
+      "control": "constant",
+      "fixed_models_molecule_ci95_eV": [
+        0.02983138600053887,
+        0.049246305927711856
+      ],
+      "mean_difference_eV": 0.03912385522077481,
+      "relative_improvement": -0.18460259351561845,
+      "scope": "noise_subset",
+      "seed_differences_eV": {
+        "42": 0.034332721028476954,
+        "43": 0.06151622184552252,
+        "44": 0.021522622788324952
+      },
+      "sigma": 0.0
+    },
+    {
+      "control": "egnn",
+      "fixed_models_molecule_ci95_eV": [
+        0.07087196125713591,
+        0.09170232228482039
+      ],
+      "mean_difference_eV": 0.08109035208407375,
+      "relative_improvement": -0.3719760378272465,
+      "scope": "noise_subset",
+      "seed_differences_eV": {
+        "42": 0.05108266090974212,
+        "43": 0.11702888738363981,
+        "44": 0.07515950795883933
+      },
+      "sigma": 0.01
+    },
+    {
+      "control": "geometry",
+      "fixed_models_molecule_ci95_eV": [
+        0.04866069398315934,
+        0.07030000740843309
+      ],
+      "mean_difference_eV": 0.059338770806789405,
+      "relative_improvement": -0.24750223842580632,
+      "scope": "noise_subset",
+      "seed_differences_eV": {
+        "42": 0.05624309523651997,
+        "43": 0.06323659063006441,
+        "44": 0.05853662655378382
+      },
+      "sigma": 0.01
+    },
+    {
+      "control": "constant",
+      "fixed_models_molecule_ci95_eV": [
+        0.07603163051923426,
+        0.09769132058394865
+      ],
+      "mean_difference_eV": 0.08683051430206332,
+      "relative_improvement": -0.4090787106955277,
+      "scope": "noise_subset",
+      "seed_differences_eV": {
+        "42": 0.07047089810172717,
+        "43": 0.12314120098017156,
+        "44": 0.06687944382429123
+      },
+      "sigma": 0.01
+    },
+    {
+      "control": "egnn",
+      "fixed_models_molecule_ci95_eV": [
+        0.6852044046817658,
+        0.7628101860910342
+      ],
+      "mean_difference_eV": 0.7242051158617768,
+      "relative_improvement": -3.15481485630536,
+      "scope": "noise_subset",
+      "seed_differences_eV": {
+        "42": 0.6087516065842162,
+        "43": 0.8149007041938603,
+        "44": 0.748963036807254
+      },
+      "sigma": 0.05
+    },
+    {
+      "control": "geometry",
+      "fixed_models_molecule_ci95_eV": [
+        0.647799048030154,
+        0.7210505844152066
+      ],
+      "mean_difference_eV": 0.6845638037969669,
+      "relative_improvement": -2.542986252951645,
+      "scope": "noise_subset",
+      "seed_differences_eV": {
+        "42": 0.595595468999818,
+        "43": 0.7314358255825937,
+        "44": 0.726660116808489
+      },
+      "sigma": 0.05
+    },
+    {
+      "control": "constant",
+      "fixed_models_molecule_ci95_eV": [
+        0.6943535329069063,
+        0.7702838996683973
+      ],
+      "mean_difference_eV": 0.7322745233412005,
+      "relative_improvement": -3.3061873105225947,
+      "scope": "noise_subset",
+      "seed_differences_eV": {
+        "42": 0.6355264775144557,
+        "43": 0.8219403778202832,
+        "44": 0.7393567146888624
+      },
+      "sigma": 0.05
+    },
+    {
+      "control": "egnn",
+      "fixed_models_molecule_ci95_eV": [
+        0.9886807712758633,
+        1.089281287812628
+      ],
+      "mean_difference_eV": 1.038750716071162,
+      "relative_improvement": -3.5851811706563805,
+      "scope": "noise_subset",
+      "seed_differences_eV": {
+        "42": 0.9261402890551835,
+        "43": 1.1239209047829113,
+        "44": 1.0661909543753911
+      },
+      "sigma": 0.1
+    },
+    {
+      "control": "geometry",
+      "fixed_models_molecule_ci95_eV": [
+        0.8829019051556113,
+        0.9700686532557786
+      ],
+      "mean_difference_eV": 0.9252458792955924,
+      "relative_improvement": -2.2945327201897494,
+      "scope": "noise_subset",
+      "seed_differences_eV": {
+        "42": 0.8581487712605546,
+        "43": 0.9438263867050409,
+        "44": 0.9737624799211819
+      },
+      "sigma": 0.1
+    },
+    {
+      "control": "constant",
+      "fixed_models_molecule_ci95_eV": [
+        1.0102508367239758,
+        1.1106026829239757
+      ],
+      "mean_difference_eV": 1.0599034351503684,
+      "relative_improvement": -3.94629667390804,
+      "scope": "noise_subset",
+      "seed_differences_eV": {
+        "42": 0.9603131647842627,
+        "43": 1.1550447901245207,
+        "44": 1.0643523505423218
+      },
+      "sigma": 0.1
+    }
+  ],
+  "criterion_met": false,
+  "mae": [
+    {
+      "arm": "egnn",
+      "condition": "matched",
+      "mean_mae_eV": 0.21717609252074946,
+      "scope": "full_clean",
+      "seed_mae_eV": {
+        "42": 0.2177658057639228,
+        "43": 0.20131104345425158,
+        "44": 0.23245142834407406
+      },
+      "seed_sd_eV": 0.01557856585355185,
+      "sigma": 0.0
+    },
+    {
+      "arm": "tda",
+      "condition": "matched",
+      "mean_mae_eV": 0.2576932184869673,
+      "scope": "full_clean",
+      "seed_mae_eV": {
+        "42": 0.23336836384072357,
+        "43": 0.27336284678596784,
+        "44": 0.26634844483421033
+      },
+      "seed_sd_eV": 0.021355897870514992,
+      "sigma": 0.0
+    },
+    {
+      "arm": "geometry",
+      "condition": "matched",
+      "mean_mae_eV": 0.23648196112899425,
+      "scope": "full_clean",
+      "seed_mae_eV": {
+        "42": 0.20564012554252378,
+        "43": 0.26300373961348955,
+        "44": 0.24080201823096944
+      },
+      "seed_sd_eV": 0.028924785649057455,
+      "sigma": 0.0
+    },
+    {
+      "arm": "constant",
+      "condition": "matched",
+      "mean_mae_eV": 0.21402350433750109,
+      "scope": "full_clean",
+      "seed_mae_eV": {
+        "42": 0.20706915275032314,
+        "43": 0.19249268052447502,
+        "44": 0.24250867973770507
+      },
+      "seed_sd_eV": 0.025722991638279954,
+      "sigma": 0.0
+    },
+    {
+      "arm": "egnn",
+      "condition": "matched",
+      "mean_mae_eV": 0.21770712647897503,
+      "scope": "noise_subset",
+      "seed_mae_eV": {
+        "42": 0.21769513376057148,
+        "43": 0.20658077741973102,
+        "44": 0.22884546825662255
+      },
+      "seed_sd_eV": 0.011132350263289485,
+      "sigma": 0.0
+    },
+    {
+      "arm": "tda",
+      "condition": "matched",
+      "mean_mae_eV": 0.2510594216485818,
+      "scope": "noise_subset",
+      "seed_mae_eV": {
+        "42": 0.23261960945092142,
+        "43": 0.261555050034076,
+        "44": 0.2590036054607481
+      },
+      "seed_sd_eV": 0.016020220746495045,
+      "sigma": 0.0
+    },
+    {
+      "arm": "geometry",
+      "condition": "matched",
+      "mean_mae_eV": 0.23978106250676015,
+      "scope": "noise_subset",
+      "seed_mae_eV": {
+        "42": 0.21189530636183918,
+        "43": 0.26083873282186687,
+        "44": 0.24660914833657444
+      },
+      "seed_sd_eV": 0.02517601667235144,
+      "sigma": 0.0
+    },
+    {
+      "arm": "constant",
+      "condition": "matched",
+      "mean_mae_eV": 0.211935566427807,
+      "scope": "noise_subset",
+      "seed_mae_eV": {
+        "42": 0.19828688842244446,
+        "43": 0.20003882818855345,
+        "44": 0.23748098267242312
+      },
+      "seed_sd_eV": 0.022140314848010652,
+      "sigma": 0.0
+    },
+    {
+      "arm": "egnn",
+      "condition": "matched",
+      "mean_mae_eV": 0.21799885970540345,
+      "scope": "noise_subset",
+      "seed_mae_eV": {
+        "42": 0.2178032541802774,
+        "43": 0.20693741987148923,
+        "44": 0.22925590506444374
+      },
+      "seed_sd_eV": 0.011160528279079237,
+      "sigma": 0.01
+    },
+    {
+      "arm": "tda",
+      "condition": "matched",
+      "mean_mae_eV": 0.29908921178947717,
+      "scope": "noise_subset",
+      "seed_mae_eV": {
+        "42": 0.26888591509001947,
+        "43": 0.323966307255129,
+        "44": 0.3044154130232831
+      },
+      "seed_sd_eV": 0.027923801943016486,
+      "sigma": 0.01
+    },
+    {
+      "arm": "tda",
+      "condition": "clean_auxiliary",
+      "mean_mae_eV": 0.2510901697807842,
+      "scope": "noise_subset",
+      "seed_mae_eV": {
+        "42": 0.23248707526363432,
+        "43": 0.2617398755780111,
+        "44": 0.25904355850070715
+      },
+      "seed_sd_eV": 0.016167061441580803,
+      "sigma": 0.01
+    },
+    {
+      "arm": "geometry",
+      "condition": "matched",
+      "mean_mae_eV": 0.2397504409826878,
+      "scope": "noise_subset",
+      "seed_mae_eV": {
+        "42": 0.21264281985349953,
+        "43": 0.2607297166250646,
+        "44": 0.24587878646949926
+      },
+      "seed_sd_eV": 0.024622243481942925,
+      "sigma": 0.01
+    },
+    {
+      "arm": "geometry",
+      "condition": "clean_auxiliary",
+      "mean_mae_eV": 0.24018438377728066,
+      "scope": "noise_subset",
+      "seed_mae_eV": {
+        "42": 0.21237685857340693,
+        "43": 0.2609467504856487,
+        "44": 0.2472295422727863
+      },
+      "seed_sd_eV": 0.02503965442576651,
+      "sigma": 0.01
+    },
+    {
+      "arm": "constant",
+      "condition": "matched",
+      "mean_mae_eV": 0.21225869748741388,
+      "scope": "noise_subset",
+      "seed_mae_eV": {
+        "42": 0.19841501698829234,
+        "43": 0.20082510627495745,
+        "44": 0.23753596919899186
+      },
+      "seed_sd_eV": 0.021923902058669432,
+      "sigma": 0.01
+    },
+    {
+      "arm": "egnn",
+      "condition": "matched",
+      "mean_mae_eV": 0.22955550447416803,
+      "scope": "noise_subset",
+      "seed_mae_eV": {
+        "42": 0.23079286538995802,
+        "43": 0.21902852971106768,
+        "44": 0.23884511832147837
+      },
+      "seed_sd_eV": 0.009966072073064101,
+      "sigma": 0.05
+    },
+    {
+      "arm": "tda",
+      "condition": "matched",
+      "mean_mae_eV": 0.9537606203359448,
+      "scope": "noise_subset",
+      "seed_mae_eV": {
+        "42": 0.8395444719741741,
+        "43": 1.033929233904928,
+        "44": 0.9878081551287322
+      },
+      "seed_sd_eV": 0.10156665243483469,
+      "sigma": 0.05
+    },
+    {
+      "arm": "tda",
+      "condition": "clean_auxiliary",
+      "mean_mae_eV": 0.2556351995250831,
+      "scope": "noise_subset",
+      "seed_mae_eV": {
+        "42": 0.23482176413138708,
+        "43": 0.2669548168002317,
+        "44": 0.2651290176436305
+      },
+      "seed_sd_eV": 0.018048066525412902,
+      "sigma": 0.05
+    },
+    {
+      "arm": "geometry",
+      "condition": "matched",
+      "mean_mae_eV": 0.269196816538978,
+      "scope": "noise_subset",
+      "seed_mae_eV": {
+        "42": 0.24394900297435623,
+        "43": 0.3024934083223343,
+        "44": 0.26114803832024336
+      },
+      "seed_sd_eV": 0.030090679163120807,
+      "sigma": 0.05
+    },
+    {
+      "arm": "geometry",
+      "condition": "clean_auxiliary",
+      "mean_mae_eV": 0.2511266922164294,
+      "scope": "noise_subset",
+      "seed_mae_eV": {
+        "42": 0.22357543231919408,
+        "43": 0.2734147006024917,
+        "44": 0.25638994372760254
+      },
+      "seed_sd_eV": 0.02533307182530433,
+      "sigma": 0.05
+    },
+    {
+      "arm": "constant",
+      "condition": "matched",
+      "mean_mae_eV": 0.22148609699474442,
+      "scope": "noise_subset",
+      "seed_mae_eV": {
+        "42": 0.20401799445971847,
+        "43": 0.2119888560846448,
+        "44": 0.24845144043986997
+      },
+      "seed_sd_eV": 0.0236903138243484,
+      "sigma": 0.05
+    },
+    {
+      "arm": "egnn",
+      "condition": "matched",
+      "mean_mae_eV": 0.28973451176554793,
+      "scope": "noise_subset",
+      "seed_mae_eV": {
+        "42": 0.3009754322314014,
+        "43": 0.28835127813120687,
+        "44": 0.27987682493403554
+      },
+      "seed_sd_eV": 0.010617099836466365,
+      "sigma": 0.1
+    },
+    {
+      "arm": "tda",
+      "condition": "matched",
+      "mean_mae_eV": 1.3284852278367099,
+      "scope": "noise_subset",
+      "seed_mae_eV": {
+        "42": 1.227115721286585,
+        "43": 1.412272182914118,
+        "44": 1.346067779309427
+      },
+      "seed_sd_eV": 0.09382211044218242,
+      "sigma": 0.1
+    },
+    {
+      "arm": "tda",
+      "condition": "clean_auxiliary",
+      "mean_mae_eV": 0.271063172749968,
+      "scope": "noise_subset",
+      "seed_mae_eV": {
+        "42": 0.24297855305485427,
+        "43": 0.28573754243552685,
+        "44": 0.284473422759523
+      },
+      "seed_sd_eV": 0.024330205449259852,
+      "sigma": 0.1
+    },
+    {
+      "arm": "geometry",
+      "condition": "matched",
+      "mean_mae_eV": 0.40323934854111737,
+      "scope": "noise_subset",
+      "seed_mae_eV": {
+        "42": 0.3689669500260303,
+        "43": 0.468445796209077,
+        "44": 0.37230529938824475
+      },
+      "seed_sd_eV": 0.0564951038340653,
+      "sigma": 0.1
+    },
+    {
+      "arm": "geometry",
+      "condition": "clean_auxiliary",
+      "mean_mae_eV": 0.31444410255385774,
+      "scope": "noise_subset",
+      "seed_mae_eV": {
+        "42": 0.29009176860563457,
+        "43": 0.3396987638746699,
+        "44": 0.31354177518126863
+      },
+      "seed_sd_eV": 0.02481580425698543,
+      "sigma": 0.1
+    },
+    {
+      "arm": "constant",
+      "condition": "matched",
+      "mean_mae_eV": 0.26858179268634147,
+      "scope": "noise_subset",
+      "seed_mae_eV": {
+        "42": 0.2668025565023224,
+        "43": 0.2572273927895973,
+        "44": 0.2817154287671049
+      },
+      "seed_sd_eV": 0.012340593079662725,
+      "sigma": 0.1
+    }
+  ],
+  "prediction_rows": 335184,
+  "uncertainty": "molecule intervals condition on these 12 checkpoints; seed SD/differences reported separately",
+  "wall_seconds": 87.1489651999982
+}

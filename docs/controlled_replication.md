@@ -1,8 +1,16 @@
-# Proposed controlled replication
+# Executed controlled replication
 
 Status: the bounded diagnostic below **completed on 13 September 2026**;
-the four-arm multi-seed replication remains proposed. The completed checkpoint
+the four-arm multi-seed replication **also completed**, with 120 training epochs
+and paired test evaluation. The completed checkpoint
 validation is in the [pilot report](../reports/paired_pilot_2026-09-13.md).
+
+The [replication report](../reports/controlled_replication_2026-09-13.md) records
+a negative result: TDA had higher full-clean and matched 0.10 Å test MAE than
+every control in all three seeds. Mean noisy MAEs were 1.32849 eV (TDA), 0.28973
+(EGNN), 0.40324 (geometry) and 0.26858 (constant). The frozen criterion failed.
+Several late optimization spikes limit conclusions beyond this optimizer and
+ten-epoch budget. The protocol below preserves the choices made before outcomes.
 
 The [training diagnostic](../reports/conditioning_diagnostic_2026-09-13.md)
 used scaling fitted on its 4,096 training molecules only. Standardization gave
@@ -11,6 +19,30 @@ descriptor sensitivity. The gate passed; retain standardization for replication
 and refit the scaler on the full training split. This is a functioning-path
 result, not evidence of superior predictive accuracy. No initialization or
 descriptor-definition change was combined with scaling.
+
+## Frozen replication execution
+
+The executable `scripts/run_controlled_replication.py` freezes seeds 42/43/44,
+ten epochs per arm, all 104,664 training molecules and all 13,083 validation
+molecules. Scaling is refitted on the full training split. Within each seed,
+all arms share encoder/head initialization and training order; TDA and constant
+fusion also share the initial FiLM weights. The simple-geometry arm retains its
+separately dimensioned, nearly parameter-matched FiLM network.
+
+Before outcomes, the noise evaluation subset was fixed to the first 1,024 test
+IDs to bound the initial comparison; clean evaluation retains all 13,084 test
+molecules. All three prescribed noise seeds and four noise levels are retained.
+The practical criterion is a mean MAE at 0.10 Å at least 1% below **each** control,
+with an improvement in all three model seeds. This is a working research
+criterion, not a universal significance threshold. Molecule-bootstrap intervals
+condition on the fitted models and are reported separately from training-seed
+variation. No epoch extension is permitted within this frozen run.
+
+The first full EGNN epoch took 35.60 seconds for training and 37.35 seconds with
+validation on the local RTX 3080 Ti. Compact train/validation feature preparation
+took 94.55 seconds. Batches are assembled from GPU-resident arrays, with padding
+trimmed to the largest molecule in each batch. This preserves the original
+batch size and float32 computations while avoiding repeated dataset I/O.
 
 The next question is whether a fusion model can learn useful molecule-specific
 conditioning once saturation is controlled, and whether topology improves on

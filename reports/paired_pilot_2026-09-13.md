@@ -11,6 +11,9 @@ Subsequent work: the separately archived
 [one-epoch training diagnostic](conditioning_diagnostic_2026-09-13.md) passed
 the conditioning gate using training-standardized features. It does not alter
 the historical checkpoint findings below or establish a topology advantage.
+The later [four-arm replication](controlled_replication_2026-09-13.md) completed
+three seeds and found higher error for standardized TDA than all controls on
+the full clean test set and matched 0.10 Å test subset.
 
 ## Paired result
 

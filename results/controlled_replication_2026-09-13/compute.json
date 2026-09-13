@@ -1,0 +1,9 @@
+{
+  "colab_runtime_used": false,
+  "evaluation_seconds": 87.1489651999982,
+  "gpu": "NVIDIA GeForce RTX 3080 Ti",
+  "preprocessing_seconds": 94.54994769999757,
+  "summed_train_validation_seconds": 4809.433923699988,
+  "summed_training_seconds": 4602.70019109999,
+  "timing_limit": "Phase times exclude inter-epoch checkpoint I/O, some batch assembly and orchestration; concurrent software tests affected early timings"
+}

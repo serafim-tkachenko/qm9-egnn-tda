@@ -5,6 +5,12 @@ one-epoch experiment.** Raw and standardized TDA arms started from identical
 weights and received the same minibatches. This supports standardization for the
 next replication; it does not establish a topology-specific accuracy advantage.
 
+Follow-up: the [full controlled replication](controlled_replication_2026-09-13.md)
+has now completed and failed its TDA performance criterion. Standardized TDA
+remained responsive but was strongly noise-sensitive; several training runs
+also developed late optimization spikes. The one-epoch findings below remain
+valid as a bounded diagnostic, not a guarantee of stable full training.
+
 ![Saturation, descriptor sensitivity and training losses](../results/conditioning_diagnostic_2026-09-13/conditioning.png)
 
 ## Frozen experiment
@@ -71,8 +77,8 @@ The decision is to retain training-only standardization and the existing
 descriptor definition for the proposed four-arm replication: EGNN, standardized
 TDA fusion, simple-geometry fusion and a trained constant-conditioning control.
 No smaller-output initialization or shared-grid redesign was needed for this
-gate. The [replication protocol](../docs/controlled_replication.md) remains the
-next experiment; its multi-seed results are **not yet available**. In particular,
+gate. The [replication protocol](../docs/controlled_replication.md) specified the
+subsequent experiment, whose results are now linked above. In particular,
 the one-epoch MAE difference is not a basis for a performance claim or for
 selecting a winner.
 

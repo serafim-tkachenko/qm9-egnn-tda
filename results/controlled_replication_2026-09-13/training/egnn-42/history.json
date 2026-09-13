@@ -1,0 +1,112 @@
+[
+  {
+    "epoch": 1,
+    "film_gradient_max": null,
+    "film_gradient_min": null,
+    "order_sha256": "493070cb0488e3901bd64fe36413ec075c6f17b2a466f4609738c162ef183401",
+    "saturation_fraction": null,
+    "train_and_validation_seconds": 37.34745169999951,
+    "train_mse_eV2": 0.8573161792720502,
+    "training_seconds": 35.5975881000013,
+    "val_mae_eV": 0.5313342921843015
+  },
+  {
+    "epoch": 2,
+    "film_gradient_max": null,
+    "film_gradient_min": null,
+    "order_sha256": "cbcd39029bfe57842c5f5747a36478148c02241ea486b4bb6677b385f8e25106",
+    "saturation_fraction": null,
+    "train_and_validation_seconds": 42.3129506999976,
+    "train_mse_eV2": 0.3556267059681695,
+    "training_seconds": 40.58346359999996,
+    "val_mae_eV": 0.3674798300805136
+  },
+  {
+    "epoch": 3,
+    "film_gradient_max": null,
+    "film_gradient_min": null,
+    "order_sha256": "904ee6623d48875734573bf3eab08052544f2962281bad005ab0fcee831e8403",
+    "saturation_fraction": null,
+    "train_and_validation_seconds": 41.197637099998246,
+    "train_mse_eV2": 0.207103831067523,
+    "training_seconds": 39.426844300000084,
+    "val_mae_eV": 0.31487462098359936
+  },
+  {
+    "epoch": 4,
+    "film_gradient_max": null,
+    "film_gradient_min": null,
+    "order_sha256": "ea62b84570c0feb41496eab12c9e74c837a9cc188eb0920d4bcd9f7ec2bca585",
+    "saturation_fraction": null,
+    "train_and_validation_seconds": 38.054488700003276,
+    "train_mse_eV2": 0.1618778585127932,
+    "training_seconds": 36.30367670000123,
+    "val_mae_eV": 0.27193984738969296
+  },
+  {
+    "epoch": 5,
+    "film_gradient_max": null,
+    "film_gradient_min": null,
+    "order_sha256": "a087df5d4a09e98743b1a5a01fb437701d43eda17c409b7f8b44dac235c45971",
+    "saturation_fraction": null,
+    "train_and_validation_seconds": 38.127014300000155,
+    "train_mse_eV2": 0.14278684174644102,
+    "training_seconds": 36.37417229999846,
+    "val_mae_eV": 0.26160037141231496
+  },
+  {
+    "epoch": 6,
+    "film_gradient_max": null,
+    "film_gradient_min": null,
+    "order_sha256": "3eaae2868dee7fae1bc8d9564c637455d24470c8246523c39100aca4dadecfa6",
+    "saturation_fraction": null,
+    "train_and_validation_seconds": 37.61760839999988,
+    "train_mse_eV2": 0.1301239170102746,
+    "training_seconds": 35.8936328000018,
+    "val_mae_eV": 0.28358110885485993
+  },
+  {
+    "epoch": 7,
+    "film_gradient_max": null,
+    "film_gradient_min": null,
+    "order_sha256": "52fedaaa183d66c625433707dbc089786568c690e05e1fe4d2d74797fd059a46",
+    "saturation_fraction": null,
+    "train_and_validation_seconds": 37.48680719999902,
+    "train_mse_eV2": 0.12635741125031147,
+    "training_seconds": 35.77127570000084,
+    "val_mae_eV": 0.21713894331827902
+  },
+  {
+    "epoch": 8,
+    "film_gradient_max": null,
+    "film_gradient_min": null,
+    "order_sha256": "854ec96bd2114018c8e38dedb927aa9e27b4056cb55a7f2fe8d79fde79c8219d",
+    "saturation_fraction": null,
+    "train_and_validation_seconds": 37.960685500002,
+    "train_mse_eV2": 0.0951383932955124,
+    "training_seconds": 36.21948500000144,
+    "val_mae_eV": 0.22400131774478974
+  },
+  {
+    "epoch": 9,
+    "film_gradient_max": null,
+    "film_gradient_min": null,
+    "order_sha256": "de95d2d72657ccded6d743f35bf655fb6a644c67865ab279f19c832edf355afb",
+    "saturation_fraction": null,
+    "train_and_validation_seconds": 37.57210470000064,
+    "train_mse_eV2": 0.09638515065125093,
+    "training_seconds": 35.84488649999912,
+    "val_mae_eV": 0.22359904129097133
+  },
+  {
+    "epoch": 10,
+    "film_gradient_max": null,
+    "film_gradient_min": null,
+    "order_sha256": "0dacc6908862a416765127d4417f8b22379372ff26239acbc606eac9322999d8",
+    "saturation_fraction": null,
+    "train_and_validation_seconds": 38.18894849999924,
+    "train_mse_eV2": 0.07819879321371626,
+    "training_seconds": 36.425558699997055,
+    "val_mae_eV": 0.21763295798566668
+  }
+]

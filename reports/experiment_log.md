@@ -1,5 +1,26 @@
 # Original QM9 experiment record
 
+## 13 September 2026 — completed four-arm replication
+
+All twelve models completed ten epochs: EGNN, standardized legacy TDA fusion,
+simple-geometry fusion and trained constant fusion, each with seeds 42/43/44.
+The fixed split and training-only scalers were preserved, with shared
+encoder/head initialization and minibatch order within each seed.
+
+At paired noise 0.10 Å on 1,024 test molecules with three noise draws, mean MAEs
+were 0.28973, 1.32849, 0.40324 and 0.26858 eV respectively. TDA also had higher
+full-clean test error than each control in all three seeds. Its clean-auxiliary
+noise score was 0.27106 eV, emphasizing the difference between the two scenarios.
+The predeclared performance criterion failed. Descriptor sensitivity was
+restored, but several runs had late optimization spikes, so the result is
+specific to this representation and fixed training budget.
+
+The [report](controlled_replication_2026-09-13.md) and
+[archive](../results/controlled_replication_2026-09-13) include all histories,
+335,184 predictions, exact evaluation inputs, scalers, hashes, feature checks
+and measured compute. Thirteen tests passed. Local GPU training plus validation
+summed to 80.16 minutes; no Colab runtime was used. Original results remain below.
+
 ## 13 September 2026 — new conditioning training diagnostic
 
 After the checkpoint analysis, two newly initialized fusion arms were trained

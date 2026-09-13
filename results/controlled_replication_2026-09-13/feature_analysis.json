@@ -1,0 +1,712 @@
+{
+  "checks": {
+    "exact_coordinate_noise_and_geometry_rows": 10240,
+    "fixed_membership_atoms_labels": true,
+    "recomputed_tda_vectors": 80
+  },
+  "conditions": [
+    {
+      "geometry": {
+        "fraction_changed_molecules": 0.0,
+        "fraction_entries_outside_training_range": 0.0,
+        "max_absolute_standardized_feature": 13.836883354760344,
+        "mean_per_molecule_rms_standardized_change": 0.0,
+        "top_feature_rms_standardized_changes": [
+          {
+            "index": 9,
+            "rms": 0.0,
+            "training_scale": 0.3393885688152596
+          },
+          {
+            "index": 8,
+            "rms": 0.0,
+            "training_scale": 0.9795522136728853
+          },
+          {
+            "index": 7,
+            "rms": 0.0,
+            "training_scale": 0.052082188496919715
+          },
+          {
+            "index": 6,
+            "rms": 0.0,
+            "training_scale": 0.24330261032625772
+          },
+          {
+            "index": 5,
+            "rms": 0.0,
+            "training_scale": 0.2710225073898397
+          }
+        ]
+      },
+      "noise_seed": 0,
+      "sigma": 0.0,
+      "tda": {
+        "fraction_changed_molecules": 0.0,
+        "fraction_entries_outside_training_range": 0.0,
+        "max_absolute_standardized_feature": 8.068378558001108,
+        "mean_per_molecule_rms_standardized_change": 0.0,
+        "top_feature_rms_standardized_changes": [
+          {
+            "index": 129,
+            "rms": 0.0,
+            "training_scale": 0.7709251361818856
+          },
+          {
+            "index": 32,
+            "rms": 0.0,
+            "training_scale": 2.941741955978009
+          },
+          {
+            "index": 34,
+            "rms": 0.0,
+            "training_scale": 2.941741955978009
+          },
+          {
+            "index": 35,
+            "rms": 0.0,
+            "training_scale": 2.941741955978009
+          },
+          {
+            "index": 36,
+            "rms": 0.0,
+            "training_scale": 2.941741955978009
+          }
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "fraction_changed_molecules": 1.0,
+        "fraction_entries_outside_training_range": 0.01416015625,
+        "max_absolute_standardized_feature": 13.836883354760344,
+        "mean_per_molecule_rms_standardized_change": 0.07690284561784709,
+        "top_feature_rms_standardized_changes": [
+          {
+            "index": 7,
+            "rms": 0.2933746101366519,
+            "training_scale": 0.052082188496919715
+          },
+          {
+            "index": 8,
+            "rms": 0.014075345029498617,
+            "training_scale": 0.9795522136728853
+          },
+          {
+            "index": 5,
+            "rms": 0.012782731244026025,
+            "training_scale": 0.2710225073898397
+          },
+          {
+            "index": 9,
+            "rms": 0.010789968368830095,
+            "training_scale": 0.3393885688152596
+          },
+          {
+            "index": 6,
+            "rms": 0.006834944773834662,
+            "training_scale": 0.24330261032625772
+          }
+        ]
+      },
+      "noise_seed": 20260913,
+      "sigma": 0.01,
+      "tda": {
+        "fraction_changed_molecules": 1.0,
+        "fraction_entries_outside_training_range": 0.0,
+        "max_absolute_standardized_feature": 7.927646239333363,
+        "mean_per_molecule_rms_standardized_change": 0.2601440948856891,
+        "top_feature_rms_standardized_changes": [
+          {
+            "index": 46,
+            "rms": 0.8435128456393222,
+            "training_scale": 1.454790672244491
+          },
+          {
+            "index": 62,
+            "rms": 0.8298459767619851,
+            "training_scale": 1.3446449379845185
+          },
+          {
+            "index": 45,
+            "rms": 0.7604257295029409,
+            "training_scale": 3.1728736611092985
+          },
+          {
+            "index": 44,
+            "rms": 0.6999984472827394,
+            "training_scale": 3.4302527360713655
+          },
+          {
+            "index": 65,
+            "rms": 0.6918426627685397,
+            "training_scale": 0.5344495307127795
+          }
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "fraction_changed_molecules": 1.0,
+        "fraction_entries_outside_training_range": 0.01259765625,
+        "max_absolute_standardized_feature": 13.836883354760344,
+        "mean_per_molecule_rms_standardized_change": 0.07784182423437003,
+        "top_feature_rms_standardized_changes": [
+          {
+            "index": 7,
+            "rms": 0.2975128337434081,
+            "training_scale": 0.052082188496919715
+          },
+          {
+            "index": 8,
+            "rms": 0.013869823407448915,
+            "training_scale": 0.9795522136728853
+          },
+          {
+            "index": 5,
+            "rms": 0.011938990255507471,
+            "training_scale": 0.2710225073898397
+          },
+          {
+            "index": 9,
+            "rms": 0.01016656615095086,
+            "training_scale": 0.3393885688152596
+          },
+          {
+            "index": 6,
+            "rms": 0.006844651002463706,
+            "training_scale": 0.24330261032625772
+          }
+        ]
+      },
+      "noise_seed": 20260914,
+      "sigma": 0.01,
+      "tda": {
+        "fraction_changed_molecules": 1.0,
+        "fraction_entries_outside_training_range": 1.5024038461538462e-05,
+        "max_absolute_standardized_feature": 7.9723995922064095,
+        "mean_per_molecule_rms_standardized_change": 0.2630491784744978,
+        "top_feature_rms_standardized_changes": [
+          {
+            "index": 62,
+            "rms": 0.8304965813125381,
+            "training_scale": 1.3446449379845185
+          },
+          {
+            "index": 46,
+            "rms": 0.7979745804404109,
+            "training_scale": 1.454790672244491
+          },
+          {
+            "index": 45,
+            "rms": 0.7723239251693637,
+            "training_scale": 3.1728736611092985
+          },
+          {
+            "index": 65,
+            "rms": 0.7113350022716148,
+            "training_scale": 0.5344495307127795
+          },
+          {
+            "index": 126,
+            "rms": 0.707913755092022,
+            "training_scale": 0.3771647536449765
+          }
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "fraction_changed_molecules": 1.0,
+        "fraction_entries_outside_training_range": 0.0123046875,
+        "max_absolute_standardized_feature": 13.836883354760344,
+        "mean_per_molecule_rms_standardized_change": 0.07770918343108318,
+        "top_feature_rms_standardized_changes": [
+          {
+            "index": 7,
+            "rms": 0.29843027777110814,
+            "training_scale": 0.052082188496919715
+          },
+          {
+            "index": 8,
+            "rms": 0.014233739937975476,
+            "training_scale": 0.9795522136728853
+          },
+          {
+            "index": 5,
+            "rms": 0.012242353775493868,
+            "training_scale": 0.2710225073898397
+          },
+          {
+            "index": 9,
+            "rms": 0.010426093667645187,
+            "training_scale": 0.3393885688152596
+          },
+          {
+            "index": 6,
+            "rms": 0.0070904660864549995,
+            "training_scale": 0.24330261032625772
+          }
+        ]
+      },
+      "noise_seed": 20260915,
+      "sigma": 0.01,
+      "tda": {
+        "fraction_changed_molecules": 1.0,
+        "fraction_entries_outside_training_range": 0.0,
+        "max_absolute_standardized_feature": 7.935287862774583,
+        "mean_per_molecule_rms_standardized_change": 0.2580382669363077,
+        "top_feature_rms_standardized_changes": [
+          {
+            "index": 62,
+            "rms": 0.8223270281796612,
+            "training_scale": 1.3446449379845185
+          },
+          {
+            "index": 45,
+            "rms": 0.8015389285380048,
+            "training_scale": 3.1728736611092985
+          },
+          {
+            "index": 46,
+            "rms": 0.7697186788188781,
+            "training_scale": 1.454790672244491
+          },
+          {
+            "index": 44,
+            "rms": 0.6921290271666541,
+            "training_scale": 3.4302527360713655
+          },
+          {
+            "index": 65,
+            "rms": 0.6692354986608273,
+            "training_scale": 0.5344495307127795
+          }
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "fraction_changed_molecules": 1.0,
+        "fraction_entries_outside_training_range": 0.04013671875,
+        "max_absolute_standardized_feature": 13.836883354760344,
+        "mean_per_molecule_rms_standardized_change": 0.4244313799147119,
+        "top_feature_rms_standardized_changes": [
+          {
+            "index": 7,
+            "rms": 1.5845843254752752,
+            "training_scale": 0.052082188496919715
+          },
+          {
+            "index": 8,
+            "rms": 0.07256735825549837,
+            "training_scale": 0.9795522136728853
+          },
+          {
+            "index": 5,
+            "rms": 0.06107895226917046,
+            "training_scale": 0.2710225073898397
+          },
+          {
+            "index": 9,
+            "rms": 0.05234494910351871,
+            "training_scale": 0.3393885688152596
+          },
+          {
+            "index": 6,
+            "rms": 0.03632771222666498,
+            "training_scale": 0.24330261032625772
+          }
+        ]
+      },
+      "noise_seed": 20260913,
+      "sigma": 0.05,
+      "tda": {
+        "fraction_changed_molecules": 1.0,
+        "fraction_entries_outside_training_range": 0.0009164663461538462,
+        "max_absolute_standardized_feature": 9.303812238577212,
+        "mean_per_molecule_rms_standardized_change": 0.6915768080270415,
+        "top_feature_rms_standardized_changes": [
+          {
+            "index": 48,
+            "rms": 2.094519850863983,
+            "training_scale": 0.7248056038046928
+          },
+          {
+            "index": 47,
+            "rms": 2.033943647498412,
+            "training_scale": 0.9965460257542704
+          },
+          {
+            "index": 46,
+            "rms": 1.8055336920708638,
+            "training_scale": 1.454790672244491
+          },
+          {
+            "index": 49,
+            "rms": 1.5989744782681585,
+            "training_scale": 0.7493197113691623
+          },
+          {
+            "index": 55,
+            "rms": 1.538662003663755,
+            "training_scale": 0.9872761670366499
+          }
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "fraction_changed_molecules": 1.0,
+        "fraction_entries_outside_training_range": 0.03984375,
+        "max_absolute_standardized_feature": 13.836883354760344,
+        "mean_per_molecule_rms_standardized_change": 0.4131420489846232,
+        "top_feature_rms_standardized_changes": [
+          {
+            "index": 7,
+            "rms": 1.5781525317280425,
+            "training_scale": 0.052082188496919715
+          },
+          {
+            "index": 8,
+            "rms": 0.07298705965713612,
+            "training_scale": 0.9795522136728853
+          },
+          {
+            "index": 5,
+            "rms": 0.06421314900134352,
+            "training_scale": 0.2710225073898397
+          },
+          {
+            "index": 9,
+            "rms": 0.05470521052213863,
+            "training_scale": 0.3393885688152596
+          },
+          {
+            "index": 6,
+            "rms": 0.03671679446752327,
+            "training_scale": 0.24330261032625772
+          }
+        ]
+      },
+      "noise_seed": 20260914,
+      "sigma": 0.05,
+      "tda": {
+        "fraction_changed_molecules": 1.0,
+        "fraction_entries_outside_training_range": 0.0009164663461538462,
+        "max_absolute_standardized_feature": 10.011711712273009,
+        "mean_per_molecule_rms_standardized_change": 0.6739653188880478,
+        "top_feature_rms_standardized_changes": [
+          {
+            "index": 48,
+            "rms": 2.0442152918156204,
+            "training_scale": 0.7248056038046928
+          },
+          {
+            "index": 47,
+            "rms": 2.0076667169479827,
+            "training_scale": 0.9965460257542704
+          },
+          {
+            "index": 46,
+            "rms": 1.8330522784739343,
+            "training_scale": 1.454790672244491
+          },
+          {
+            "index": 49,
+            "rms": 1.58751214784352,
+            "training_scale": 0.7493197113691623
+          },
+          {
+            "index": 57,
+            "rms": 1.4774412088037705,
+            "training_scale": 1.343573975103805
+          }
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "fraction_changed_molecules": 1.0,
+        "fraction_entries_outside_training_range": 0.03984375,
+        "max_absolute_standardized_feature": 13.836883354760344,
+        "mean_per_molecule_rms_standardized_change": 0.4176205640985555,
+        "top_feature_rms_standardized_changes": [
+          {
+            "index": 7,
+            "rms": 1.5912625962340607,
+            "training_scale": 0.052082188496919715
+          },
+          {
+            "index": 8,
+            "rms": 0.07214117375726839,
+            "training_scale": 0.9795522136728853
+          },
+          {
+            "index": 5,
+            "rms": 0.059222497014012845,
+            "training_scale": 0.2710225073898397
+          },
+          {
+            "index": 9,
+            "rms": 0.0504512100299715,
+            "training_scale": 0.3393885688152596
+          },
+          {
+            "index": 6,
+            "rms": 0.034311641971411774,
+            "training_scale": 0.24330261032625772
+          }
+        ]
+      },
+      "noise_seed": 20260915,
+      "sigma": 0.05,
+      "tda": {
+        "fraction_changed_molecules": 1.0,
+        "fraction_entries_outside_training_range": 0.0008638822115384615,
+        "max_absolute_standardized_feature": 8.755339053187566,
+        "mean_per_molecule_rms_standardized_change": 0.6789799429926087,
+        "top_feature_rms_standardized_changes": [
+          {
+            "index": 48,
+            "rms": 2.018132461490607,
+            "training_scale": 0.7248056038046928
+          },
+          {
+            "index": 47,
+            "rms": 1.9467425229333668,
+            "training_scale": 0.9965460257542704
+          },
+          {
+            "index": 46,
+            "rms": 1.8114020428673514,
+            "training_scale": 1.454790672244491
+          },
+          {
+            "index": 49,
+            "rms": 1.5732049874442517,
+            "training_scale": 0.7493197113691623
+          },
+          {
+            "index": 56,
+            "rms": 1.54462186291652,
+            "training_scale": 1.1523071769012396
+          }
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "fraction_changed_molecules": 1.0,
+        "fraction_entries_outside_training_range": 0.08037109375,
+        "max_absolute_standardized_feature": 13.836883354760344,
+        "mean_per_molecule_rms_standardized_change": 0.8936574291236787,
+        "top_feature_rms_standardized_changes": [
+          {
+            "index": 7,
+            "rms": 3.2998636125658964,
+            "training_scale": 0.052082188496919715
+          },
+          {
+            "index": 8,
+            "rms": 0.14438475032515186,
+            "training_scale": 0.9795522136728853
+          },
+          {
+            "index": 5,
+            "rms": 0.12721353820193768,
+            "training_scale": 0.2710225073898397
+          },
+          {
+            "index": 9,
+            "rms": 0.1085399326599184,
+            "training_scale": 0.3393885688152596
+          },
+          {
+            "index": 6,
+            "rms": 0.0735948517424679,
+            "training_scale": 0.24330261032625772
+          }
+        ]
+      },
+      "noise_seed": 20260913,
+      "sigma": 0.1,
+      "tda": {
+        "fraction_changed_molecules": 1.0,
+        "fraction_entries_outside_training_range": 0.0030123197115384617,
+        "max_absolute_standardized_feature": 11.391391994476596,
+        "mean_per_molecule_rms_standardized_change": 1.0568732445666371,
+        "top_feature_rms_standardized_changes": [
+          {
+            "index": 48,
+            "rms": 3.165064545565067,
+            "training_scale": 0.7248056038046928
+          },
+          {
+            "index": 55,
+            "rms": 2.9660833913184033,
+            "training_scale": 0.9872761670366499
+          },
+          {
+            "index": 54,
+            "rms": 2.859694640350423,
+            "training_scale": 0.9293720189130426
+          },
+          {
+            "index": 49,
+            "rms": 2.8502817898687267,
+            "training_scale": 0.7493197113691623
+          },
+          {
+            "index": 56,
+            "rms": 2.7400096071339455,
+            "training_scale": 1.1523071769012396
+          }
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "fraction_changed_molecules": 1.0,
+        "fraction_entries_outside_training_range": 0.0802734375,
+        "max_absolute_standardized_feature": 13.836883354760344,
+        "mean_per_molecule_rms_standardized_change": 0.8653125872542228,
+        "top_feature_rms_standardized_changes": [
+          {
+            "index": 7,
+            "rms": 3.1924192840801586,
+            "training_scale": 0.052082188496919715
+          },
+          {
+            "index": 8,
+            "rms": 0.14433428158947284,
+            "training_scale": 0.9795522136728853
+          },
+          {
+            "index": 5,
+            "rms": 0.12715070080862814,
+            "training_scale": 0.2710225073898397
+          },
+          {
+            "index": 9,
+            "rms": 0.10828953427552979,
+            "training_scale": 0.3393885688152596
+          },
+          {
+            "index": 6,
+            "rms": 0.0708195218166696,
+            "training_scale": 0.24330261032625772
+          }
+        ]
+      },
+      "noise_seed": 20260914,
+      "sigma": 0.1,
+      "tda": {
+        "fraction_changed_molecules": 1.0,
+        "fraction_entries_outside_training_range": 0.0025916466346153845,
+        "max_absolute_standardized_feature": 11.391391994476596,
+        "mean_per_molecule_rms_standardized_change": 1.0555866558632672,
+        "top_feature_rms_standardized_changes": [
+          {
+            "index": 48,
+            "rms": 3.0684440171375185,
+            "training_scale": 0.7248056038046928
+          },
+          {
+            "index": 55,
+            "rms": 2.9887968605431503,
+            "training_scale": 0.9872761670366499
+          },
+          {
+            "index": 54,
+            "rms": 2.925748910385259,
+            "training_scale": 0.9293720189130426
+          },
+          {
+            "index": 49,
+            "rms": 2.824228879953378,
+            "training_scale": 0.7493197113691623
+          },
+          {
+            "index": 56,
+            "rms": 2.7472473303909717,
+            "training_scale": 1.1523071769012396
+          }
+        ]
+      }
+    },
+    {
+      "geometry": {
+        "fraction_changed_molecules": 1.0,
+        "fraction_entries_outside_training_range": 0.08046875,
+        "max_absolute_standardized_feature": 13.836883354760344,
+        "mean_per_molecule_rms_standardized_change": 0.8829658644034537,
+        "top_feature_rms_standardized_changes": [
+          {
+            "index": 7,
+            "rms": 3.2373881453145548,
+            "training_scale": 0.052082188496919715
+          },
+          {
+            "index": 8,
+            "rms": 0.13890884133232106,
+            "training_scale": 0.9795522136728853
+          },
+          {
+            "index": 5,
+            "rms": 0.12565563528264934,
+            "training_scale": 0.2710225073898397
+          },
+          {
+            "index": 9,
+            "rms": 0.10727443164198036,
+            "training_scale": 0.3393885688152596
+          },
+          {
+            "index": 6,
+            "rms": 0.07186435556399937,
+            "training_scale": 0.24330261032625772
+          }
+        ]
+      },
+      "noise_seed": 20260915,
+      "sigma": 0.1,
+      "tda": {
+        "fraction_changed_molecules": 1.0,
+        "fraction_entries_outside_training_range": 0.0029296875,
+        "max_absolute_standardized_feature": 10.011711712273009,
+        "mean_per_molecule_rms_standardized_change": 1.060036471654727,
+        "top_feature_rms_standardized_changes": [
+          {
+            "index": 48,
+            "rms": 3.149166994997039,
+            "training_scale": 0.7248056038046928
+          },
+          {
+            "index": 55,
+            "rms": 3.011838035416623,
+            "training_scale": 0.9872761670366499
+          },
+          {
+            "index": 54,
+            "rms": 2.9086957843269987,
+            "training_scale": 0.9293720189130426
+          },
+          {
+            "index": 56,
+            "rms": 2.7988327508726036,
+            "training_scale": 1.1523071769012396
+          },
+          {
+            "index": 49,
+            "rms": 2.7882815567312766,
+            "training_scale": 0.7493197113691623
+          }
+        ]
+      }
+    }
+  ],
+  "evaluation_complete_sha256": "25b67913864276118a1ac548e455ebb6246ceca76f1124315ddff43e5977c42e",
+  "features_sha256": "2abfc1e06083f2226e709055803b0c9d0bd0d5fd1f111b6ce0939443d576c529",
+  "source_sha256": "c67bae34768e23108fadbd9b0b72690f7aa8ab984c4b43d8a417a7db5cf3bbde"
+}

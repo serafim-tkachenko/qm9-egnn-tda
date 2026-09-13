@@ -2,15 +2,44 @@
 
 This project tests whether persistent-homology features help an EGNN predict the QM9 HOMO–LUMO gap. I built a training and evaluation pipeline around `egnn_pytorch`, then added a FiLM-conditioned model using Betti curves and persistence entropy.
 
-**Current finding — 13 September 2026:** fusion has lower error under paired coordinate noise, but its topology conditioning is saturated. Swapping individual descriptors barely changes predictions. These results **do not establish a benefit from molecule-specific topology**.
+**Current finding — 13 September 2026:** the completed four-arm, three-seed replication found **no benefit from standardized legacy TDA under this training budget**. TDA had higher clean and matched-noise test error than every control in all three seeds. Restoring descriptor sensitivity exposed substantial noise fragility.
 
-[Research report](reports/paired_pilot_2026-09-13.md) · [Exact inputs and results](results/paired_pilot_2026-09-13) · [Next experiment](docs/controlled_replication.md)
+[Controlled replication report](reports/controlled_replication_2026-09-13.md) · [Exact results and histories](results/controlled_replication_2026-09-13) · [Executed protocol](docs/controlled_replication.md)
 
-**New training diagnostic:** standardizing TDA on training molecules prevented early FiLM saturation: **0% saturated outputs versus 85.7% with raw features** after one epoch. Both arms used identical initial weights and minibatch order. This restores descriptor sensitivity; it does not yet show a topology-specific prediction benefit. [Diagnostic report](reports/conditioning_diagnostic_2026-09-13.md).
+| Model | Full clean test MAE | MAE at noise 0.10 Å, matched inputs |
+| --- | ---: | ---: |
+| EGNN | 0.21718 ± 0.01558 | 0.28973 ± 0.01062 |
+| Standardized TDA fusion | 0.25769 ± 0.02136 | **1.32849 ± 0.09382** |
+| Simple-geometry fusion | 0.23648 ± 0.02892 | 0.40324 ± 0.05650 |
+| Trained constant fusion | 0.21402 ± 0.02572 | 0.26858 ± 0.01234 |
+
+Values are eV, mean ± sample SD across three training seeds, not confidence intervals or ensemble scores. Clean evaluation uses 13,084 test molecules; noise uses 1,024 preselected test molecules and three perturbations each. All twelve models trained for ten epochs on the fixed split.
+
+![Controlled replication: learning curves, matched-noise errors and FiLM saturation across three seeds](results/controlled_replication_2026-09-13/replication.png)
+
+At 0.10 Å, TDA-minus-EGNN MAE is +1.03875 eV, with a molecule-bootstrap interval of [0.98868, 1.08928] eV conditional on these models and noise draws. Retaining **clean auxiliary TDA** reduces TDA MAE to 0.27106 eV, demonstrating why it must be separated from recomputed noisy features. Several runs had late optimization spikes; these results describe the fixed optimizer/budget and do not rule out other topology methods.
+
+```mermaid
+flowchart LR
+    A["Historical noisy advantage"] --> B["Paired audit: saturated conditioning"]
+    B --> C["Training-only standardization"]
+    C --> D["Descriptor sensitivity restored"]
+    D --> E["Four arms, three seeds, equal budget"]
+    E --> F["Recomputed TDA is fragile under noise"]
+    F --> G["No topology-specific robustness claim"]
+```
+
+## Earlier checkpoint audit and training diagnostic
+
+The recovered historical fusion checkpoint had lower noisy-input error but saturated topology conditioning. Swapping individual descriptors barely changed predictions, so that pilot did not establish a benefit from molecule-specific topology.
+
+[Research report](reports/paired_pilot_2026-09-13.md) · [Exact inputs and results](results/paired_pilot_2026-09-13) · [Replication protocol](docs/controlled_replication.md)
+
+**Preliminary training diagnostic:** standardizing TDA on training molecules prevented early FiLM saturation: **0% saturated outputs versus 85.7% with raw features** after one epoch on 4,096 training molecules. Both arms used identical initial weights and minibatch order. The full replication above subsequently tested predictive performance. [Diagnostic report](reports/conditioning_diagnostic_2026-09-13.md).
 
 ![Controlled training diagnostic: standardization prevents early saturation and preserves descriptor sensitivity](results/conditioning_diagnostic_2026-09-13/conditioning.png)
 
-## The result at a glance
+## Recovered-checkpoint pilot
 
 The pilot used **256 frozen validation molecules**, recovered checkpoints and identical perturbations across all three arms. Targets remain the original molecular gaps.
 
@@ -68,18 +97,18 @@ flowchart LR
 
 Constant FiLM coefficients can be absorbed into the regression head's first linear layer. The fusion checkpoint can therefore behave like a geometric predictor with different learned weights. These checks do not reveal whether TDA influenced training or when saturation developed. Unscaled feature magnitudes are a hypothesis to investigate, not an established cause.
 
-Our conclusion is to **pause topology-specific performance claims** and diagnose conditioning before replication. A negative or inconclusive topology result is a valid research outcome.
+At that stage, the conclusion was to **pause topology-specific performance claims** and diagnose conditioning before replication. The completed replication above follows that decision. A negative or inconclusive topology result is a valid research outcome.
 
 ## What was verified
 
 - All four historical clean validation/test MAEs reproduce within **7.22e-9 eV**, across 26,167 molecules.
 - All 256 selected original topology vectors match recomputation exactly; real-molecule symmetry and padding checks pass.
-- Ten software tests cover pairing, cache compatibility, frozen splits, checkpoint loading, aggregation and training-only scaling.
+- Thirteen software tests cover pairing, cache compatibility, frozen splits, checkpoint loading, aggregation, training-only scaling, geometry controls and shared initialization.
 - Exact inputs, predictions, hashes, activation checks and measured compute are [archived](results/paired_pilot_2026-09-13). Original outputs remain unchanged.
 
 Full-test clean MAEs are **0.205111 eV for EGNN and 0.202298 eV for fusion**. Their paired molecule-bootstrap interval for the difference is [−0.005871, +0.000230] eV and crosses zero. Numerical reproduction does not establish a reliable topology advantage.
 
-## Method
+## Historical method
 
 The baseline embeds atomic numbers, applies four EGNN layers and pools the node embeddings to predict the gap. The fusion model modulates the pooled representation with 130 features: 64 Betti bins for each of H0 and H1, plus two persistence entropies. Topology is computed from centered molecular coordinates scaled to unit diameter.
 
@@ -120,9 +149,9 @@ records recovered artifacts, software checks and execution status.
 
 The [archived pilot](results/paired_pilot_2026-09-13) includes per-molecule predictions, exact inputs, checksums, recovery checks and measured compute. Labels stay fixed: this tests input corruption, not the electronic properties of newly distorted molecules.
 
-The follow-up one-epoch diagnostic trained two newly initialized fusion models on 4,096 training molecules using the local RTX 3080 Ti. Standardization passed the conditioning check. The next comparison uses independent training seeds on the fixed split, a trained constant-conditioning control and simple geometric descriptors. The Betti grids remain fitted separately for each molecule; a shared, training-defined grid would require rebuilding the cache and retraining.
+The one-epoch diagnostic passed the conditioning check, and the subsequent four-arm replication completed all 120 planned epochs on the local RTX 3080 Ti. It failed the predeclared TDA performance criterion. The negative result, descriptor-shift checks and optimization limitations are documented in the [replication report](reports/controlled_replication_2026-09-13.md).
 
-The [next-step protocol](docs/controlled_replication.md) records the completed diagnostic and proposed controlled replication. Multi-seed replication has not run. Full historical clean metrics were reproduced, but the full-test paired molecule interval crosses zero; numerical reproduction alone does not establish a reliable advantage.
+The [executed protocol](docs/controlled_replication.md) preserves the frozen comparison. Further work would first need validation-only optimization checks and a separately versioned descriptor experiment; a shared, training-defined Betti grid would require rebuilding features and retraining. No topology-specific robustness claim is supported by the current results.
 
 ## Code and references
 
