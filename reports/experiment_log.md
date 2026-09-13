@@ -1,203 +1,75 @@
-# Experiment Log
+# Original QM9 experiment record
 
-## Experiment 001 — EGNN baseline
+## 13 September 2026 — paired evaluator implementation
 
-**Goal:**
-Train an E(n)-Equivariant Graph Neural Network baseline for HOMO–LUMO gap prediction on QM9.
+Added a paired evaluator and artifact-recovery checks. The
+[audit](validation_audit_2026-09-13.md) records hashes, environment checks and
+execution status; the [protocol](../docs/paired_evaluation.md) freezes the initial
+subset and three conditions. Nine software tests pass. Synthetic fixtures are
+not molecular performance results. Original numeric artifacts remain unchanged.
 
-**Setup:**
-Model: EGNN
-Dataset: QM9
-Target: HOMO–LUMO gap
-Metric: Mean Absolute Error
+This is a summary of the saved experiment outputs. The tables retain the original results; the interpretation was corrected on 13 September 2026 after inspecting the evaluation and topology code. This documentation review did not rerun training or evaluation.
 
-**Artifacts:**
+## Correction to the noise interpretation
 
-* `results/baseline_metrics.json`
-* `results/baseline_robustness.csv`
-* `figures/baseline_robustness.png`
+`src/eval.py` adds noise to coordinates but loads fusion's topology vector from the unchanged per-molecule cache. `src/data/tda_features.py` builds that cache from the dataset's clean coordinates. Baseline and fusion evaluations also draw separate noise samples.
 
-**Result:**
+The earlier interpretation attributed the increasing advantage under coordinate noise to stable topology. That conclusion is not established by this experiment: fusion retains a clean structural input while its coordinate input is corrupted. The original comparison below remains evidence about that specific setup. It is not a paired test of two methods using the same noisy measurement.
 
-| Metric         |  Value |
-| -------------- | -----: |
-| Validation MAE | 0.2056 |
-| Test MAE       | 0.2051 |
+The code also fits Betti grids separately for each molecule and does not validate cache configuration on reuse. See the [method notes](../docs/methods.md). These require explicit treatment in a new experiment, not silent changes to the historical outputs.
 
-**Baseline robustness:**
+## Baseline run
 
-| Noise sigma | Test MAE |
-| ----------: | -------: |
-|        0.00 |   0.2051 |
-|        0.01 |   0.2058 |
-|        0.05 |   0.2342 |
-|        0.10 |   0.3886 |
+The saved EGNN run reports validation MAE 0.2056 eV and clean test MAE 0.2051 eV.
 
-**Interpretation:**
-The baseline trains stably and provides a reasonable reference point for evaluating the contribution of topological features.
+| Coordinate noise sigma | Test MAE, eV |
+| ---: | ---: |
+| 0.00 | 0.2051 |
+| 0.01 | 0.2058 |
+| 0.05 | 0.2342 |
+| 0.10 | 0.3886 |
 
-As expected, the baseline becomes less accurate when molecular coordinates are perturbed, because the model relies directly on coordinate-based geometric information.
+Sources: [baseline metrics](../results/baseline_metrics.json), [noise results](../results/baseline_robustness.csv), [figure](../figures/baseline_robustness.png). The standalone noise values differ slightly from the later comparison below. They are separate saved evaluations; the exact cause of the difference has not been independently reconstructed. Do not average or interchange them.
 
-**Notes:**
-No severe overfitting was observed. The EGNN already captures much of the relevant local molecular geometry.
+## Topology analysis
 
----
+The original analysis used 5,000 molecules, H0/H1 persistence, 64 Betti bins per dimension and two entropy values. It reported a 93.4% H1 nonzero rate. This describes the computed point-cloud representation; it does not validate a chemical-ring interpretation or show predictive value.
 
-## Experiment 002 — Dataset-level topology analysis
+Sources: [nonzero rate](../results/tda_h1_nonzero_rate.txt), [mean Betti curves](../figures/tda_betti_mean_std.png), [examples](../figures/tda_examples.png), [H1 histogram](../figures/tda_h1_max_hist.png).
 
-**Goal:**
-Check whether QM9 molecules contain nontrivial topological signal before using persistent homology features for prediction.
+## Fusion training
 
-**Setup:**
-Input: molecular 3D point clouds
-Topological features: (H_0), (H_1), Betti curves, persistence entropy
-Sample: 5000 molecules
-Betti bins: 64
-Maximum homology dimension: 1
-Final TDA feature dimension: 130
+The FiLM-conditioned model used ten epochs, batch size 64, learning rate 0.001 and seed 42. The topology vector had 130 dimensions.
 
-**Artifacts:**
+| Saved training metric | Value |
+| --- | ---: |
+| Best validation MAE, eV | 0.2009 |
+| Final train MAE, eV | 0.2144 |
+| Final validation MAE, eV | 0.2100 |
+| Final training loss, MSE | 0.0838 |
 
-* `figures/tda_betti_mean_std.png`
-* `figures/tda_examples.png`
-* `figures/tda_h1_max_hist.png`
-* `results/tda_h1_nonzero_rate.txt`
+The best validation checkpoint precedes the final epoch. Full epoch values remain in [training history](../results/fusion_train_history.json) and [summary](../results/fusion_summary.csv), with [loss](../figures/fusion_train_loss.png) and [MAE](../figures/fusion_mae_curves.png) plots. Ten epochs and one training seed do not establish convergence or reliable differences between methods.
 
-**Result:**
+## Model comparison
 
-| Metric          | Value |
-| --------------- | ----: |
-| H1 nonzero rate | 93.4% |
+| Model | Validation MAE, eV | Clean test MAE, eV |
+| --- | ---: | ---: |
+| EGNN | 0.2056 | 0.2051 |
+| EGNN + TDA | 0.2009 | 0.2023 |
 
-**Interpretation:**
-The (H_0) curves capture the merging of atomic components across filtration scales. The (H_1) signal is weaker but non-degenerate, suggesting that many QM9 molecules contain some loop-like geometric structure that can be captured by persistent homology.
+Sources: [comparison metrics](../results/compare_metrics.json), [comparison table](../results/compare_table.csv). The observed clean-test difference is about 1.4%, without training-seed uncertainty or a parameter-matched control.
 
-**Notes:**
-Because QM9 molecules are relatively small, the topological signal is limited. This is one reason why a large standard prediction improvement should not be expected.
+| Coordinate noise sigma | EGNN test MAE, eV | EGNN + TDA test MAE, eV | Observed relative reduction |
+| ---: | ---: | ---: | ---: |
+| 0.00 | 0.2051 | 0.2023 | 1.4% |
+| 0.01 | 0.2058 | 0.2024 | 1.7% |
+| 0.05 | 0.2344 | 0.2137 | 8.9% |
+| 0.10 | 0.3904 | 0.3014 | 22.8% |
 
----
+**Fusion topology remains clean in every row. Noise is not paired across models.** Sources: [noise comparison](../results/compare_robustness.csv), [original plot](../figures/compare_robustness.png). These percentages describe the saved asymmetric-input comparison, not a corrected robustness result.
 
-## Experiment 003 — EGNN + TDA with FiLM conditioning
+## What the next run must resolve
 
-**Goal:**
-Test whether persistent homology features improve molecular property prediction when fused with EGNN graph embeddings.
+Restore the original checkpoints and caches. Run paired perturbations for the baseline and fusion, comparing clean auxiliary topology with topology recomputed from the same noisy coordinates. Keep the old feature definition for checkpoint compatibility, record per-molecule results and inspect failures before retraining.
 
-**Setup:**
-
-| Parameter                  |             Value |
-| -------------------------- | ----------------: |
-| Model                      | EGNN + TDA (FiLM) |
-| Epochs                     |                10 |
-| Batch size                 |                64 |
-| Learning rate              |             0.001 |
-| Seed                       |                42 |
-| TDA bins                   |                64 |
-| TDA max homology dimension |                 1 |
-| TDA feature dimension      |               130 |
-
-**Artifacts:**
-
-* `results/fusion_train_history.json`
-* `results/fusion_summary.csv`
-* `figures/fusion_train_loss.png`
-* `figures/fusion_mae_curves.png`
-
-**Training summary:**
-
-| Metric               |  Value |
-| -------------------- | -----: |
-| Best validation MAE  | 0.2009 |
-| Final train MAE      | 0.2144 |
-| Final validation MAE | 0.2100 |
-| Final train loss     | 0.0838 |
-
-**Training dynamics:**
-
-| Stage    | Train loss | Train MAE | Validation MAE |
-| -------- | ---------: | --------: | -------------: |
-| Epoch 1  |     0.6476 |    0.5992 |         0.4809 |
-| Epoch 2  |     0.2143 |    0.3485 |         0.3113 |
-| Epoch 3  |     0.1592 |    0.2995 |         0.2810 |
-| Epoch 8  |     0.0842 |    0.2185 |         0.2009 |
-| Epoch 9  |     0.0760 |    0.2081 |         0.2019 |
-| Epoch 10 |     0.0838 |    0.2144 |         0.2100 |
-
-**Interpretation:**
-The fusion model trains stably. Adding FiLM conditioning with TDA features does not appear to destabilize optimization.
-
-The best validation MAE was reached before the final epoch, and the final validation MAE increased slightly, so the best checkpoint should be used for evaluation.
-
----
-
-## Experiment 004 — Standard prediction comparison
-
-**Goal:**
-Compare EGNN against EGNN + TDA on standard in-distribution HOMO–LUMO prediction.
-
-**Artifacts:**
-
-* `results/compare_metrics.json`
-* `results/compare_table.csv`
-
-**Result:**
-
-| Model             | Validation MAE | Test MAE |
-| ----------------- | -------------: | -------: |
-| EGNN              |         0.2056 |   0.2051 |
-| EGNN + TDA (FiLM) |         0.2009 |   0.2023 |
-
-**Interpretation:**
-The topology-aware model improves test MAE from 0.2051 to 0.2023, approximately 1.4%.
-
-This is a weak/modest improvement. It should not be interpreted as strong evidence that persistent homology substantially improves HOMO–LUMO prediction on QM9.
-
-**Notes:**
-The result suggests that topology may provide complementary information, but the standard accuracy gain alone is not strong enough to claim a meaningful predictive improvement.
-
----
-
-## Experiment 005 — Robustness comparison: EGNN vs EGNN + TDA
-
-**Goal:**
-Evaluate whether topological features improve robustness when molecular coordinates are perturbed.
-
-**Setup:**
-Models compared:
-
-* EGNN
-* EGNN + TDA with FiLM conditioning
-
-Perturbation: Gaussian coordinate noise
-Metric: Test MAE
-
-**Artifacts:**
-
-* `results/compare_robustness.csv`
-* `figures/compare_robustness.png`
-
-**Result:**
-
-| Noise sigma | EGNN test MAE | EGNN + TDA test MAE | Relative error reduction |
-| ----------: | ------------: | ------------------: | -----------------------: |
-|        0.00 |        0.2051 |              0.2023 |                     1.4% |
-|        0.01 |        0.2058 |              0.2024 |                     1.7% |
-|        0.05 |        0.2344 |              0.2137 |                     8.9% |
-|        0.10 |        0.3904 |              0.3014 |                    22.8% |
-
-**Interpretation:**
-The topology-aware model becomes more useful as coordinate noise increases.
-
-At (σ=0.10), EGNN + TDA reduces error by approximately 22.8%. This is the strongest result of the project. Persistent homology features appear to provide a more stable global descriptor when precise coordinate information is degraded.
-
-**Notes:**
-This robustness result is more interesting than the standard prediction result. It suggests that topological features may be useful for stability and robustness rather than direct in-distribution accuracy gains on small molecular datasets.
-
----
-
-## Overall conclusion
-
-Topology provides only a modest improvement in standard HOMO–LUMO prediction accuracy on QM9, but a substantially stronger improvement in robustness under coordinate perturbation.
-
-The project should be treated as an exploratory scientific ML investigation rather than a performance breakthrough. The main value is that it tests a plausible hypothesis, documents a weak/modest accuracy result honestly, and identifies a more promising robustness direction.
-
-The most interesting future work is to test whether topology improves robustness, generalization, or out-of-distribution performance on larger and more structurally complex molecular datasets.
+If further work is justified, train on a fixed split with independent model seeds and compare topology against both extra capacity and simple geometric descriptors. A revised common-grid representation needs its own versioned cache and retraining. Preserve these original CSVs and write the corrected experiment to a new directory, with actual execution dates and a configuration manifest.

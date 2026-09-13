@@ -1,6 +1,6 @@
 from __future__ import annotations
 from dataclasses import dataclass
-from typing import List
+from typing import List, Tuple
 import torch
 from .qm9_data import GAP_TARGET_INDEX
 

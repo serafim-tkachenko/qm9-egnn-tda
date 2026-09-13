@@ -55,8 +55,10 @@ class TDACache:
 
     def compute_vec(self, coords: np.ndarray) -> np.ndarray:
         coords = np.asarray(coords, dtype=np.float32)
-        if coords.ndim != 2 or coords.shape[1] != 3:
+        if coords.ndim != 2 or coords.shape[1] != 3 or len(coords) == 0:
             raise ValueError(f"Expected coords shape (N,3), got {coords.shape}")
+        if not np.isfinite(coords).all():
+            raise ValueError("TDA coordinates must be finite")
 
         # Center
         coords = coords - coords.mean(axis=0, keepdims=True)
@@ -78,6 +80,8 @@ class TDACache:
             ent = self.entropy.fit_transform(diagrams) # (1, dims)
 
         vec = np.concatenate([betti.reshape(1, -1), ent.reshape(1, -1)], axis=1)[0].astype(np.float32)
+        if vec.shape != (self.feature_dim(),) or not np.isfinite(vec).all():
+            raise ValueError("Invalid/nonfinite TDA vector")
 
         # sanity
         if np.count_nonzero(vec) == 0:
