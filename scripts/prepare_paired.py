@@ -28,6 +28,7 @@ def main():
     p.add_argument("--original-root", required=True)
     p.add_argument("--out", required=True, help="New directory for recovery records")
     p.add_argument("--device", default="cpu")
+    p.add_argument("--legacy-cache-dir", help="Optional staged copy of the exact legacy cache files")
     args = p.parse_args()
     root, out = Path(args.original_root), Path(args.out)
     if out.exists():
@@ -70,7 +71,7 @@ def main():
     for idx in ids:
         coords = ds[idx].pos.numpy()
         vector = tda.compute_vec(coords)
-        old_path = root / "tda_cache" / f"{idx:06d}.npy"
+        old_path = Path(args.legacy_cache_dir or root / "tda_cache") / f"{idx:06d}.npy"
         old = np.load(old_path, allow_pickle=False)
         if old.shape != (130,) or not np.isfinite(old).all():
             raise ValueError(f"Malformed legacy descriptor: {old_path}")

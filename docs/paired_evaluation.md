@@ -60,6 +60,18 @@ Existing output directories are refused. Completed prediction batches persist
 incrementally; incomplete runs lack `complete.json`. After interruption, choose
 a new output directory and reuse the checked cache.
 
+If the legacy Drive directory is too large for mounted filesystem reads, stage
+the **same selected files** through the Drive API and pass `--legacy-cache-dir`
+to recovery and clean reproduction. Verify provider checksums during transfer;
+archive the subset on Drive. This changes storage access only, not molecules,
+descriptors or compatibility tolerances.
+
+`scripts.reproduce_clean_subset` compares the sigma-zero output against the old
+clean evaluator with the original cached descriptors (2e-6 eV MAE tolerance).
+`scripts.benchmark_paired_inputs` measures disposable optimizer steps on archived
+real pilot inputs, without saving models. It reports fixed-batch throughput,
+excluding data/cache I/O and validation; extrapolations are not measured epochs.
+
 For clean full-split reproduction, use separate outputs with `--size 0 --split val
 --sigmas 0`, then `--split test`. These remain retrospective evaluations.
 The historical `src.eval` remains available and must not be used for a corrected
