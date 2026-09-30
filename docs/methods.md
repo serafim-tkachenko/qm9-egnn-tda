@@ -1,6 +1,6 @@
 # Method and implementation notes
 
-These notes describe the implementation reviewed and validated on 13 September 2026.
+This document describes the implementation used in the reported experiments.
 
 ## Data and model
 
