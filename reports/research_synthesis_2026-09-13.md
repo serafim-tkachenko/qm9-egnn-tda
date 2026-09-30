@@ -1,6 +1,6 @@
 # Research synthesis and pause decision
 
-13 September 2026 · QM9 HOMO–LUMO gap · targeted primary-source comparison
+QM9 HOMO–LUMO gap · targeted primary-source comparison
 
 **Pause the current pipeline.** The completed experiment provides a useful,
 reproducible negative result: standardized legacy topology features did not help

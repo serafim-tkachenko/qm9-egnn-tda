@@ -1,8 +1,6 @@
 # EGNN with topology features on QM9
 
-**Status: paused after controlled validation and literature review (13 September 2026).**
-The current pipeline produced a reproducible negative result. Before further
-topology experiments, the next milestone is a faithful, converged clean baseline.
+The pipeline produced a reproducible negative result in controlled validation.
 Our EGNN variant is not a reproduction of the original paper's QM9 benchmark.
 
 **[Final research synthesis: related works, comparison plots, limitations and restart criteria](reports/research_synthesis_2026-09-13.md)**
@@ -16,7 +14,7 @@ failure of persistent homology or a topology-specific robustness benefit.
 
 This project tests whether persistent-homology features help an EGNN predict the QM9 HOMO–LUMO gap. I built a training and evaluation pipeline around `egnn_pytorch`, then added a FiLM-conditioned model using Betti curves and persistence entropy.
 
-**Current finding — 13 September 2026:** the completed four-arm, three-seed replication found **no benefit from standardized legacy TDA under this training budget**. TDA had higher clean and matched-noise test error than every control in all three seeds. Restoring descriptor sensitivity exposed substantial noise fragility.
+**Finding:** the completed four-arm, three-seed replication found **no benefit from standardized legacy TDA under this training budget**. TDA had higher clean and matched-noise test error than every control in all three seeds. Restoring descriptor sensitivity exposed substantial noise fragility.
 
 [Controlled replication report](reports/controlled_replication_2026-09-13.md) · [Exact results and histories](results/controlled_replication_2026-09-13) · [Executed protocol](docs/controlled_replication.md)
 
@@ -140,7 +138,7 @@ These values come from [compare_table.csv](results/compare_table.csv) and [compa
 | Coordinate noise, sigma 0.05; fusion topology remains clean | 0.2344 | 0.2137 |
 | Coordinate noise, sigma 0.10; fusion topology remains clean | 0.3904 | 0.3014 |
 
-The [experiment record](reports/experiment_log.md) retains the separate baseline run, topology analysis and training history. The old noise plot in `figures/compare_robustness.png` visualizes this same asymmetric comparison, not a corrected robustness test.
+The [original experiment results](reports/original_experiment.md) retains the separate baseline run, topology analysis and training history. The old noise plot in `figures/compare_robustness.png` visualizes this same asymmetric comparison, not a corrected robustness test.
 
 </details>
 
@@ -155,7 +153,7 @@ python -m src.eval_paired --help
 
 Start with the [validation environment and commands](docs/paired_evaluation.md) or [Colab notebook](notebooks/paired_validation.ipynb). Dataset files, trained checkpoints and the full topology cache are outside Git; the archived pilot can be inspected immediately. Use new output locations to preserve earlier runs. The legacy training and `src.eval` entry points remain available, but the old evaluator does not implement the corrected paired protocol.
 
-## Validation and next decision
+## Validation
 
 The [paired protocol](docs/paired_evaluation.md), `src.eval_paired` and recovery
 checks implement the diagnostic. The [validation audit](reports/validation_audit_2026-09-13.md)

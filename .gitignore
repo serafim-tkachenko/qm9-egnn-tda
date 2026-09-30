@@ -29,3 +29,13 @@ artifacts/recovered/
 artifacts/validation_cache/
 artifacts/split42.json
 .pytest_cache/
+
+# Internal working context is maintained privately.
+.ai-context/
+docs/notes/
+**/*handoff*.md
+research/STATUS.md
+docs/novelty_assessment.md
+experiments/coding_forensics/next_protocol.md
+reports/experiment_log.md
+AGENTS.md
